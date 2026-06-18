@@ -44,6 +44,9 @@ class RetrievalConfig:
     faiss_index_filename: str = "food_index.faiss"
     food_embeddings_filename: str = "food_embeddings.npy"
     description_embeddings_filename: str = "food_descriptions_embeddings.npy"
+    nutrient_store_directory: str = "chroma_nutrients"
+    recipe_store_directory: str = "chroma_recipes"
+    recipe_top_k: int = 5
 
 
 @dataclass(frozen=True)
@@ -138,6 +141,14 @@ class AppConfig:
     @property
     def faiss_index_path(self) -> Path:
         return self.indexes_dir / self.retrieval.faiss_index_filename
+
+    @property
+    def nutrient_vectorstore_dir(self) -> Path:
+        return self.indexes_dir / self.retrieval.nutrient_store_directory
+
+    @property
+    def recipe_vectorstore_dir(self) -> Path:
+        return self.indexes_dir / self.retrieval.recipe_store_directory
 
     def ensure_output_directories(self) -> None:
         """Create writable output directories when a command explicitly requests them."""

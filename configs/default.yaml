@@ -23,6 +23,9 @@ retrieval:
   faiss_index_filename: food_index.faiss
   food_embeddings_filename: food_embeddings.npy
   description_embeddings_filename: food_descriptions_embeddings.npy
+  nutrient_store_directory: chroma_nutrients
+  recipe_store_directory: chroma_recipes
+  recipe_top_k: 5
 
 cnf:
   base_url: https://food-nutrition.canada.ca
@@ -41,4 +44,3 @@ pipeline:
 
 logging:
   level: INFO
-
