@@ -69,6 +69,20 @@ class PipelineConfig:
 
 
 @dataclass(frozen=True)
+class NutritionConfig:
+    protein_energy_min: float = 0.10
+    protein_energy_max: float = 0.35
+    carbohydrate_energy_min: float = 0.45
+    carbohydrate_energy_max: float = 0.65
+    sugar_energy_max: float = 0.10
+    fat_energy_min: float = 0.15
+    fat_energy_max: float = 0.30
+    saturated_fat_energy_max: float = 0.10
+    sodium_max_mg: float = 2500.0
+    fiber_min_g: float = 12.5
+
+
+@dataclass(frozen=True)
 class LoggingConfig:
     level: str = "INFO"
 
@@ -81,6 +95,7 @@ class AppConfig:
     retrieval: RetrievalConfig = field(default_factory=RetrievalConfig)
     cnf: CnfConfig = field(default_factory=CnfConfig)
     pipeline: PipelineConfig = field(default_factory=PipelineConfig)
+    nutrition: NutritionConfig = field(default_factory=NutritionConfig)
     logging: LoggingConfig = field(default_factory=LoggingConfig)
 
     def resolve_path(self, path: str | Path) -> Path:
@@ -238,6 +253,7 @@ def load_config(
     retrieval_values = _section(data, "retrieval")
     cnf_values = _section(data, "cnf")
     pipeline_values = _section(data, "pipeline")
+    nutrition_values = _section(data, "nutrition")
     logging_values = _section(data, "logging")
 
     if chat_model := os.getenv("RECIPEPREP_CHAT_MODEL"):
@@ -254,6 +270,7 @@ def load_config(
         retrieval=RetrievalConfig(**retrieval_values),
         cnf=CnfConfig(**cnf_values),
         pipeline=PipelineConfig(**pipeline_values),
+        nutrition=NutritionConfig(**nutrition_values),
         logging=LoggingConfig(**logging_values),
     )
 

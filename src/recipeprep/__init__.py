@@ -2,6 +2,7 @@
 
 from recipeprep.config import AppConfig, get_config, load_config
 from recipeprep.schemas import (
+    ConsistencyResult,
     EvaluationResult,
     GeneratedRecipe,
     HealthScoreResult,
@@ -15,6 +16,7 @@ from recipeprep.schemas import (
 
 __all__ = [
     "AppConfig",
+    "ConsistencyResult",
     "EvaluationResult",
     "GeneratedRecipe",
     "HealthScoreResult",

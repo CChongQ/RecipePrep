@@ -101,6 +101,8 @@ class HealthScoreResult(RecipePrepModel):
 
     total_health_score: int = Field(ge=0, le=7)
     summary_of_points: dict[str, int]
+    nutrient_totals: dict[str, float] = Field(default_factory=dict)
+    warnings: list[str] = Field(default_factory=list)
 
 
 class RelevanceResult(RecipePrepModel):
@@ -111,9 +113,17 @@ class RelevanceResult(RecipePrepModel):
     ingredient_overlap_rate: float = Field(ge=0, le=100)
 
 
+class ConsistencyResult(RecipePrepModel):
+    """Checks for clear instructions, measurements, and step order."""
+
+    instructional_clarity: bool
+    measurement_consistency: bool
+    logical_step_sequence: bool
+
+
 class EvaluationResult(RecipePrepModel):
     """Groups all available evaluation results for one recipe."""
 
     health: HealthScoreResult | None = None
     relevance: RelevanceResult | None = None
-    consistency: dict[str, Any] | None = None
+    consistency: ConsistencyResult | None = None
