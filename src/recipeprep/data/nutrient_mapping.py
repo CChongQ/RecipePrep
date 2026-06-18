@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
-from importlib import import_module
-from typing import Any, Callable, Mapping, cast
+from typing import Any, Callable, Mapping
 
+from recipeprep.data.nutrient_client import get_nut_map
 from recipeprep.schemas import FoodCodeMatch, IngredientNutrientRecord
 
 NutrientLookup = Callable[
@@ -22,10 +22,9 @@ def get_all_ingredient_mapping(
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     """Create nutrient-map records from ingredient-to-food-code matches."""
 
-    # Use the existing CNF helper unless a test or caller provides another lookup.
+    # Use the standard CNF client unless a test or caller provides another lookup.
     if nutrient_lookup is None:
-        legacy_helper = import_module("Helpers.food_nutrient_mapping_helpder")
-        nutrient_lookup = cast(NutrientLookup, legacy_helper.get_nut_map)
+        nutrient_lookup = get_nut_map
 
     all_mapping: list[dict[str, Any]] = []
     current_unit_map = untri_unit_map
