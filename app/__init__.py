@@ -1,0 +1,2 @@
+"""RecipePrep application entry points."""
+
