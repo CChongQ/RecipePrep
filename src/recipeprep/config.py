@@ -8,7 +8,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any, Mapping
 
-import yaml
+import yaml  # type: ignore[import-untyped]
 
 DEFAULT_CONFIG_ENV = "RECIPEPREP_CONFIG"
 PROJECT_ROOT_ENV = "RECIPEPREP_ROOT"
