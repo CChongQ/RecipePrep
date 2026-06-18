@@ -1,24 +1,18 @@
 """
 Provide functions to evaluate the healthiness of recipes using RAG
 """
-"""
-need to install the following packages:
-pip install -qU langchain-openai
-pip install jq
-pip install langchain-community
-pip install langchain-chroma
-"""
 import json
+import re
+
 from langchain_community.document_loaders import JSONLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
-from langchain_openai import ChatOpenAI
-from pathlib import Path
-from pprint import pprint
-import getpass
-import os
-import re
+
+from recipeprep.config import get_config
+
+
+CONFIG = get_config()
 
 """
 load data from the file "ingredient_nutrient_map.json"
@@ -51,10 +45,15 @@ then turn the VectorStore into a Retriever
 
 def get_retriever(data, search_k):
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000, chunk_overlap=200, add_start_index=True
+        chunk_size=CONFIG.retrieval.chunk_size,
+        chunk_overlap=CONFIG.retrieval.chunk_overlap,
+        add_start_index=True,
     )
     all_splits = text_splitter.split_documents(data)
-    vectorstore = Chroma.from_documents(documents=all_splits, embedding=OpenAIEmbeddings())
+    vectorstore = Chroma.from_documents(
+        documents=all_splits,
+        embedding=OpenAIEmbeddings(model=CONFIG.openai.embedding_model),
+    )
     retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": search_k})
     return retriever
 
@@ -112,9 +111,6 @@ def convert_to_grams(ingredient_dict):
     ingredient_dict['value'] = convert_value
     ingredient_dict['unit'] = 'gram'
     return ingredient_dict
-
-
-import re
 
 
 def get_health_score_with_rag(retriever, recipe):
@@ -200,12 +196,10 @@ def get_health_score_with_rag(retriever, recipe):
 An example to calculate a recipe's health score
 """
 if __name__ == "__main__":
-    os.environ["OPENAI_API_KEY"] = getpass.getpass()  # need to provide your api-key
-    llm = ChatOpenAI(model="gpt-4o")
-    map_path = '/content/drive/MyDrive/ECE1786/ingredient_nutrient_map_6.json'
+    map_path = CONFIG.nutrient_map_path
     data = map_loader(map_path)
-    retriever = get_retriever(data, 1)
-    file_path = "processed_recipes_init_200_batch_1.json"
+    retriever = get_retriever(data, CONFIG.retrieval.top_k)
+    file_path = CONFIG.processed_recipes_dir / "processed_recipes_init_200_batch_1.json"
     with open(file_path, "r") as file:
         recipes = json.load(file)
     recipe = recipes[1]
@@ -215,12 +209,10 @@ if __name__ == "__main__":
 An example to add `total_health_score` attribution in recipe JSON file
 """
 if __name__ == "__main__":
-    os.environ["OPENAI_API_KEY"] = getpass.getpass()  # need to provide your api-key
-    llm = ChatOpenAI(model="gpt-4o")
-    map_path = 'ingredient_nutrient_map_6.json'
+    map_path = CONFIG.nutrient_map_path
     data = map_loader(map_path)
-    retriever = get_retriever(data, 1)
-    file_path = "processed_recipes_init_200_batch_1.json"
+    retriever = get_retriever(data, CONFIG.retrieval.top_k)
+    file_path = CONFIG.processed_recipes_dir / "processed_recipes_init_200_batch_1.json"
     with open(file_path, "r") as file:
         recipes = json.load(file)
     for i, recipe in enumerate(recipes):
@@ -229,7 +221,7 @@ if __name__ == "__main__":
         recipe["total_health_score"] = health_score
         recipe["summary_of_points"] = score_summary
 
-    output_file_path = "scored_recipes_init_200_batch_1.json"
+    output_file_path = CONFIG.datasets_dir / "scored_recipes_init_200_batch_1.json"
     with open(output_file_path, "w") as file:
         json.dump(recipes, file, indent=4)
         print(f"health score in recipes has been saved")

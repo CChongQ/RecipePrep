@@ -1,25 +1,18 @@
 """
 Provide functions to evaluate the relevance of recipes using RAG
 """
-"""
-need to install the following packages:
-pip install -qU langchain-openai
-pip install jq
-pip install langchain-community
-pip install langchain-chroma
-"""
 
 import json
+
 from langchain_community.document_loaders import JSONLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from pathlib import Path
-from pprint import pprint
-import getpass
-import os
-from langchain_openai import ChatOpenAI
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 
+from recipeprep.config import get_config
+
+
+CONFIG = get_config()
 """
 Check the hard constraints
 Input arguments:
@@ -74,10 +67,15 @@ def map_loader(file_path):
 
 def get_retriever(data, search_k):
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000, chunk_overlap=200, add_start_index=True
+        chunk_size=CONFIG.retrieval.chunk_size,
+        chunk_overlap=CONFIG.retrieval.chunk_overlap,
+        add_start_index=True,
     )
     all_splits = text_splitter.split_documents(data)
-    vectorstore = Chroma.from_documents(documents=all_splits, embedding=OpenAIEmbeddings())
+    vectorstore = Chroma.from_documents(
+        documents=all_splits,
+        embedding=OpenAIEmbeddings(model=CONFIG.openai.embedding_model),
+    )
     retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": search_k})
     return retriever
 
@@ -139,11 +137,8 @@ meaning:
 Note that when you call the function, it will ask you to provide your api key.
 """
 def relevance_evaluation(focused_tools,input_tools,input_time,input_ingredients,recipe,nutrient_map_path):
-  os.environ["OPENAI_API_KEY"]=getpass.getpass()
-  llm=ChatOpenAI(model="gpt-4o")
-
   data=map_loader(nutrient_map_path)
-  search_k=1
+  search_k=CONFIG.retrieval.top_k
   retriever=get_retriever(data,search_k)
 
   hard_constraint=check_cooking_tools(input_tools,recipe,focused_tools)
@@ -161,8 +156,8 @@ def relevance_evaluation(focused_tools,input_tools,input_time,input_ingredients,
 Test Example
 """
 if __name__ =='__main__':
-    input_file_path = "/content/drive/MyDrive/ECE1786/filtered_recipes_14.json"
-    nutrient_map_path = '/content/drive/MyDrive/ECE1786/ingredient_nutrient_map_3.json'
+    input_file_path = CONFIG.datasets_dir / "filtered_recipes_419.json"
+    nutrient_map_path = CONFIG.nutrient_map_path
     with open(input_file_path, "r") as file:
         recipes = json.load(file)
     recipe = recipes[0]

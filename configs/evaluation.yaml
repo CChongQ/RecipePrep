@@ -1,0 +1,8 @@
+# Evaluation-specific overrides. The evaluation pipeline will consume this file
+# when it is extracted from the current scripts and notebooks.
+retrieval:
+  top_k: 1
+
+pipeline:
+  random_seed: 42
+

@@ -1,0 +1,44 @@
+paths:
+  raw_recipes: recipes_raw
+  datasets: datasets
+  processed_recipes: datasets/Processed_Recipes
+  test_data: datasets/testing
+  nutrient_maps: ingre_nutrition_map
+  artifacts: artifacts
+  embeddings: artifacts/embeddings
+  indexes: artifacts/indexes
+  reports: reports
+
+openai:
+  chat_model: gpt-4o
+  embedding_model: text-embedding-3-small
+  temperature: 0.0
+  timeout_seconds: 60.0
+  max_retries: 3
+
+retrieval:
+  top_k: 1
+  chunk_size: 1000
+  chunk_overlap: 200
+  faiss_index_filename: food_index.faiss
+  food_embeddings_filename: food_embeddings.npy
+  description_embeddings_filename: food_descriptions_embeddings.npy
+
+cnf:
+  base_url: https://food-nutrition.canada.ca
+  language: en
+  food_endpoint: /api/canadian-nutrient-file/food/
+  nutrient_amount_endpoint: /api/canadian-nutrient-file/nutrientamount/
+  nutrient_name_endpoint: /api/canadian-nutrient-file/nutrientname/
+  request_timeout_seconds: 30.0
+  food_code_filename: CNF_API_food_code.json
+  nutrient_map_filename: ingredient_nutrient_map.json
+  nutrient_unit_map_filename: nutrient_unit_map.json
+
+pipeline:
+  random_seed: 42
+  long_recipe_min_characters: 900
+
+logging:
+  level: INFO
+

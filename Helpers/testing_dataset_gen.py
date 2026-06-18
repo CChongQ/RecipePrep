@@ -9,6 +9,11 @@ import math
 
 import csv
 
+from recipeprep.config import get_config
+
+
+CONFIG = get_config()
+
 def generate_mix_examples(categorized_data,num_examples, ingredient_range):
     examples = []
     mixed_examples = categorized_data.get("Mixed", [])  # Retrieve mixed examples if they exist
@@ -149,15 +154,16 @@ def save_to_csv(data, file_path):
         writer.writerows(zip(*csv_data.values()))
 
 def test_generate_datasets():
-    file_path='./datasets/testing/testing_ingredient_List.csv';
+    file_path = CONFIG.test_data_dir / "testing_ingredient_List.csv"
     mid_percnt=0.5
     total_size = 400
     tune_size=0.2
     tuning_dataset_sorted,testing_dataset_sorted = generate_datasets(file_path,mid_percnt,total_size,tune_size)
-    tuning_dataset_filename = './datasets/testing/tuning_ingre_list.csv'
-    testing_dataset_filename= './datasets/testing/testing_ingre_list.csv'
+    tuning_dataset_filename = CONFIG.test_data_dir / "tuning_ingre_list.csv"
+    testing_dataset_filename = CONFIG.test_data_dir / "testing_ingre_list.csv"
     save_to_csv(tuning_dataset_sorted, tuning_dataset_filename)
     save_to_csv(testing_dataset_sorted, testing_dataset_filename)
     
     
-test_generate_datasets()
+if __name__ == "__main__":
+    test_generate_datasets()

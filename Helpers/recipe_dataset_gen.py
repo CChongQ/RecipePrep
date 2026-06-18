@@ -1,17 +1,25 @@
 import json
-import os
 import random
+import re
 from collections import Counter
+from pathlib import Path
+
 import pandas as pd
 from nltk.stem import WordNetLemmatizer
-import re
+
+from recipeprep.config import get_config
+
 
 lemmatizer = WordNetLemmatizer()
+CONFIG = get_config()
 
-MIN_LONG_RECIPE_LEN = 900 #call the get_average_instruction_length() to get a sense
+MIN_LONG_RECIPE_LEN = CONFIG.pipeline.long_recipe_min_characters
 
 
-TEMP_EXCLD_FILES = [os.path.join('./datasets/Processed_Recipes/', file) for file in os.listdir('./datasets/Processed_Recipes') if file.endswith(".json")]
+def _processed_recipe_files() -> list[Path]:
+    if not CONFIG.processed_recipes_dir.is_dir():
+        return []
+    return sorted(CONFIG.processed_recipes_dir.glob("*.json"))
 
 
 #Get recipe dataset
@@ -23,8 +31,8 @@ def get_testing_dataset(in_filename,samp_size,long_percnt=0):
     existing_ids = set()
     
     # Extract recipe IDs from existing files
-    for file in TEMP_EXCLD_FILES:
-        with open(file, 'r') as f:
+    for file in _processed_recipe_files():
+        with file.open("r", encoding="utf-8") as f:
             data = json.load(f)
             existing_ids.update(recipe["recipe_id"] for recipe in data)
             
@@ -219,14 +227,14 @@ def combine_two_json(file_1, file_2,out_filename):
 Testing helpers 
 '''
 def test_get_average_instruction_length():
-    recipe_filename = f'./datasets/sample_data_1000.json'
+    recipe_filename = CONFIG.datasets_dir / "sample_data_1000.json"
     avg_len = get_average_instruction_length(recipe_filename)
     print(f"The average instruction length in the {recipe_filename} dataset is: {avg_len:.4f} characters.")
 
 def test_get_testing_dataset(long_recipe_percnt):
     sample_size = 250
-    recipe_filename = './recipes_raw/recipes_raw_processed.json'
-    output_file_name = f'./datasets/recipe_dataset_init_{sample_size}.json'
+    recipe_filename = CONFIG.raw_recipes_dir / "recipes_raw_processed.json"
+    output_file_name = CONFIG.datasets_dir / f"recipe_dataset_init_{sample_size}.json"
     
     if long_recipe_percnt>0:
         get_long_short_recipe_dataset(recipe_filename,sample_size,output_file_name,long_recipe_percnt=long_recipe_percnt)
@@ -236,39 +244,42 @@ def test_get_testing_dataset(long_recipe_percnt):
         get_rand_recipe_dataset(recipe_filename,sample_size,output_file_name,long_recipe_percnt=0)
 
 def test_filter_recipe_ingre_frequency():
-    recipe_filename = f'./datasets/processed_recipes_init_300.json'
+    recipe_filename = CONFIG.datasets_dir / "processed_recipes_init_300.json"
   
     with open(recipe_filename, "r") as f:
         recipe_data = json.load(f)
     
     min_freq=2
     filtered_recipes = filter_recipe_ingre_frequency(recipe_data, min_freq=2)
-    filtered_filename = f'./datasets/processed_freq{min_freq}_recipes_init_{len(filtered_recipes)}.json'
+    filtered_filename = (
+        CONFIG.datasets_dir
+        / f"processed_freq{min_freq}_recipes_init_{len(filtered_recipes)}.json"
+    )
     save_json_file(filtered_recipes,filtered_filename)
     
 def test_filter_raw_recipe_on_ingredient_list():
-    raw_file_name = './recipes_raw/recipes_raw_nosource_epi.json'
-    key_word_filename = './recipes_raw/Good_ingredient_List.csv'
-    output_filename_1 = './recipes_raw/recipes_raw_nosource_epi_filtered.json'
+    raw_file_name = CONFIG.raw_recipes_dir / "recipes_raw_nosource_epi.json"
+    key_word_filename = CONFIG.raw_recipes_dir / "Good_ingredient_List.csv"
+    output_filename_1 = CONFIG.raw_recipes_dir / "recipes_raw_nosource_epi_filtered.json"
     filter_raw_recipe_on_ingredient_list(raw_file_name,key_word_filename,output_filename_1)
     
-    raw_file_name = './recipes_raw/recipes_raw_nosource_fn.json'
-    key_word_filename = './recipes_raw/Good_ingredient_List.csv'
-    output_filename_2 = './recipes_raw/recipes_raw_nosource_fn_filtered.json'
+    raw_file_name = CONFIG.raw_recipes_dir / "recipes_raw_nosource_fn.json"
+    key_word_filename = CONFIG.raw_recipes_dir / "Good_ingredient_List.csv"
+    output_filename_2 = CONFIG.raw_recipes_dir / "recipes_raw_nosource_fn_filtered.json"
     filter_raw_recipe_on_ingredient_list(raw_file_name,key_word_filename,output_filename_2)
     
-    combined_filename = './recipes_raw/recipes_raw_processed.json'
+    combined_filename = CONFIG.raw_recipes_dir / "recipes_raw_processed.json"
     combine_two_json(output_filename_1, output_filename_2,combined_filename)
 
 
 
 def test_get_pure_testing_ingre_list():
-    key_word_filename = './recipes_raw/Good_ingredient_List.csv'
+    key_word_filename = CONFIG.raw_recipes_dir / "Good_ingredient_List.csv"
     data = pd.read_csv(key_word_filename)
     
     sampled_testing_data,remaining_data = get_pure_testing_ingre_list(data,  category_col="Category", frac=0.2,random_state=123)
-    out_pure_ingre_list =  './datasets/testing/test_ingre_list.csv'
-    tune_ingre_list =  './datasets/testing/tuning_ingre_list.csv'
+    out_pure_ingre_list = CONFIG.test_data_dir / "test_ingre_list.csv"
+    tune_ingre_list = CONFIG.test_data_dir / "tuning_ingre_list.csv"
     sampled_testing_data.to_csv(out_pure_ingre_list, index=False)
     remaining_data.to_csv(tune_ingre_list, index=False)
 

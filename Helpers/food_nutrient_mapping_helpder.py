@@ -1,28 +1,29 @@
-import requests
 import json
-import os
 import random
+from pathlib import Path
 
-# Canadian Nutrient (CNF) API endpoints
-#https://produits-sante.canada.ca/api/documentation/cnf-documentation-en.html#a6
-NUTRITION_BASE_URL = 'https://food-nutrition.canada.ca'
-REQ_LANG='en'
-REQ_NUT_AMOUNT = '/api/canadian-nutrient-file/nutrientamount'
-REQ_NUT_NAME = '/api/canadian-nutrient-file/nutrientname'
-#For output
-MAP_BASE_PATH  = './ingre_nutrition_map'
-NUT_UNIT_MAP_NAME = 'nutrient_unit_map.json'
-INGRE_NUT_MAP_NAME = 'ingredient_nutrient_map.json'
-os.makedirs(MAP_BASE_PATH, exist_ok=True)
+import requests
+
+from recipeprep.config import get_config
+
+
+CONFIG = get_config()
+NUTRITION_BASE_URL = CONFIG.cnf.base_url
+REQ_LANG = CONFIG.cnf.language
+REQ_NUT_AMOUNT = CONFIG.cnf.nutrient_amount_endpoint
+REQ_NUT_NAME = CONFIG.cnf.nutrient_name_endpoint
+MAP_BASE_PATH = CONFIG.nutrient_maps_dir
+NUT_UNIT_MAP_NAME = CONFIG.cnf.nutrient_unit_map_filename
+INGRE_NUT_MAP_NAME = CONFIG.cnf.nutrient_map_filename
 
 EVAL_NUTRIENTS = {"Protein", "Carbohydrate", "Sugars, total", "Sodium, Na", "Total Fat", "Fatty acids, saturated, total", "Fiber","Fibre","Calories","Energy"}
 
 def get_nutrientamount_foodcode(food_code):
-    query_param = f'{REQ_NUT_AMOUNT}/?REQ_LANG={REQ_LANG}&id={food_code}'
+    query_param = f'{REQ_NUT_AMOUNT}?REQ_LANG={REQ_LANG}&id={food_code}'
 
     request_url = NUTRITION_BASE_URL + query_param
     #print(request_url)
-    response = requests.get(request_url)
+    response = requests.get(request_url, timeout=CONFIG.cnf.request_timeout_seconds)
     if response.status_code == 200:
         nutrient_data = response.json()
         return nutrient_data
@@ -31,9 +32,9 @@ def get_nutrientamount_foodcode(food_code):
         return None
 
 def get_nutrientname_foodcode(nut_name_id):
-    query_param = f'{REQ_NUT_NAME}/?REQ_LANG={REQ_LANG}&id={nut_name_id}'
+    query_param = f'{REQ_NUT_NAME}?REQ_LANG={REQ_LANG}&id={nut_name_id}'
     request_url = NUTRITION_BASE_URL + query_param
-    response = requests.get(request_url)
+    response = requests.get(request_url, timeout=CONFIG.cnf.request_timeout_seconds)
     if response.status_code == 200:
         nutrient_data = response.json()
         #print(nutrient_data)
@@ -86,8 +87,9 @@ def save_nut_map(nuntri_unit_map,all_mapping):
     save_nut_id_map(nuntri_unit_map,nut_unit_map_name)
 
     #save the ingredient-nutrient map
-    output_file_name =  os.path.join(MAP_BASE_PATH,INGRE_NUT_MAP_NAME)
-    with open(output_file_name, "w") as file:
+    output_file_name = MAP_BASE_PATH / INGRE_NUT_MAP_NAME
+    output_file_name.parent.mkdir(parents=True, exist_ok=True)
+    with output_file_name.open("w", encoding="utf-8") as file:
         json.dump(all_mapping, file, indent=4)
 
     print(f"Ingredient-Nutrient mapping has been saved to {output_file_name}")
@@ -95,14 +97,17 @@ def save_nut_map(nuntri_unit_map,all_mapping):
 '''Small Helpers'''
 
 def load_nut_id_map(unit_map_name):
-    if os.path.exists(unit_map_name):
-        with open(unit_map_name, 'r') as f:
+    unit_map_path = Path(unit_map_name)
+    if unit_map_path.exists():
+        with unit_map_path.open("r", encoding="utf-8") as f:
             return json.load(f)
     else:
         return {}
     
 def save_nut_id_map(nut_id_map,unit_map_name):
-    with open(unit_map_name, 'w') as f:
+    unit_map_path = Path(unit_map_name)
+    unit_map_path.parent.mkdir(parents=True, exist_ok=True)
+    with unit_map_path.open("w", encoding="utf-8") as f:
         json.dump(nut_id_map, f, indent=4)
     
     print(f"Unit map {unit_map_name} updated!")
@@ -138,7 +143,7 @@ def save_N_random_items(in_filename, out_filename, N):
 '''
 
 def get_unitMap_name():
-    return  f"{MAP_BASE_PATH}/{NUT_UNIT_MAP_NAME}"
+    return MAP_BASE_PATH / NUT_UNIT_MAP_NAME
     
 def test_map_create():
 
@@ -152,13 +157,13 @@ def test_map_create():
 
 def test_mapping_size():
     # Example usage
-    file_path = "./datasets/CNF_API_food_code.json"  # Path to your dataset_2 file
+    file_path = CONFIG.cnf_food_code_path
     num_items = count_items_in_dataset(file_path)
     print(f"The dataset contains {num_items} items.")
 
 def get_smaller_map():
-    file_path = "./datasets/CNF_API_food_code.json"  
-    out_file = "./datasets/CNF_API_food_code_test.json"  
+    file_path = CONFIG.cnf_food_code_path
+    out_file = CONFIG.datasets_dir / "CNF_API_food_code_test.json"
     N=1000
     save_N_random_items(file_path,out_file,N)
 
