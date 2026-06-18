@@ -1,6 +1,18 @@
 # RecipePrep
 A GPT-4o-powered personalized recipe generator designed to make balanced cooking more accessible for users who may find healthy recipes complex or time-consuming to search for online. By taking user-provided ingredients and cooking requirements as input, it generates tailored recipes with clear step-by-step instructions, helping users create practical, balanced meals from what they already have.
 
+## API key setup
+
+Create an OpenAI API key and expose it through the `OPENAI_API_KEY` environment variable before running the notebooks. For PowerShell:
+
+```powershell
+$env:OPENAI_API_KEY="your-key"
+```
+
+The repository includes `.env.example` as a configuration template, while populated `.env` files are ignored by Git.
+
+Never place an API key directly in source code, notebook cells, or notebook output.
+
 ## Data Processing
 ### Data Processing Agent + Ingredient Nutrient map
 #### Data sources
