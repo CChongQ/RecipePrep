@@ -57,18 +57,23 @@ def recipe_metadata(record: Mapping[str, Any]) -> dict[str, Any]:
 
 
 def load_file_content(file_path: str | Path) -> list[dict[str, Any]]:
-    """Load a JSON list used by the generation and retrieval workflows."""
+    """Load a JSON list"""
     path = Path(file_path)
     with path.open("r", encoding="utf-8") as file:
         data = json.load(file)
+        
     if not isinstance(data, list):
         raise ValueError(f"Expected a JSON list: {path}")
+    
     return data
 
 
 def load_and_process_json(file_path: str | Path) -> list[dict[str, Any]]:
     """Convert recipe JSON records into page-content and metadata dictionaries."""
+    
     processed_data: list[dict[str, Any]] = []
+
+    # Chroma searches page_content; metadata keeps recipe IDs/titles for lookup.
     for recipe in load_file_content(file_path):
         metadata = recipe_metadata(recipe)
         processed_data.append(
@@ -82,7 +87,10 @@ def load_and_process_json(file_path: str | Path) -> list[dict[str, Any]]:
 
 def _nutrient_documents(file_path: str | Path) -> list[Any]:
     """Create LangChain documents from the saved ingredient nutrient map."""
+    
     _, Document, _ = _langchain_types()
+
+    # Search by ingredient name, then return nutrient data from metadata.
     return [
         Document(
             page_content=str(record.get("ingredient_name", "")),
@@ -94,7 +102,10 @@ def _nutrient_documents(file_path: str | Path) -> list[Any]:
 
 def _recipe_documents(file_path: str | Path) -> list[Any]:
     """Create LangChain documents from processed recipe data."""
+    
     _, Document, _ = _langchain_types()
+
+    # Search by pure ingredient text, then return matching recipe metadata.
     return [
         Document(page_content=item["page_content"], metadata=item["metadata"])
         for item in load_and_process_json(file_path)
@@ -111,10 +122,14 @@ def _build_or_load_retriever(
     rebuild: bool,
 ) -> Any:
     """Load an existing Chroma store or build it once from source documents."""
+    
     Chroma, _, OpenAIEmbeddings = _langchain_types()
+
+    # Use the configured OpenAI embedding model for both Chroma collections.
     embeddings = OpenAIEmbeddings(model=config.openai.embedding_model)
     has_saved_store = persist_directory.is_dir() and any(persist_directory.iterdir())
 
+    # Reuse persisted Chroma data unless the caller explicitly rebuilds it.
     if has_saved_store and not rebuild:
         vectorstore = Chroma(
             collection_name=collection_name,
@@ -132,6 +147,7 @@ def _build_or_load_retriever(
         )
         LOGGER.info("Built vector store at %s", persist_directory)
 
+    # Expose the vector store through LangChain's retriever interface.
     return vectorstore.as_retriever(
         search_type="similarity",
         search_kwargs={"k": top_k},
@@ -147,6 +163,7 @@ def build_nutrient_retriever(
     config: AppConfig | None = None,
 ) -> Any:
     """Build or load the retriever used for ingredient nutrient lookups."""
+    
     settings = config or get_config()
     source_path = (
         settings.nutrient_map_path
@@ -158,7 +175,10 @@ def build_nutrient_retriever(
         if persist_directory is None
         else Path(persist_directory)
     )
+    
+    # Convert the nutrient map JSON into searchable Chroma documents.
     documents = _nutrient_documents(source_path)
+    
     return _build_or_load_retriever(
         documents,
         persist_directory=store_path,
@@ -178,12 +198,15 @@ def build_recipe_retriever(
     config: AppConfig | None = None,
 ) -> Any:
     """Build or load the retriever used to find similar recipes."""
+    
     settings = config or get_config()
     store_path = (
         settings.recipe_vectorstore_dir
         if persist_directory is None
         else Path(persist_directory)
     )
+    
+    # Convert filtered recipes into searchable Chroma documents.
     documents = _recipe_documents(recipes_path)
     return _build_or_load_retriever(
         documents,
@@ -200,10 +223,13 @@ def retrieve_food_and_nutrients(
     query: str,
 ) -> tuple[str | None, Any | None]:
     """Return the closest ingredient name and its saved nutrient metadata."""
+    
+    # Use the top retrieved ingredient document as the nutrient match.
     results = _retrieve_documents(retriever, query)
     if not results:
         return None, None
     metadata = results[0].metadata
+    
     return metadata.get("ingredient_name"), metadata.get("nutrients")
 
 
@@ -212,7 +238,10 @@ def retrieve_similar_recipe_id(
     input_ingredients: Sequence[str],
 ) -> set[str]:
     """Return recipe IDs found for the sorted ingredient query."""
+    
+    # Sort ingredients so equivalent user input orders produce the same query.
     query = ",".join(sorted(input_ingredients))
+    
     results = _retrieve_documents(retriever_recipe, query)
     recipe_ids = {
         str(document.metadata["recipe_id"])
@@ -221,6 +250,7 @@ def retrieve_similar_recipe_id(
     }
     if not recipe_ids:
         LOGGER.info("No similar recipe found for: %s", query)
+        
     return recipe_ids
 
 
@@ -252,6 +282,8 @@ def build_retrievers(
 ) -> RetrievalBundle:
     """Build or load both project retrievers."""
     settings = config or get_config()
+
+    # Build/load both stores used by recipe generation.
     return RetrievalBundle(
         nutrient=build_nutrient_retriever(
             nutrient_map_path,

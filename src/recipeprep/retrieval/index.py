@@ -29,6 +29,7 @@ def _load_faiss() -> Any:
 
 def get_food_code_dataset(*, config: AppConfig | None = None) -> list[dict[str, Any]]:
     """Download the CNF food-code dataset and save it locally."""
+    
     settings = config or get_config()
     url = (
         f"{settings.cnf.base_url}{settings.cnf.food_endpoint}"
@@ -49,10 +50,13 @@ def get_food_code_dataset(*, config: AppConfig | None = None) -> list[dict[str, 
 
 def _load_food_code_dataset(path: Path) -> list[dict[str, Any]]:
     """Load and check the local CNF food-code dataset."""
+    
     with path.open("r", encoding="utf-8") as file:
         data = json.load(file)
+        
     if not isinstance(data, list):
         raise ValueError(f"Food-code dataset must be a list: {path}")
+    
     return data
 
 
@@ -61,12 +65,16 @@ def get_normalized_foodCode_dataset(
     config: AppConfig | None = None,
 ) -> tuple[list[str], list[int | str]]:
     """Return normalized food descriptions and their matching food codes."""
+    
     settings = config or get_config()
+    
     food_code_dataset = _load_food_code_dataset(settings.cnf_food_code_path)
+    
     descriptions = [
         preprocess_text(str(item["food_description"])) for item in food_code_dataset
     ]
     food_codes = [item["food_code"] for item in food_code_dataset]
+    
     return descriptions, food_codes
 
 
@@ -76,9 +84,12 @@ def get_regular_foodCode_dataset(
 ) -> tuple[list[str], list[int | str]]:
     """Return original food descriptions and their matching food codes."""
     settings = config or get_config()
+    
     food_code_dataset = _load_food_code_dataset(settings.cnf_food_code_path)
+    
     descriptions = [str(item["food_description"]) for item in food_code_dataset]
     food_codes = [item["food_code"] for item in food_code_dataset]
+    
     return descriptions, food_codes
 
 
@@ -89,6 +100,7 @@ def create_FAISS_Index(
     config: AppConfig | None = None,
 ) -> Any:
     """Build a flat L2 FAISS index, save it, and return it."""
+    
     faiss = _load_faiss()
     if food_embeddings.ndim != 2:
         raise ValueError("food_embeddings must be a two-dimensional array.")
@@ -97,12 +109,14 @@ def create_FAISS_Index(
     index_path = (
         settings.faiss_index_path if output_path is None else Path(output_path)
     )
+    
     index = faiss.IndexFlatL2(food_embeddings.shape[1])
     index.add(food_embeddings)
 
     index_path.parent.mkdir(parents=True, exist_ok=True)
     faiss.write_index(index, str(index_path))
     LOGGER.info("FAISS index saved to %s", index_path)
+    
     return index
 
 

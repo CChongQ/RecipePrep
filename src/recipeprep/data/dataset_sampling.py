@@ -19,6 +19,7 @@ LOGGER = logging.getLogger(__name__)
 
 def _processed_recipe_files(config: AppConfig) -> list[Path]:
     """Return processed recipe JSON files that should not be sampled again."""
+    
     if not config.processed_recipes_dir.is_dir():
         return []
     return sorted(config.processed_recipes_dir.glob("*.json"))
@@ -31,40 +32,53 @@ def get_testing_dataset(
     *,
     config: AppConfig | None = None,
 ) -> tuple[list[tuple[str, dict[str, Any]]], list[tuple[str, dict[str, Any]]] | None]:
-    """Sample raw recipes, optionally with a fixed share of long recipes."""
+    """Sample raw recipes, optionally with a fixed % of long recipes."""
+    
     settings = config or get_config()
     existing_ids: set[str] = set()
 
+    # Collect recipe IDs from already processed datasets
     for file_path in _processed_recipe_files(settings):
         with file_path.open("r", encoding="utf-8") as file:
             data = json.load(file)
         existing_ids.update(recipe["recipe_id"] for recipe in data)
 
+    # Load the raw recipe dataset
     with Path(in_filename).open("r", encoding="utf-8") as file:
         recipe_data: dict[str, dict[str, Any]] = json.load(file)
 
-    recipe_data = {
-        recipe_id: recipe
-        for recipe_id, recipe in recipe_data.items()
-        if recipe_id not in existing_ids
-        and isinstance(recipe.get("instructions"), str)
-        and recipe["instructions"].strip()
-    }
+    filtered_recipes: dict[str, dict[str, Any]] = {}
+    for recipe_id, recipe in recipe_data.items():
+        # Skip recipes that have already been processed.
+        if recipe_id in existing_ids:
+            continue
 
+        instructions = recipe.get("instructions")
+        # recipe must have an 'instructions' key with a non-empty string value.
+        if not isinstance(instructions, str) or not instructions.strip():
+            continue
+
+        filtered_recipes[recipe_id] = recipe
+    recipe_data = filtered_recipes
+
+    # When the dataset need to contain long_percnt of long recipes 
     if long_percnt != 0:
         long_recipes: dict[str, dict[str, Any]] = {}
         short_recipes: dict[str, dict[str, Any]] = {}
-        for recipe_id, recipe in recipe_data.items():
-            target = (
-                long_recipes
-                if len(recipe["instructions"])
-                >= settings.pipeline.long_recipe_min_characters
-                else short_recipes
-            )
-            target[recipe_id] = recipe
 
+        # Categorize recipes as long or short based on instruction length.
+        for recipe_id, recipe in recipe_data.items():
+            instruction_length = len(recipe["instructions"])
+
+            if instruction_length >= settings.pipeline.long_recipe_min_characters:
+                long_recipes[recipe_id] = recipe
+            else:
+                short_recipes[recipe_id] = recipe
+
+        # Calc how many long recipes and short recipes we want to sample.
         num_sample_long = int(samp_size * long_percnt)
         num_sample_short = samp_size - num_sample_long
+
         if num_sample_long == 0:
             raise ValueError(
                 "The long-recipe sample is empty; increase the sample size or percentage."
@@ -75,16 +89,22 @@ def get_testing_dataset(
             num_sample_long,
             num_sample_short,
         )
+
+        # Randomly sample long recipes.
         sampled_long_items = random.sample(
             list(long_recipes.items()),
             min(num_sample_long, len(long_recipes)),
         )
+
+        # Randomly sample short recipes.
         sampled_short_items = random.sample(
             list(short_recipes.items()),
             min(num_sample_short, len(short_recipes)),
         )
+
         return sampled_short_items, sampled_long_items
 
+    # If no percentage for long recipes is given, return a random sample of the specified size.
     return random.sample(list(recipe_data.items()), samp_size), None
 
 
@@ -98,7 +118,9 @@ def filter_recipe_ingre_frequency(
         ingredient_counts.update(recipe.get("pure_ingredients", []))
 
     valid_ingredients = {
-        ingredient for ingredient, count in ingredient_counts.items() if count >= min_freq
+        ingredient
+        for ingredient, count in ingredient_counts.items()
+        if count >= min_freq
     }
     filtered_out = set(ingredient_counts) - valid_ingredients
     if filtered_out:

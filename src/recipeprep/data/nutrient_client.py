@@ -30,6 +30,7 @@ EVAL_NUTRIENTS = {
 
 def _request_json(url: str, *, timeout: float) -> Any | None:
     """Request JSON data and return None when the CNF API call fails."""
+    
     try:
         response = requests.get(url, timeout=timeout)
         response.raise_for_status()
@@ -45,12 +46,16 @@ def get_nutrientamount_foodcode(
     config: AppConfig | None = None,
 ) -> list[dict[str, Any]] | None:
     """Get all nutrient amounts for one CNF food code."""
+    
     settings = config or get_config()
+    
     url = (
         f"{settings.cnf.base_url}{settings.cnf.nutrient_amount_endpoint}"
         f"?REQ_LANG={settings.cnf.language}&id={food_code}"
     )
+    
     data = _request_json(url, timeout=settings.cnf.request_timeout_seconds)
+    
     return data if isinstance(data, list) else None
 
 
@@ -60,7 +65,9 @@ def get_nutrientname_foodcode(
     config: AppConfig | None = None,
 ) -> dict[str, Any] | None:
     """Get the name and unit for one CNF nutrient ID."""
+    
     settings = config or get_config()
+    
     url = (
         f"{settings.cnf.base_url}{settings.cnf.nutrient_name_endpoint}"
         f"?REQ_LANG={settings.cnf.language}&id={nutrient_name_id}"
@@ -77,7 +84,10 @@ def get_nut_map(
     config: AppConfig | None = None,
 ) -> tuple[dict[str, Any] | None, dict[str, Any] | None]:
     """Create the saved nutrient record for one matched ingredient."""
+    
     settings = config or get_config()
+
+    # fetch all nutrient amounts for the matched food code.
     map_data = get_nutrientamount_foodcode(in_foodCode, config=settings)
     if not map_data:
         return None, None
@@ -86,17 +96,24 @@ def get_nut_map(
     current_unit_map = nutri_id_map
     for nutrient in map_data:
         nutrient_name = str(nutrient.get("nutrient_web_name", ""))
+
+        # Keep only nutrients used by the health-scoring pipeline.
         if not any(name.lower() in nutrient_name.lower() for name in EVAL_NUTRIENTS):
             continue
 
         nutrient_id = str(nutrient["nutrient_name_id"])
+
+        # Get unit
         if nutrient_id in current_unit_map:
+            #Reuse cached units
             nutrient_unit = current_unit_map[nutrient_id]
         else:
+            #call CNF once to look up the nutrient unit
             nutrient_data = get_nutrientname_foodcode(nutrient_id, config=settings)
             nutrient_unit = "g" if nutrient_data is None else nutrient_data["unit"]
             current_unit_map[nutrient_id] = nutrient_unit
 
+        # Store a compact nutrient record for this ingredient.
         nutrients.append(
             {
                 "value": nutrient["nutrient_value"],

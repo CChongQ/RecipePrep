@@ -22,16 +22,20 @@ def get_all_ingredient_mapping(
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     """Create nutrient-map records from ingredient-to-food-code matches."""
 
-    # Use the standard CNF client unless a test or caller provides another lookup.
     if nutrient_lookup is None:
         nutrient_lookup = get_nut_map
 
     all_mapping: list[dict[str, Any]] = []
+
+    # Carry the unit cache through the full ingredient loop.
     current_unit_map = untri_unit_map
 
-    # Look up and validate one nutrient record for each matched ingredient.
+    # for each ingredient, look up and validate its nutrients 
     for ingredient, details in ingre_food_code_dict.items():
+        # Validate the saved match before using its CNF food code.
         match = FoodCodeMatch.model_validate(details)
+
+        # nutrient_lookup calls CNF by default through get_nut_map().
         map_created, updated_unit_map = nutrient_lookup(
             match.food_code,
             ingredient,
@@ -41,10 +45,12 @@ def get_all_ingredient_mapping(
             current_unit_map = updated_unit_map
 
         if map_created:
+            # Validate the generated nutrient record before saving it.
             validated_mapping = IngredientNutrientRecord.model_validate(map_created)
             all_mapping.append(validated_mapping.model_dump())
         else:
             print(f"Ingredient: {ingredient} - No nutrient amount found")
 
     print("All ingredients processed!")
+    
     return all_mapping, current_unit_map

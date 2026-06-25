@@ -22,8 +22,11 @@ def get_API_response(
     *,
     model: str | None = None,
 ) -> str:
-    """Send a system prompt and user input to the configured chat model."""
+    """Send a system prompt and user input to the configured model."""
+    
     config = get_config()
+
+    # Send the recipe-specific prompt to the chat model.
     chat_completion = client.chat.completions.create(
         messages=[
             {"role": "system", "content": in_prompt},
@@ -36,6 +39,8 @@ def get_API_response(
     response = chat_completion.choices[0].message.content
     if response is None:
         raise ValueError("The chat-completions API returned no message content.")
+
+    # Return plain text for JSON parsing.
     return str(response)
 
 
@@ -45,10 +50,16 @@ def process_API_res_get_processed_recipe(
     eachRecipe: Mapping[str, Any],
 ) -> dict[str, Any]:
     """Turn the LLM JSON response into the processed recipe dictionary."""
+    
     try:
+        # Validate the LLM output schema.
         processed_res = RecipeProcessingOutput.model_validate_json(API_resonse)
+
+        # Validate the source recipe metadata.
         raw_recipe = RawRecipe.model_validate(eachRecipe)
+        
     except (ValidationError, ValueError, TypeError) as error:
+        # Skip responses that cannot become a processed recipe.
         print(f"Error: {error}")
         print(API_resonse)
         return {}
@@ -72,6 +83,7 @@ def _save_recipe_batch(
 ) -> Path:
     """Save one processed recipe batch and return its file path."""
 
+    # Save each batch as a separate checkpoint file.
     output_dir.mkdir(parents=True, exist_ok=True)
     output_path = output_dir / (
         f"processed_recipes_init_{total_size}_batch_{batch_counter}.json"
@@ -93,12 +105,15 @@ def get_processed_recipe_dataset(
     output_dir: str | Path | None = None,
     model: str | None = None,
 ) -> int:
-    """Process a raw recipe dictionary and save valid results in JSON batches."""
+    """Process a raw recipe dictionary and save valid results in JSON batches.
+    """
     
     if batch_size <= 0:
         raise ValueError("batch_size must be greater than zero.")
 
     config = get_config()
+
+    # Use the default output folder unless one is provided.
     destination = (
         config.processed_recipes_dir
         if output_dir is None
@@ -109,15 +124,21 @@ def get_processed_recipe_dataset(
     batch_counter = 0
     total_size = len(recipe_dataset)
 
-    # Process each source recipe with the same prompt and output format.
+    # Process each raw recipe with the same prompt template.
     for recipe_id, eachRecipe in recipe_dataset.items():
+        
+        # Validate required raw recipe fields.
         raw_recipe = RawRecipe.model_validate(eachRecipe)
+
+        # Convert ingredient list into prompt text.
         ingredients_str = ". ".join(raw_recipe.ingredients)
         prompt_recipe_process = prompt_template.format(
             raw_recipe.title,
             ingredients_str,
             raw_recipe.instructions,
         )
+
+        # Ask the model for structured recipe JSON.
         response = get_API_response(
             client,
             in_prompt=prompt_recipe_process,
@@ -127,6 +148,7 @@ def get_processed_recipe_dataset(
             model=model,
         )
 
+        # Parse the response and attach source metadata.
         processed_recipe = process_API_res_get_processed_recipe(
             response,
             recipe_id,
@@ -140,7 +162,7 @@ def get_processed_recipe_dataset(
         else:
             out_list.append(processed_recipe)
 
-        # Save a full batch so a long run does not keep everything in memory.
+        # Save a batch
         if len(out_list) >= batch_size:
             batch_counter += 1
             _save_recipe_batch(
@@ -151,7 +173,7 @@ def get_processed_recipe_dataset(
             )
             out_list = []
 
-    # Save the last partial batch, if there is one.
+    # Save any remaining recipes that did not fill a full batch.
     if out_list:
         batch_counter += 1
         _save_recipe_batch(

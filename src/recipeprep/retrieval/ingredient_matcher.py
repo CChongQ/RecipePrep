@@ -27,12 +27,12 @@ def find_closest_food_code(
 
     normalized_ingredient = preprocess_text(ingredient)
 
-    # Exact text matches are reliable and do not need an API call.
+    #Case 1: Exact text matches
     for idx, description in enumerate(food_descriptions):
         if normalized_ingredient == description:
             return food_codes[idx], description, 1.0
 
-    # Otherwise, create an embedding and search the saved FAISS index.
+    #Case 2: embed the ingredient and search the saved FAISS index
     ingredient_embedding = generate_embeddings(
         client,
         [normalized_ingredient],
@@ -42,7 +42,7 @@ def find_closest_food_code(
     distances, indices = index.search(
         np.array([ingredient_embedding], dtype="float32"),
         k=search_k,
-    )
+    ) # L2 distances
 
     priority_match: tuple[int | str, str, float] | None = None
     best_match: tuple[int | str, str, float] | None = None
@@ -50,18 +50,27 @@ def find_closest_food_code(
     best_prio_similarity = 0.0
     first_part_empty = True
 
-    # Prefer matches where the ingredient is a main part of the CNF description.
+
+    """
+    Core Logic:
+        CNF descriptions often use comma-separated parts. 
+        Prefer exact matches against the main description, then the second segment, before fallback.
+    """
     for idx, distance in zip(indices[0], distances[0], strict=False):
+        
         if idx < 0 or idx >= len(food_descriptions_ori):
             continue
 
         description_ori = food_descriptions_ori[idx].strip()
-        similarity = 1 - float(distance)
+
+        # Smaller L2 distance = closer vectors
+        similarity = 1 - float(distance) #simple match score
         if similarity < 0.5:
             continue
 
         second_part = None
         second_part_words: list[str] = []
+
         if "," in description_ori:
             parts = description_ori.lower().split(",")
             first_part = parts[0].strip() if parts else ""
@@ -89,10 +98,13 @@ def find_closest_food_code(
             best_match = (food_codes[idx], description_ori, similarity)
             best_similarity = similarity
 
+    # Check the best text-priority match first
+    # otherwise use the closest remaining vector candidate above the score threshold.
     if priority_match:
         return priority_match
     if best_match:
         return best_match
+    
     return None, None, 0.0
 
 
@@ -144,4 +156,5 @@ def get_food_code_for_ingredients(
             similarity=similarity,
         )
         results_dict[ingredient] = match.model_dump()
+        
     return results_dict
