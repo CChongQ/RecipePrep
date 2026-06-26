@@ -52,7 +52,7 @@ dev = [
 where = ["src"]
 
 [tool.setuptools.package-data]
-recipeprep = ["py.typed"]
+recipeprep = ["py.typed", "generation/prompt_text/*.md"]
 
 [tool.pytest.ini_options]
 addopts = "-ra"

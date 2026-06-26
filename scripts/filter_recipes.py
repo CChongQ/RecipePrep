@@ -11,7 +11,7 @@ from recipeprep.data.recipe_filtering import filter_recipe_files
 
 
 def build_parser() -> argparse.ArgumentParser:
-    """Create the command-line argument parser."""
+
     parser = argparse.ArgumentParser(
         description=(
             "Combine one or more scored recipe JSON files and keep recipes "
@@ -51,7 +51,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: Sequence[str] | None = None) -> int:
-    """Run the recipe filtering command."""
+
     args = build_parser().parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 

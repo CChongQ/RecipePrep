@@ -14,6 +14,7 @@ from recipeprep.schemas import ConsistencyResult
 
 def evaluate_instruction_clarity(recipe: Mapping[str, Any]) -> bool:
     """Check that the recipe has non-empty instruction steps."""
+    
     instructions = recipe.get("instructions") or recipe.get("step_by_step_instructions")
     return bool(
         isinstance(instructions, Sequence)
@@ -24,6 +25,7 @@ def evaluate_instruction_clarity(recipe: Mapping[str, Any]) -> bool:
 
 def evaluate_measurement_consistency(recipe: Mapping[str, Any]) -> bool:
     """Check that each processed ingredient starts with an amount and unit."""
+    
     ingredients = recipe.get("processed_ingredients") or []
     if not isinstance(ingredients, Sequence) or isinstance(ingredients, str):
         return False
@@ -39,6 +41,7 @@ def evaluate_measurement_consistency(recipe: Mapping[str, Any]) -> bool:
 
 def evaluate_step_sequence(recipe: Mapping[str, Any]) -> bool:
     """Check that the recipe has at least one ordered instruction step."""
+    
     instructions = recipe.get("instructions") or recipe.get("step_by_step_instructions")
     return bool(
         isinstance(instructions, Sequence)

@@ -20,7 +20,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--recipes",
         required=True,
         type=Path,
-        help="Filtered recipe JSON file used for the recipe retriever.",
+        help="Filtered/scored recipe JSON file used for the recipe retriever.",
     )
     parser.add_argument(
         "--nutrient-map",

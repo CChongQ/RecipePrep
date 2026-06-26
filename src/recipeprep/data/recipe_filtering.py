@@ -41,6 +41,7 @@ def filter_recipes(
     strict: bool = False,
 ) -> FilterResult:
     """Keep recipes whose numeric health score meets the minimum."""
+    
     filtered: list[dict[str, Any]] = []
     skipped_invalid = 0
 
@@ -74,6 +75,7 @@ def filter_recipe_files(
     strict: bool = False,
 ) -> FilterResult:
     """Load one or more files, filter their recipes, and save one result file."""
+    
     if not input_paths:
         raise ValueError("At least one input file is required.")
 

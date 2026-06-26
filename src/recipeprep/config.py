@@ -46,7 +46,7 @@ class RetrievalConfig:
     description_embeddings_filename: str = "food_descriptions_embeddings.npy"
     nutrient_store_directory: str = "chroma_nutrients"
     recipe_store_directory: str = "chroma_recipes"
-    recipe_top_k: int = 5
+    recipe_top_k: int = 3
 
 
 @dataclass(frozen=True)

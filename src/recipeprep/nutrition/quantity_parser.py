@@ -29,6 +29,7 @@ _INGREDIENT_PATTERN = re.compile(
 
 def parse_quantity(value: str | int | float) -> float:
     """Parse a decimal, fraction, or mixed number such as '1 1/2'."""
+    
     if isinstance(value, (int, float)):
         return float(value)
 
@@ -53,6 +54,7 @@ def parse_processed_ingredient(
     name_override: str | None = None,
 ) -> ParsedIngredient:
     """Parse the standard 'amount unit ingredient' recipe format."""
+    
     match = _INGREDIENT_PATTERN.match(ingredient_text)
     if match is None:
         raise QuantityParseError(

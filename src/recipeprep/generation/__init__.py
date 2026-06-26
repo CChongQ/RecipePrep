@@ -1,6 +1,9 @@
 """Recipe generation."""
 
-from recipeprep.generation.prompts import RECIPE_PROCESS_PROMPT
+from recipeprep.generation.prompts import (
+    RECIPE_GENERATION_SYSTEM_PROMPT,
+    RECIPE_PROCESS_PROMPT,
+)
 from recipeprep.generation.recipe_generator import (
     RecipeGenerator,
     build_user_prompt,
@@ -14,6 +17,7 @@ from recipeprep.generation.structured_output import (
 )
 
 __all__ = [
+    "RECIPE_GENERATION_SYSTEM_PROMPT",
     "RECIPE_PROCESS_PROMPT",
     "RecipeGenerator",
     "build_user_prompt",

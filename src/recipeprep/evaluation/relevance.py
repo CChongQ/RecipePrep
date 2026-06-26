@@ -38,16 +38,19 @@ def get_similarity(
     retriever: Any,
 ) -> tuple[bool, float]:
     """Compare user ingredients with the generated recipe ingredients."""
+    
     recipe_ingredients = recipe.get("pure_ingredients") or []
     if not isinstance(recipe_ingredients, Sequence) or isinstance(
         recipe_ingredients, str
     ):
         raise ValueError("pure_ingredients must be a list.")
+    
     user_matches = get_matched_list(input_ingredients, retriever)
     recipe_matches = get_matched_list(
         [str(item) for item in recipe_ingredients],
         retriever,
     )
+    
     return compare_ingredient_list(user_matches, recipe_matches)
 
 
@@ -60,6 +63,7 @@ def relevance_evaluation(
     retriever: Any,
 ) -> dict[str, bool | int | float]:
     """Return relevance metrics using an existing ingredient retriever."""
+    
     tool_result = check_cooking_tools(input_tools, recipe, focused_tools)
     time_result = check_cooking_time(input_time, recipe)
     _, overlap_rate = get_similarity(input_ingredients, recipe, retriever)

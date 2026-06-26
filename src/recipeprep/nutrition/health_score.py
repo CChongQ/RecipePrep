@@ -54,6 +54,7 @@ def calculate_nutrient_totals(
     recipe: Mapping[str, Any],
 ) -> tuple[dict[str, float], list[str]]:
     """Sum supported nutrients for all parseable recipe ingredients."""
+    
     processed = recipe.get("processed_ingredients") or []
     pure = recipe.get("pure_ingredients") or []
     if not isinstance(processed, Sequence) or isinstance(processed, str):
@@ -95,6 +96,7 @@ def score_nutrient_totals(
     warnings: list[str] | None = None,
 ) -> HealthScoreResult:
     """Apply configured nutrition thresholds to pre-calculated totals."""
+    
     settings = config or get_config()
     thresholds = settings.nutrition
     total_energy = float(totals.get("Energy (kJ)", 0))
@@ -108,6 +110,7 @@ def score_nutrient_totals(
         float(totals.get("Fatty acids, saturated, total", 0)) * 37
     )
 
+    # Each nutrition metric is scored 1 if it meets the rule, otherwise 0
     summary = {
         "Proteins": int(
             total_energy > 0
@@ -160,7 +163,9 @@ def evaluate_recipe_health(
     config: AppConfig | None = None,
 ) -> HealthScoreResult:
     """Calculate nutrient totals and return the full health-score result."""
+    
     totals, warnings = calculate_nutrient_totals(retriever, recipe)
+    
     return score_nutrient_totals(totals, config=config, warnings=warnings)
 
 
