@@ -1,2933 +1,472 @@
 [
     {
-        "recipe_id": "miP.RIOwx1tEhhYpSHQPQjvSZmV/mWm",
-        "recipe_title": "Breaded Pork Chops",
-        "original_instructions": "Put the flour in a shallow bowl or lipped plate. Break the eggs into another shallow bowl and whisk with the salt and pepper. In a third shallow bowl mix the breadcrumbs with herbs.\nBread the chops. Dredge a chop in the flour, shaking off the excess, then dip it into the eggs, and finally coat the meat evenly with the breadcrumbs. Set on a piece of waxed paper or baking sheet. Repeat with the remaining chops. Heat a large skillet over medium heat with enough oil to come halfway up the sides of the chops, about 1/4 cup. When the oil shimmers, add the chops and fry 3 to 4 minutes on each side, until golden brown and crispy. Drain on paper towels and serve immediately with lemon wedges.",
-        "ingredients": [
-            "Four 1/2-inch-thick, bone-in, pork chops (about 1-1/2 pounds), patted dry",
-            "Flour for dredging",
-            "2 large eggs",
-            "1 teaspoon kosher salt",
-            "Freshly ground black pepper",
-            "1 1/2 cups fresh sourdough bread crumbs",
-            "1/4 teaspoon dried thyme",
-            "1/4 teaspoon dried marjoram",
-            "1/4 teaspoon dried basil",
-            "Extra-virgin olive oil for shallow frying",
-            "2 lemon wedges"
-        ],
         "step_by_step_instructions": [
-            "Put approximately 1 tablespoon of flour in a shallow bowl or lipped plate.",
-            "Break half an egg into another shallow bowl and whisk with a pinch of salt and pepper.",
-            "In a third shallow bowl, mix about 0.38 cup of breadcrumbs with a pinch of dried thyme, marjoram, and basil.",
-            "Dredge one pork chop in the flour, shaking off the excess.",
-            "Dip the chop into the egg mixture.",
-            "Coat the chop evenly with the breadcrumb mixture.",
-            "Set the breaded chop on a piece of waxed paper or baking sheet.",
-            "Heat a large skillet over medium heat with about 1 tablespoon of olive oil.",
-            "When the oil shimmers, add the chop and fry for 3 to 4 minutes on each side, until golden brown and crispy.",
-            "Drain on paper towels.",
-            "Serve immediately with a lemon wedge."
+            "In a large bowl, combine the broccoli slaw mix, raisins, and slivered almonds.",
+            "Pour the ranch dressing over the slaw mixture and toss to coat.",
+            "Cover and refrigerate for 1 hour before serving."
         ],
         "processed_ingredients": [
-            "0.38 lb pork chop",
-            "1 tbsp flour",
-            "0.50 egg",
-            "0.25 tsp salt",
-            "0.13 tsp black pepper",
-            "0.38 cup sourdough bread crumbs",
-            "0.06 tsp dried thyme",
-            "0.06 tsp dried marjoram",
-            "0.06 tsp dried basil",
-            "1 tbsp olive oil",
-            "0.50 lemon wedge"
+            "1 lb broccoli slaw mix",
+            "1 cup raisins",
+            "0.5 cup slivered almonds",
+            "1 cup ranch dressing"
         ],
         "pure_ingredients": [
-            "pork",
-            "flour",
-            "egg",
-            "salt",
-            "black pepper",
-            "bread crumbs",
-            "thyme",
-            "marjoram",
-            "basil",
-            "olive oil",
-            "lemon"
+            "broccoli slaw mix",
+            "raisins",
+            "slivered almonds",
+            "ranch dressing"
         ],
-        "cooking_time": "15 minutes",
+        "cooking_time": "1 hour 10 minutes",
         "required_tools": [
-            "shallow bowl",
-            "lipped plate",
-            "whisk",
-            "waxed paper",
-            "baking sheet",
-            "large skillet",
-            "paper towels"
-        ]
-    },
-    {
-        "recipe_id": "OzXY/iwSrHeTw6VjfCuxy40aNxe2tTy",
-        "recipe_title": "Roasted Peppers Stuffed with Cherry Tomatoes, Onion, and Basil",
-        "original_instructions": "Preheat oven to 425 degrees F.\nLightly oil a large shallow baking pan with 1 tablespoon olive oil.\nArrange peppers, cut sides up, in baking pan, and lightly oil the cut edges and stems.\nIn a bowl, toss the tomatoes, onion, basil, garlic, 2 tablespoons oil, red pepper flakes, mozzarella, and salt and pepper, to taste.\nDivide mixture among peppers and roast in upper third of oven until peppers are tender, about 20 minutes.",
-        "ingredients": [
-            "1 tablespoon olive oil, plus 2 tablespoons",
-            "4 red bell peppers, halved through the stem, seeds and ribs removed but stem intact",
-            "1 pint cherry tomatoes, halved",
-            "1 medium onion, diced",
-            "1 cup packed fresh basil leaves, chiffonaded",
-            "3 garlic cloves, finely chopped",
-            "1/4 teaspoon red pepper flakes",
-            "1 cup cubed mozzarella",
-            "Salt and freshly ground black pepper"
-        ],
-        "step_by_step_instructions": [
-            "Preheat oven to 425 degrees F.",
-            "Lightly oil a large shallow baking pan with 0.25 tablespoon olive oil.",
-            "Arrange 1 red bell pepper half, cut side up, in the baking pan, and lightly oil the cut edges and stem.",
-            "In a bowl, toss 0.25 pint cherry tomatoes, 0.25 medium onion, 0.25 cup packed fresh basil leaves, 0.75 garlic cloves, 0.06 teaspoon red pepper flakes, 0.25 cup cubed mozzarella, and salt and pepper to taste with 0.5 tablespoon olive oil.",
-            "Fill the pepper half with the mixture.",
-            "Roast in the upper third of the oven until the pepper is tender, about 20 minutes."
-        ],
-        "processed_ingredients": [
-            "0.75 tablespoon olive oil",
-            "1 red bell pepper",
-            "0.25 pint cherry tomatoes",
-            "0.25 medium onion",
-            "0.25 cup basil leaves",
-            "0.75 garlic cloves",
-            "0.06 teaspoon red pepper flakes",
-            "0.25 cup mozzarella",
-            "0.06 teaspoon salt",
-            "0.06 teaspoon black pepper"
-        ],
-        "pure_ingredients": [
-            "olive oil",
-            "red bell pepper",
-            "cherry tomatoes",
-            "onion",
-            "basil leaves",
-            "garlic",
-            "red pepper flakes",
-            "mozzarella",
-            "salt",
-            "black pepper"
-        ],
-        "cooking_time": "20 minutes",
-        "required_tools": [
-            "oven",
-            "baking pan",
-            "bowl"
-        ]
-    },
-    {
-        "recipe_id": "b7D2NhCHvPETFzJA2bCB2N.0gspLl5W",
-        "recipe_title": "Roasted Rainbow Trout with Rock Shrimp and Sage Butter Stuffing",
-        "original_instructions": "Preheat the oven to 425 degrees.\nWell in advance of cooking the fish, prepare the stuffing. Combine the sage, softened butter, lemon juice, spice and seasonings, bread crumbs, pine nuts, jalapenos, garlic and coriander in the bowl of a food processor, pulsing to combine well. Remove and place in a bowl. Keep refrigerated until ready to use.\nSeason the trout with salt and pepper and rub the trout with olive oil.\nDivide the stuffing between the 4 fish evenly and spread an even layer inside the cavity of the fish. Divide the shrimp in the same way and add the shrimp in a layer in top of the herb butter. Close the fish to seal in the stuffing.\nLay the fish on an oiled rack and set in a roasting pan.\nPlace the fish in the oven and roast for 12 minutes on each side. Remove and serve immediately.",
-        "ingredients": [
-            "3 tablespoons chopped fresh sage",
-            "1/4 cup unsalted butter, softened to room temperature",
-            "Juice of 1 lemon",
-            "1/2 teaspoon salt",
-            "1/2 teaspoon freshly ground black pepper",
-            "1/2 teaspoon paprika",
-            "3 scallions, finely chopped",
-            "1/2 cup dry bread crumbs",
-            "1/4 cup pine nuts",
-            "2 fresh jalapeno peppers, seeded and diced",
-            "1 clove garlic, finely chopped",
-            "1 tablespoon toasted, ground coriander seed",
-            "Salt and freshly ground black pepper to taste",
-            "4 butterflied rainbow trout, whole, skin on, bones removed (ask your fish dealer to do this for you)",
-            "Olive oil",
-            "1/2 pound cleaned and shelled rock shrimp"
-        ],
-        "step_by_step_instructions": [
-            "Preheat the oven to 425 degrees.",
-            "Prepare the stuffing by combining 0.75 tablespoons chopped fresh sage, 1 tablespoon unsalted butter, 0.25 tablespoon lemon juice, 0.13 teaspoon salt, 0.13 teaspoon freshly ground black pepper, 0.13 teaspoon paprika, 0.75 chopped scallion, 2 tablespoons dry bread crumbs, 1 tablespoon pine nuts, 0.5 diced jalapeno pepper, 0.25 clove finely chopped garlic, and 0.25 tablespoon toasted, ground coriander seed in a food processor. Pulse to combine well.",
-            "Remove the stuffing from the processor, place in a bowl, and refrigerate until ready to use.",
-            "Season 1 rainbow trout with salt and pepper and rub with olive oil.",
-            "Divide the stuffing into 1 portion and spread an even layer inside the cavity of the trout.",
-            "Add 2 ounces of rock shrimp in a layer on top of the stuffing.",
-            "Close the trout to seal in the stuffing.",
-            "Lay the trout on an oiled rack and set in a roasting pan.",
-            "Place the trout in the oven and roast for 12 minutes on one side.",
-            "Flip the trout and roast for another 12 minutes on the other side.",
-            "Remove the trout from the oven and serve immediately."
-        ],
-        "processed_ingredients": [
-            "0.75 tablespoon chopped fresh sage",
-            "1 tablespoon unsalted butter",
-            "0.25 tablespoon lemon juice",
-            "0.13 teaspoon salt",
-            "0.13 teaspoon freshly ground black pepper",
-            "0.13 teaspoon paprika",
-            "0.75 scallion",
-            "2 tablespoon dry bread crumbs",
-            "1 tablespoon pine nuts",
-            "0.5 jalapeno pepper",
-            "0.25 clove garlic",
-            "0.25 tablespoon toasted, ground coriander seed",
-            "1 rainbow trout",
-            "2 ounce rock shrimp",
-            "1 tablespoon olive oil"
-        ],
-        "pure_ingredients": [
-            "sage",
-            "butter",
-            "lemon",
-            "salt",
-            "black pepper",
-            "paprika",
-            "scallions",
-            "bread crumbs",
-            "pine nuts",
-            "jalapeno peppers",
-            "garlic",
-            "coriander seed",
-            "trout",
-            "olive oil",
-            "rock shrimp"
-        ],
-        "cooking_time": "24 minutes",
-        "required_tools": [
-            "oven",
-            "food processor",
-            "bowl",
-            "roasting pan",
-            "rack"
-        ]
-    },
-    {
-        "recipe_id": "Zitazrxu4kd0/4tbeVvuGw4XiMkgaxm",
-        "recipe_title": "Artichoke and Bean Salad with Tuna",
-        "original_instructions": "Combine all ingredients in a mixing bowl, and season to taste with salt and pepper. Toss gently and refrigerate 45 minutes before serving.\nServe salad on a bed of mixed greens with crusty bread. Or alternatively, serve salad scooped onto a hero roll with arugula.",
-        "ingredients": [
-            "1 (15-ounce) can white northern or cannellini beans, drained & rinsed",
-            "1 (15-ounce) can artichoke hearts, drained and quartered",
-            "1 rib celery, finely diced",
-            "2 tablespoons red onion, finely diced",
-            "1 (6-ounce) can tuna, drained and flaked",
-            "3 tablespoons extra-virgin olive oil",
-            "juice and zest of 1 lemon",
-            "\u00bc cup chopped fresh parsley",
-            "Kosher salt and cracked black pepper"
-        ],
-        "step_by_step_instructions": [
-            "Combine 3.75 ounces of white northern or cannellini beans, 3.75 ounces of artichoke hearts, 0.25 rib of celery, 0.5 tablespoon of red onion, 1.5 ounces of tuna, 0.75 tablespoon of extra-virgin olive oil, juice and zest of 0.25 lemon, and 1 tablespoon of chopped fresh parsley in a mixing bowl.",
-            "Season to taste with kosher salt and cracked black pepper.",
-            "Toss gently and refrigerate for 45 minutes before serving.",
-            "Serve the salad on a bed of mixed greens with crusty bread, or alternatively, scoop the salad onto a hero roll with arugula."
-        ],
-        "processed_ingredients": [
-            "3.75 oz white northern beans",
-            "3.75 oz artichoke hearts",
-            "0.25 rib celery",
-            "0.5 tbsp red onion",
-            "1.5 oz tuna",
-            "0.75 tbsp extra-virgin olive oil",
-            "0.25 lemon",
-            "1 tbsp parsley",
-            "1 pinch salt",
-            "1 pinch black pepper"
-        ],
-        "pure_ingredients": [
-            "beans",
-            "artichoke hearts",
-            "celery",
-            "onion",
-            "tuna",
-            "olive oil",
-            "lemon",
-            "parsley",
-            "salt",
-            "pepper"
-        ],
-        "cooking_time": "45 minutes",
-        "required_tools": [
-            "mixing bowl",
-            "knife",
-            "cutting board",
-            "spoon",
+            "large bowl",
             "refrigerator"
+        ],
+        "recipe_id": "R0a90Jn9vYPm8nueR2z2TbznV7nl9ma",
+        "recipe_title": "Broccoli Slaw",
+        "original_instructions": "In a large bowl combine slaw mix, raisins and almonds. Pour the dressing over the slaw mixture and toss to coat. Cover and refrigerate 1 hour before serving.",
+        "ingredients": [
+            "1 (16-ounce) bag broccoli slaw mix",
+            "1 cup raisins",
+            "1/2 cup slivered almonds",
+            "1 cup ranch dressing"
         ]
     },
     {
-        "recipe_id": "S/2qzxl72LD2I.5BjZXG1ACCqA2jO1u",
-        "recipe_title": "Grilled Endive and Radicchio with Gorgonzola and Sage-Infused Olive Oil",
-        "original_instructions": "Preheat the grill to high heat.\nHeat the olive oil in a small saucepan until hot. Add the sage and allow the sage to infuse its flavor into the oil. Remove from the heat when the sage becomes fragrant and slightly crispy, a few minutes.\nGrill the endive and radicchio until slightly wilted with good grill marks, about 4 minutes per side. Turn the endive and radicchio cut-side up and top with the gorgonzola. Close the lid and grill until the cheese has softened, 2 minutes.\nRemove the endive and radicchio to a platter. Drizzle the infused olive oil over the top. Serve immediately.",
-        "ingredients": [
-            "1/2 cup extra-virgin olive oil",
-            "4 sprigs sage",
-            "3 heads endive, sliced in half lengthwise",
-            "3 heads radicchio di Treviso, sliced in half lengthwise",
-            "4 ounces crumbled gorgonzola",
-            "Kosher salt and freshly ground black pepper",
-            "Pinch red pepper flakes"
-        ],
         "step_by_step_instructions": [
-            "Preheat the grill to high heat.",
-            "Heat 1 tablespoon of olive oil in a small saucepan until hot.",
-            "Add 1 sprig of sage to the hot oil and allow it to infuse its flavor into the oil.",
-            "Remove from heat when the sage becomes fragrant and slightly crispy, a few minutes.",
-            "Grill 0.5 head of endive and 0.5 head of radicchio until slightly wilted with good grill marks, about 4 minutes per side.",
-            "Turn the endive and radicchio cut-side up and top with 1 ounce of crumbled gorgonzola.",
-            "Close the lid and grill until the cheese has softened, 2 minutes.",
-            "Remove the endive and radicchio to a platter.",
-            "Drizzle the infused olive oil over the top.",
-            "Serve immediately."
+            "Slice the smoked pork sausage into 1/4-inch-thick slices and chop the onion, bell pepper, and celery.",
+            "In a dry 2 to 2 1/2-quart heavy saucepan, brown the sausage over moderately high heat, stirring frequently. Transfer to paper towels to drain.",
+            "Pour off any fat from the pan. In the same pan, heat the vegetable oil over moderate heat and cook the onion, bell pepper, and celery, stirring occasionally, until the onion is softened.",
+            "Stir in the rice, chicken broth, and cayenne. Bring to a boil.",
+            "Cover the pan and cook the rice over low heat for 15 minutes.",
+            "Remove the pan from heat and let the rice stand, covered, for 5 minutes.",
+            "Thinly slice the scallions. Fluff the rice with a fork, then stir in the sausage, scallions, and salt and black pepper to taste."
         ],
         "processed_ingredients": [
-            "1 tablespoon olive oil",
-            "1 sprig sage",
-            "0.5 head endive",
-            "0.5 head radicchio",
-            "1 ounce gorgonzola",
-            "1 pinch salt",
-            "1 pinch black pepper",
-            "1 pinch red pepper flakes"
-        ],
-        "pure_ingredients": [
-            "olive oil",
-            "sage",
-            "endive",
-            "radicchio",
-            "gorgonzola",
-            "salt",
-            "black pepper",
-            "red pepper flakes"
-        ],
-        "cooking_time": "15 minutes",
-        "required_tools": [
-            "grill",
-            "small saucepan",
-            "platter"
-        ]
-    },
-    {
-        "recipe_id": "qIp0vWmUgh4qr2fKAUdJMOCzX1EnWOC",
-        "recipe_title": "Eggplant Parmigiana",
-        "original_instructions": "Preheat oven to 300 degrees F.\nCut the eggplant in half and scoop out the flesh. Set eggplant halves aside. Cut flesh into bite sized cubes. Chop the tomatoes and slice the garlic.\nIn a large saute pan, heat the oil and add the garlic. When the garlic is golden brown, add the chopped eggplant and saute for 3 minutes. Remove the eggplant and place in a large bowl. To the bowl, add the uncooked tomatoes and capers. Mix until combined.\nIn a baking dish, place the reserved eggplant halves and fill with the eggplant/tomato mixture. Sprinkle with Parmesan.\nPlace baking dish in the oven and cook for 10 minutes.\nRemove from the oven and garnish with fresh basil.",
-        "ingredients": [
-            "1 eggplant",
-            "3 plum tomatoes",
-            "1 clove garlic",
-            "1 tablespoon olive oil",
-            "1 teaspoon capers",
-            "1 tablespoon grated Parmesan",
-            "4 basil leaves"
-        ],
-        "step_by_step_instructions": [
-            "Preheat oven to 300 degrees F.",
-            "Cut the eggplant in half and scoop out the flesh. Set eggplant halves aside.",
-            "Cut the scooped eggplant flesh into bite-sized cubes.",
-            "Chop the tomatoes.",
-            "Slice the garlic.",
-            "In a large saute pan, heat 0.33 tablespoon olive oil and add the sliced garlic.",
-            "When the garlic is golden brown, add the chopped eggplant and saute for 1 minute.",
-            "Remove the eggplant and place in a large bowl.",
-            "To the bowl, add the chopped tomatoes and 0.33 teaspoon capers. Mix until combined.",
-            "In a baking dish, place the reserved eggplant halves and fill with the eggplant/tomato mixture.",
-            "Sprinkle with 0.33 tablespoon grated Parmesan.",
-            "Place the baking dish in the oven and cook for 3 minutes.",
-            "Remove from the oven and garnish with 1 basil leaf."
-        ],
-        "processed_ingredients": [
-            "0.50 lb eggplant",
-            "3.00 oz plum tomatoes",
-            "1.00 clove garlic",
-            "0.33 tablespoon olive oil",
-            "0.33 teaspoon capers",
-            "0.33 tablespoon grated Parmesan",
-            "1.00 basil leaf"
-        ],
-        "pure_ingredients": [
-            "eggplant",
-            "tomatoes",
-            "garlic",
-            "olive oil",
-            "capers",
-            "Parmesan",
-            "basil"
-        ],
-        "cooking_time": "15 minutes",
-        "required_tools": [
-            "oven",
-            "knife",
-            "saute pan",
-            "bowl",
-            "baking dish"
-        ]
-    },
-    {
-        "recipe_id": "inFiGDyyLIZOkQR3ePQ4GWtlM7c0PE2",
-        "recipe_title": "\"Smiling\" Grilled Cheese",
-        "original_instructions": "Heat a skillet over medium heat. Spread the butter on both sides of the bread.\nBuild the sandwich with the ham and cheeses and place in the hot skillet. Cook until the bread is golden and toasty, a few minutes on each side.\nArrange the tomato halves for the eyes, 1/4 cheese slice for a nose and pickle spear for a smile.\nThis recipe was created by a contestant during a cooking competition. The Food Network Kitchens have not tested it for home use, therefore, we cannot make any representation as to the results.",
-        "ingredients": [
-            "2 tablespoons butter, softened",
-            "2 slices rustic white bread",
-            "2 slices ham",
-            "2 slices American cheese, plus 1/4 slice for serving",
-            "2 slices mozzarella cheese",
-            "1 grape tomato, halved",
-            "1 small pickle spear"
-        ],
-        "step_by_step_instructions": [
-            "Heat a skillet over medium heat.",
-            "Spread about 1 tablespoon of butter on both sides of each slice of bread.",
-            "Build the sandwich with 1 slice of ham, 1 slice of American cheese, and 1 slice of mozzarella cheese.",
-            "Place the sandwich in the hot skillet.",
-            "Cook until the bread is golden and toasty, about 3 minutes on each side.",
-            "Remove the sandwich from the skillet.",
-            "Arrange half of a grape tomato for each eye, a small strip of the remaining 1/4 slice of cheese for the nose, and the pickle spear for the smile."
-        ],
-        "processed_ingredients": [
-            "1.00 tablespoon butter",
-            "1.00 slice rustic white bread",
-            "1.00 slice ham",
-            "1.00 slice American cheese",
-            "1.00 slice mozzarella cheese",
-            "1.00 grape tomato",
-            "0.50 small pickle spear"
-        ],
-        "pure_ingredients": [
-            "butter",
-            "bread",
-            "ham",
-            "cheese",
-            "tomato",
-            "pickle"
-        ],
-        "cooking_time": "10 minutes",
-        "required_tools": [
-            "skillet",
-            "knife"
-        ]
-    },
-    {
-        "recipe_id": "DSYLnBnu0KvZciyYZiBFNaz5btwFCr.",
-        "recipe_title": "Green Beans with Celery-Salt Butter ",
-        "original_instructions": "Cook green beans in a large pot of boiling salted water (1 tablespoon salt for 5 quarts water) until just tender, 5 to 7 minutes. Meanwhile, stir together butter and celery salt. Drain beans, then toss with butter and season with pepper.\nCook green beans in a large pot of boiling salted water (1 tablespoon salt for 5 quarts water) until just tender, 5 to 7 minutes. Meanwhile, stir together butter and celery salt. Drain beans, then toss with butter and season with pepper.\nWhat to drink: Marimar Estate Don Miguel Vineyard '06\nMarimar Estate Don Miguel Vineyard '06",
-        "ingredients": [
-            "2 pounds green beans, trimmed",
-            "2 tablespoons unsalted butter, softened",
-            "1/2 teaspoon celery salt"
-        ],
-        "step_by_step_instructions": [
-            "Boil about 0.50 quarts of water in a large pot and add about 0.20 tablespoons of salt.",
-            "Add the green beans to the pot and cook until just tender, about 5 to 7 minutes.",
-            "While the beans are cooking, mix together 0.33 tablespoons of softened unsalted butter with 0.03 teaspoons of celery salt.",
-            "Drain the cooked beans and toss them with the celery-salt butter.",
-            "Season with pepper to taste before serving."
-        ],
-        "processed_ingredients": [
-            "0.33 lb green beans",
-            "0.33 tbsp unsalted butter",
-            "0.03 tsp celery salt",
-            "0.20 tbsp salt"
-        ],
-        "pure_ingredients": [
-            "green beans",
-            "butter",
-            "celery salt",
-            "pepper",
-            "salt"
-        ],
-        "cooking_time": "7 minutes",
-        "required_tools": [
-            "large pot",
-            "strainer",
-            "mixing bowl",
-            "spoon"
-        ]
-    },
-    {
-        "recipe_id": "j2uDUfy8YABwmUDO8.YIYdcJaGuBBne",
-        "recipe_title": "Toby's Fish and Chips",
-        "original_instructions": "Pour buttermilk into a bowl.\nIn a separate bowl, mix flour, salt, and garlic powder. Dip each fish portion into buttermilk then roll in flour until evenly covered, set aside on plate.\nHeat deep-fat fryer to 360 degrees F and cook fish for 6-8 minutes, or until golden brown and done. To check for doneness, cut into one portion and check to see if fish is flaky and looks milky white. Serve with french fries, coleslaw, and garlic bread.",
-        "ingredients": [
-            "2 cups buttermilk",
-            "1 cup flour",
-            "1/2 teaspoon seasoned salt",
-            "1 teaspoon garlic powder",
-            "2 pounds cod or halibut, cut into 2 ounce portions",
-            "Serving suggestions: french fries, coleslaw, and garlic bread"
-        ],
-        "step_by_step_instructions": [
-            "Pour 0.25 cups buttermilk into a bowl.",
-            "In a separate bowl, mix 0.13 cups flour, 0.06 teaspoons seasoned salt, and 0.13 teaspoons garlic powder.",
-            "Dip one 2-ounce portion of fish into the buttermilk, then roll in the flour mixture until evenly covered, and set aside on a plate.",
-            "Heat a deep-fat fryer to 360 degrees F.",
-            "Cook the fish for 6-8 minutes, or until golden brown and done.",
-            "To check for doneness, cut into the fish portion and check to see if it is flaky and looks milky white.",
-            "Serve the fish with a side of french fries, coleslaw, and garlic bread."
-        ],
-        "processed_ingredients": [
-            "0.25 cup buttermilk",
-            "0.13 cup flour",
-            "0.06 teaspoon seasoned salt",
-            "0.13 teaspoon garlic powder",
-            "2 ounce cod"
-        ],
-        "pure_ingredients": [
-            "buttermilk",
-            "flour",
-            "salt",
-            "garlic powder",
-            "cod"
-        ],
-        "cooking_time": "8 minutes",
-        "required_tools": [
-            "bowl",
-            "deep-fat fryer",
-            "plate"
-        ]
-    },
-    {
-        "recipe_id": "8vnYnVcBT2xttaEjAtLfen9stRq/Ws2",
-        "recipe_title": "Sauteed Spinach and Garlic Chips",
-        "original_instructions": "To a wok or saucepan over a low flame, add oil. Oil should be cold. Add garlic. Fry garlic for about 4 to 5 minutes. Remove when garlic chips are brown and place towels to drain. Add spinach, and pepper flakes. Saute for 3 to 4 minutes. Garnish with garlic chips.;",
-        "ingredients": [
-            "1/3 cup extra virgin olive oil",
-            "4 cloves garlic, sliced",
-            "4 bunches spinach, washed and dried",
-            "Pinch hot pepper flakes"
-        ],
-        "step_by_step_instructions": [
-            "To a wok or saucepan over a low flame, add 1 tablespoon of cold olive oil.",
-            "Add 1 clove of sliced garlic to the cold oil.",
-            "Fry the garlic for about 4 to 5 minutes until the garlic chips are brown.",
-            "Remove the garlic chips and place them on towels to drain.",
-            "Add about 1 bunch of spinach and a pinch of hot pepper flakes to the pan.",
-            "Saute the spinach for 3 to 4 minutes.",
-            "Garnish with the garlic chips."
-        ],
-        "processed_ingredients": [
-            "1 tablespoon olive oil",
-            "1 clove garlic",
-            "1 bunch spinach",
-            "0.25 teaspoon hot pepper flakes"
-        ],
-        "pure_ingredients": [
-            "olive oil",
-            "garlic",
-            "spinach",
-            "hot pepper flakes"
-        ],
-        "cooking_time": "9 minutes",
-        "required_tools": [
-            "wok",
-            "saucepan",
-            "towels"
-        ]
-    },
-    {
-        "recipe_id": "PH4ygeNFK4.RZTnh6AQM3RMmzpS3EDy",
-        "recipe_title": "Risotto con Zucca",
-        "original_instructions": "In a roasting pan, place butternut squash cubes, sprinkle nutmeg, salt, pepper and olive oil over the cubes and roast in a 375 degree oven for 30 minutes or until tender. Place the roasted squash in a food processor and puree.\nFollow the basic risotto recipe, and when beginning to add the vegetable stock to the risotto, add the butternut squash puree, stirring continuously with a wooden spoon. When the risotto is cooked al dente, add the butter, chopped Italian parsley and Parmesan cheese, continue stirring until a creamy consistency appears, serve on a platter or in individual bowls.",
-        "ingredients": [
-            "3 cups butternut squash, peeled and cut into cubes",
-            "1 teaspoon nutmeg",
-            "1 tablespoon olive oil",
-            "2 ounces unsalted butter",
-            "3/4 cup grated Parmesan cheese",
-            "1/4 cup chopped Italian parsley",
-            "Salt and pepper"
-        ],
-        "step_by_step_instructions": [
-            "Preheat the oven to 375 degrees Fahrenheit.",
-            "Place approximately 0.75 cup of butternut squash cubes in a roasting pan.",
-            "Sprinkle 0.25 teaspoon of nutmeg over the squash.",
-            "Add a pinch of salt and pepper to the squash.",
-            "Drizzle 0.25 tablespoon of olive oil over the squash.",
-            "Roast the squash in the oven for 30 minutes or until tender.",
-            "Place the roasted squash in a food processor and puree until smooth.",
-            "Begin the basic risotto recipe in a separate pot.",
-            "When it's time to add vegetable stock to the risotto, incorporate the butternut squash puree, stirring continuously.",
-            "Cook the risotto until it is al dente.",
-            "Add approximately 0.5 ounce of butter to the risotto.",
-            "Stir in 0.19 cup of grated Parmesan cheese.",
-            "Add 1 tablespoon of chopped Italian parsley to the risotto.",
-            "Continue stirring until the risotto reaches a creamy consistency.",
-            "Serve the risotto on a platter or in individual bowls."
-        ],
-        "processed_ingredients": [
-            "0.75 cup butternut squash",
-            "0.25 teaspoon nutmeg",
-            "0.25 tablespoon olive oil",
-            "0.5 ounce unsalted butter",
-            "0.19 cup grated Parmesan cheese",
-            "1 tablespoon chopped Italian parsley",
-            "1 pinch salt",
-            "1 pinch pepper"
-        ],
-        "pure_ingredients": [
-            "butternut squash",
-            "nutmeg",
-            "olive oil",
-            "butter",
-            "Parmesan cheese",
-            "Italian parsley",
-            "salt",
-            "pepper"
-        ],
-        "cooking_time": "30 minutes",
-        "required_tools": [
-            "oven",
-            "roasting pan",
-            "food processor",
-            "wooden spoon",
-            "pot"
-        ]
-    },
-    {
-        "recipe_id": "cc4K6bBEBrt6oR5yZ.gGO8OMMdaEb9a",
-        "recipe_title": "Cauliflower with Red Pepper Ribbons",
-        "original_instructions": "Bring water to a boil and add lemon juice to prevent discoloration of the cauliflower. Add florets and boil until cauliflower is cooked through yet firm, 3 to 4 minutes.\nWhile cauliflower is steaming, heat the olive oil and saute the red pepper ribbons over high heat until slightly charred; remove from heat.\nWhen cauliflower is done, drain it well then toss with red pepper ribbons and season to taste with salt and pepper.",
-        "ingredients": [
-            "1 medium head cauliflower, cored and cut into florets",
-            "1 tablespoon lemon juice or white wine vinegar",
-            "1 to 2 tablespoons olive oil",
-            "1 small red pepper, seeded and cut into 1/4inch julienne",
-            "Salt and pepper"
-        ],
-        "step_by_step_instructions": [
-            "Bring a pot of water to a boil and add 0.50 tablespoon of lemon juice.",
-            "Add about 4 to 5 ounces of cauliflower florets to the boiling water.",
-            "Boil the cauliflower until cooked through yet firm, approximately 3 to 4 minutes.",
-            "While the cauliflower is cooking, heat 0.75 tablespoon of olive oil in a pan over high heat.",
-            "Saute about 0.75 ounces of red pepper ribbons in the olive oil until slightly charred; then remove from heat.",
-            "When the cauliflower is done, drain it well.",
-            "Toss the drained cauliflower with the red pepper ribbons.",
-            "Season to taste with salt and pepper."
-        ],
-        "processed_ingredients": [
-            "4.50 oz cauliflower",
-            "0.50 tbsp lemon juice",
-            "0.75 tbsp olive oil",
-            "0.75 oz red pepper",
-            "0.25 tsp salt",
-            "0.25 tsp pepper"
-        ],
-        "pure_ingredients": [
-            "cauliflower",
-            "lemon juice",
-            "olive oil",
-            "red pepper",
-            "salt",
-            "pepper"
-        ],
-        "cooking_time": "7 minutes",
-        "required_tools": [
-            "pot",
-            "pan",
-            "knife",
-            "cutting board",
-            "stirring spoon"
-        ]
-    },
-    {
-        "recipe_id": "QBw.2vKJ7Aaq8cGY0gIeDjDlQ3qAU9G",
-        "recipe_title": "Grilled Corn",
-        "original_instructions": "Brush each ear of corn with a little oil, sprinkle with salt and pepper. Grill over medium to high heat until golden brown, about 2 to 3 minutes on each side for a total of 8 to 12 minutes. Serve.",
-        "ingredients": [
-            "4 ears corn, shucked",
-            "1 to 2 tablespoons extra virgin olive oil",
-            "Salt",
-            "Pepper"
-        ],
-        "step_by_step_instructions": [
-            "Brush one ear of corn with a little oil.",
-            "Sprinkle with salt and pepper.",
-            "Grill over medium to high heat until golden brown, about 2 to 3 minutes on each side.",
-            "Continue grilling, turning occasionally, for a total of 8 to 12 minutes.",
-            "Serve."
-        ],
-        "processed_ingredients": [
-            "1 ear corn",
-            "0.38 tbsp extra virgin olive oil",
-            "0.13 tsp salt",
-            "0.13 tsp pepper"
-        ],
-        "pure_ingredients": [
-            "corn",
-            "olive oil",
-            "salt",
-            "pepper"
-        ],
-        "cooking_time": "12 minutes",
-        "required_tools": [
-            "brush",
-            "grill"
-        ]
-    },
-    {
-        "recipe_id": "U5LS/0qeHZDDN66tJQsuSWc21oscDJC",
-        "recipe_title": "Insalata di Fagioli e Tonno: Tuna and Bean Salad",
-        "original_instructions": "Mix cannellini beans, tuna, and celery in a salad bowl. Squeeze the lemon juice into the bowl. Pour in the extra-virgin olive oil. Season with salt and pepper, to taste. Mix well.",
-        "ingredients": [
-            "2 (19-ounce) cans cannellini beans, drained and rinsed",
-            "14 ounces canned tuna in oil or water, drained",
-            "1 celery stalk, chopped",
-            "Juice of 1/2 lemon",
-            "1/2 cup extra-virgin olive oil",
-            "Salt",
-            "Freshly ground black pepper"
-        ],
-        "step_by_step_instructions": [
-            "In a salad bowl, mix approximately 7.60 ounces of cannellini beans, 5.60 ounces of drained tuna, and 0.25 cup of chopped celery.",
-            "Squeeze the juice from 1/4 of a lemon into the bowl.",
-            "Pour in 2 tablespoons of extra-virgin olive oil.",
-            "Season with salt and freshly ground black pepper to taste.",
-            "Mix the ingredients well to combine."
-        ],
-        "processed_ingredients": [
-            "7.60 ounce cannellini beans",
-            "5.60 ounce tuna",
-            "0.25 cup celery",
-            "0.25 lemon",
-            "2 tablespoon olive oil",
-            "0.50 teaspoon salt",
-            "0.25 teaspoon black pepper"
-        ],
-        "pure_ingredients": [
-            "cannellini beans",
-            "tuna",
-            "celery",
-            "lemon",
-            "olive oil",
-            "salt",
-            "black pepper"
-        ],
-        "cooking_time": "10 minutes",
-        "required_tools": [
-            "salad bowl",
-            "mixing spoon",
-            "lemon squeezer"
-        ]
-    },
-    {
-        "recipe_id": "GKZ4TT3rGujF65PIpVaX8AaKlHCB4Um",
-        "recipe_title": "Broiled Salmon Steaks ",
-        "original_instructions": "Heat broiler. Place four 6-ounce salmon steaks on a broilerproof baking sheet. Drizzle with 2 tablespoons olive oil, turning to coat; season with salt and pepper. Broil until cooked through but still slightly translucent in the center, 5\u20137 minutes.\nHeat broiler. Place four 6-ounce salmon steaks on a broilerproof baking sheet. Drizzle with 2 tablespoons olive oil, turning to coat; season with salt and pepper. Broil until cooked through but still slightly translucent in the center, 5\u20137 minutes.",
-        "ingredients": [
-            "Four 6-ounce salmon steaks",
-            "2 tablespoons olive oil, turning to coat",
-            "Salt and pepper"
-        ],
-        "step_by_step_instructions": [
-            "Heat the broiler.",
-            "Place one 6-ounce salmon steak on a broilerproof baking sheet.",
-            "Drizzle with 0.5 tablespoon olive oil, turning to coat.",
-            "Season with salt and pepper.",
-            "Broil until cooked through but still slightly translucent in the center, 5\u20137 minutes."
-        ],
-        "processed_ingredients": [
-            "6.00 oz salmon steak",
-            "0.50 tbsp olive oil",
-            "0.13 tsp salt",
-            "0.13 tsp pepper"
-        ],
-        "pure_ingredients": [
-            "salmon",
-            "olive oil",
-            "salt",
-            "pepper"
-        ],
-        "cooking_time": "7 minutes",
-        "required_tools": [
-            "broiler",
-            "broilerproof baking sheet"
-        ]
-    },
-    {
-        "recipe_id": "rJUo78VTSIVcidnk5DMXg7JkvBRCZoy",
-        "recipe_title": "Wild Mushroom Risotto",
-        "original_instructions": "In a saute pan with the olive oil, sweat the leeks and brown the mushrooms lightly. Add the sherry and reduce. Add the rice and saute for 2 minutes.\nIn three stages, stir in the chicken stock. Continue to stir during the process of adding the stock. When all the stock is absorbed, taste the rice for doneness. If the rice still has a bite to it, stir in more stock and continue to cook.\nStir in the Parmesan and the parsley. Season and serve.\n*(Domesticated mushrooms may be substituted. Your choice, the drier the better).",
-        "ingredients": [
-            "1 tablespoon olive oil",
-            "2 tablespoons wild leeks, diced (domestic leeks may be used)",
-            "1 cup boletus* (wild mushroom), diced",
-            "1 cup orange latex milky mushrooms* (wild mushrooms), diced",
-            "1/4 cup cream sherry",
-            "1 cup Arborio rice",
-            "3 cups low-fat chicken stock",
-            "1/4 cup Parmesan, grated",
-            "1 tablespoon Italian flat leaf parsley, chopped",
-            "To taste salt and black pepper"
-        ],
-        "step_by_step_instructions": [
-            "In a saute pan, heat 0.25 tablespoon olive oil.",
-            "Add 0.5 tablespoon diced wild leeks and sweat them.",
-            "Add 0.25 cup diced boletus and 0.25 cup diced orange latex milky mushrooms, and brown them lightly.",
-            "Pour in 1 tablespoon cream sherry and reduce it.",
-            "Add 0.25 cup Arborio rice and saute for 2 minutes.",
-            "In three stages, stir in 0.75 cup low-fat chicken stock, continuing to stir during the process.",
-            "Once all the stock is absorbed, taste the rice. If it is still firm, stir in more stock and continue to cook until done.",
-            "Stir in 1 tablespoon grated Parmesan and 0.25 tablespoon chopped Italian flat leaf parsley.",
-            "Season with salt and black pepper to taste, and serve."
-        ],
-        "processed_ingredients": [
-            "0.25 tbsp olive oil",
-            "0.5 tbsp wild leeks",
-            "0.25 cup boletus",
-            "0.25 cup orange latex milky mushrooms",
-            "1 tbsp cream sherry",
-            "0.25 cup Arborio rice",
-            "0.75 cup low-fat chicken stock",
-            "1 tbsp Parmesan",
-            "0.25 tbsp Italian flat leaf parsley",
+            "0.5 lb smoked pork sausage",
+            "0.5 lb onion",
+            "0.3 lb red bell pepper",
+            "0.25 lb celery",
+            "1 tsp vegetable oil",
+            "0.67 cup long-grain white rice",
+            "1.33 cup chicken broth",
+            "0.13 tsp cayenne",
+            "2 scallions",
             "0.25 tsp salt",
             "0.25 tsp black pepper"
         ],
         "pure_ingredients": [
-            "olive oil",
-            "wild leeks",
-            "boletus",
-            "orange latex milky mushrooms",
-            "cream sherry",
-            "Arborio rice",
-            "low-fat chicken stock",
-            "Parmesan",
-            "Italian flat leaf parsley",
-            "salt",
-            "black pepper"
-        ],
-        "cooking_time": "45 minutes",
-        "required_tools": [
-            "saute pan",
-            "stirring spoon",
-            "measuring cups",
-            "measuring spoons"
-        ]
-    },
-    {
-        "recipe_id": "OonW0kIuO50NWSwNvGgSnQTMVgk53/O",
-        "recipe_title": "Salmon Sushi Bites",
-        "original_instructions": "In a small saucepan over high heat, bring the rice and 1 1/2 cups water to a boil. Reduce the heat; cover and simmer 5 minutes, or until all of the water is absorbed. Stir in the vinegar, sugar, all-purpose seasoning and salt.\nOn a cutting board, separate the salmon slices and cut into 1 1/2-inch-wide strips. Place 2 teaspoons of the rice at one end of each salmon strip and roll up tightly. Sprinkle with sesame seeds, if desired. Serve the sushi bites with the soy sauce for dipping.\nPhotograph by Kana Okada",
-        "ingredients": [
-            "1 1/2 cups instant rice",
-            "1 1/2 teaspoons rice vinegar",
-            "1 tablespoon sugar",
-            "3/4 teaspoon salt-free all-purpose seasoning",
-            "Pinch of salt",
-            "3 4-ounce packages sliced smoked salmon",
-            "Sesame seeds (optional)",
-            "Soy sauce, for dipping"
-        ],
-        "step_by_step_instructions": [
-            "In a small saucepan over high heat, bring 0.25 cups of instant rice and 0.25 cups of water to a boil.",
-            "Reduce the heat; cover and simmer for 5 minutes, or until all of the water is absorbed.",
-            "Stir in 0.25 teaspoons rice vinegar, 0.17 teaspoons sugar, 0.12 teaspoons salt-free all-purpose seasoning, and a small pinch of salt.",
-            "On a cutting board, separate approximately 1 ounce of salmon slices and cut into 1.5-inch-wide strips.",
-            "Place 2 teaspoons of the rice at one end of each salmon strip and roll up tightly.",
-            "Sprinkle with sesame seeds, if desired.",
-            "Serve the sushi bites with soy sauce for dipping."
-        ],
-        "processed_ingredients": [
-            "0.25 cup rice",
-            "0.25 cup water",
-            "0.25 teaspoon rice vinegar",
-            "0.17 teaspoon sugar",
-            "0.12 teaspoon all-purpose seasoning",
-            "0.01 teaspoon salt",
-            "1 ounce salmon",
-            "0.50 teaspoon sesame seeds",
-            "1.00 tablespoon soy sauce"
-        ],
-        "pure_ingredients": [
-            "rice",
-            "rice vinegar",
-            "sugar",
-            "all-purpose seasoning",
-            "salt",
-            "salmon",
-            "sesame seeds",
-            "soy sauce"
-        ],
-        "cooking_time": "10 minutes",
-        "required_tools": [
-            "small saucepan",
-            "cutting board",
-            "knife"
-        ]
-    },
-    {
-        "recipe_id": "rtPpWjYBQBuNXsFtAuSuo2YzQdbSpWu",
-        "recipe_title": "Individual Yorkshire Puddings",
-        "original_instructions": "Make batter: In a blender blend batter ingredients until smooth and transfer to a bowl. Let batter stand, covered, 1 hour.\nPreheat oven to 425 degrees. Spoon 1 teaspoon roast drippings into each cup of 3 mini muffin pans. Put 2 mini-muffin pans on 1 baking sheet and put remaining pan on another baking sheet. Put first baking sheet with the two mini muffin pans in middle of oven for 3 minutes to heat drippings in cups. Working quickly, pour 2 teaspoons of batter into hot drippings in each cup and bake in middle of oven 18 minutes, or until pudding shells are golden and puffed. Remove shells from cups with tongs and cool on racks. Repeat procedure with other baking sheet. Shells may be made 3 days ahead and chilled, covered, or 1 month ahead and frozen in airtight containers. Bring shells to room temperature and re-crisp in a 300 degree oven 10 minutes.",
-        "ingredients": [
-            "1 cup plus 2 tablespoons milk",
-            "2 large eggs",
-            "1 large egg yolk",
-            "1 cup all-purpose flour",
-            "1 teaspoon salt",
-            "Freshly ground black pepper, to taste",
-            "3/4 cup roast drippings or vegetable oil",
-            "Garnish: 36 small fresh flat-leafed parsley leaves"
-        ],
-        "step_by_step_instructions": [
-            "Blend all batter ingredients until smooth and pour into a bowl. Cover and let stand for 1 hour.",
-            "Preheat oven to 425 degrees Fahrenheit.",
-            "Spoon 1 teaspoon of roast drippings into a cup of a mini muffin pan.",
-            "Place the mini muffin pan in the oven to heat the drippings for 3 minutes.",
-            "Quickly pour approximately 1.5 teaspoons of batter into the hot drippings.",
-            "Bake for 18 minutes until the pudding is golden and puffed.",
-            "Remove pudding from the muffin pan, using tongs, and cool on a rack."
-        ],
-        "processed_ingredients": [
-            "0.25 cup milk",
-            "0.50 large egg",
-            "0.25 large egg yolk",
-            "0.25 cup all-purpose flour",
-            "0.25 teaspoon salt",
-            "0.13 teaspoon black pepper",
-            "0.06 cup roast drippings",
-            "0.75 small parsley leaf"
-        ],
-        "pure_ingredients": [
-            "milk",
-            "egg",
-            "flour",
-            "salt",
-            "pepper",
-            "roast drippings",
-            "parsley"
-        ],
-        "cooking_time": "82 minutes",
-        "required_tools": [
-            "blender",
-            "bowl",
-            "mini muffin pan",
-            "oven",
-            "tongs",
-            "rack"
-        ]
-    },
-    {
-        "recipe_id": "q5nBZGcNp36d4WSYYZ0Zw27mfAtTVT.",
-        "recipe_title": "Jambalaya Sandwich",
-        "original_instructions": "In a large cast iron pot, or heavy-bottomed braising pan add the bacon and fry until crisp. Remove from the pan and drain on a paper towel.\nPreheat the oven to 200 degrees F. Cut the bread lengthwise and put in the oven.\nAdd the pork to the bacon grease, and cook on medium-high heat until the pork is 3/4 cooked. Next add the sausages, onions, and bell peppers and cook until the onions are translucent.\nAdd the chicken, celery, garlic, parsley, and 3/4 cup green onions. Cook until chicken is tender, then season with salt, pepper, and cayenne. Stir in the water and combine thoroughly. Cover and let sit for 15 minutes.\nEvenly divide the meat mixture and cheese to each loaf. Top the cheese with the bacon and remaining green onions. Cut the loaves in half and serve.",
-        "ingredients": [
-            "1/4 pound thick cut bacon, diced",
-            "2 sourdough bread loaves (about 1 foot long)",
-            "1 pound pork butt or pork loin, cut in 1/2-inch pieces",
-            "1 pound smoked sausage, sliced 1/4-inch thick",
-            "1/2 pound andouille sausage, sliced 1/4-inch thick",
-            "2 cups chopped red onions",
-            "1 cup julienned red bell peppers",
-            "1 pound boneless chicken thighs, cut in 1/2-inch pieces",
-            "2 celery stalks, thinly sliced",
-            "1 tablespoon minced fresh garlic",
-            "1/4 cup chopped parsley leaves",
-            "1 cup chopped green onions",
-            "1 teaspoon salt",
-            "2 teaspoons freshly cracked black pepper",
-            "2 teaspoons cayenne pepper, or to taste",
-            "1/2 cup water",
-            "1 pound Havarti cheese, thinly sliced"
-        ],
-        "step_by_step_instructions": [
-            "In a large cast iron pot or heavy-bottomed braising pan, add 0.03 lb diced bacon and fry until crisp. Remove from the pan and drain on a paper towel.",
-            "Preheat the oven to 200 degrees F.",
-            "Cut a 6-inch length of sourdough bread and put it in the oven.",
-            "Add 0.13 lb pork to the bacon grease, and cook on medium-high heat until the pork is 3/4 cooked.",
-            "Add 0.13 lb smoked sausage, 0.06 lb andouille sausage, 0.25 cup chopped red onions, and 0.13 cup julienned red bell peppers. Cook until the onions are translucent.",
-            "Add 0.13 lb boneless chicken thighs, 0.5 stalk thinly sliced celery, 0.13 tbsp minced fresh garlic, 0.03 cup chopped parsley leaves, and 0.13 cup chopped green onions. Cook until chicken is tender.",
-            "Season with 0.13 tsp salt, 0.25 tsp freshly cracked black pepper, and 0.25 tsp cayenne pepper. Stir in 0.06 cup water and combine thoroughly. Cover and let sit for 15 minutes.",
-            "Evenly divide the meat mixture and 0.13 lb Havarti cheese onto the bread.",
-            "Top the cheese with the bacon and 0.03 cup remaining green onions.",
-            "Cut the bread in half and serve."
-        ],
-        "processed_ingredients": [
-            "0.03 lb bacon",
-            "6 oz sourdough bread",
-            "0.13 lb pork butt",
-            "0.13 lb smoked sausage",
-            "0.06 lb andouille sausage",
-            "0.25 cup red onions",
-            "0.13 cup red bell peppers",
-            "0.13 lb chicken thighs",
-            "0.5 stalk celery",
-            "0.13 tbsp garlic",
-            "0.03 cup parsley leaves",
-            "0.13 cup green onions",
-            "0.13 tsp salt",
-            "0.25 tsp black pepper",
-            "0.25 tsp cayenne pepper",
-            "0.06 cup water",
-            "0.13 lb Havarti cheese"
-        ],
-        "pure_ingredients": [
-            "bacon",
-            "sourdough bread",
-            "pork",
-            "smoked sausage",
-            "andouille sausage",
-            "red onions",
-            "red bell peppers",
-            "chicken thighs",
+            "smoked pork sausage",
+            "onion",
+            "red bell pepper",
             "celery",
-            "garlic",
-            "parsley",
-            "green onions",
-            "salt",
-            "black pepper",
-            "cayenne pepper",
-            "water",
-            "Havarti cheese"
-        ],
-        "cooking_time": "45 minutes",
-        "required_tools": [
-            "cast iron pot",
-            "paper towel",
-            "oven",
-            "knife"
-        ]
-    },
-    {
-        "recipe_id": "JgpCABT5J7Dk7N7S008SNJDIO/qar9y",
-        "recipe_title": "Salmon Cakes",
-        "original_instructions": "Watch how to make this recipe.\nHeat 1 tablespoon of the reserved bacon fat in a small saute pan over low heat. Add the onions and cook until translucent. Cool the onions for a bit.\nMix the bacon, onion, egg, mayonnaise, mustard, sugar, and lemon zest in a bowl. Add the salmon and potato, mixing gently after each addition. Form the mixture into 12 small patties. In a shallow dish, combine the bread crumbs, Parmesan, and pepper, to taste. Coat the patties in the bread crumb topping. Heat 1/4 cup of the oil in a large saute pan over medium heat, and cook the salmon cakes in batches until golden, about 3 to 4 minutes per side. Add more oil, as necessary. Arrange on a serving platter and serve.",
-        "ingredients": [
-            "2 strips bacon, cooked until crispy, crumbled, bacon fat reserved",
-            "1/4 cup chopped onion",
-            "1 egg",
-            "1/2 cup mayonnaise",
-            "2 teaspoons Dijon mustard",
-            "1/2 teaspoon sugar",
-            "1/2 lemon, zested",
-            "1 (14-ounce) can wild salmon, checked for large bones",
-            "1 baked or boiled russet potato, peeled, and fluffed with a fork",
-            "1/4 cup bread crumbs",
-            "2 tablespoons grated Parmesan",
-            "Freshly ground black pepper",
-            "1/2 cup vegetable oil"
-        ],
-        "step_by_step_instructions": [
-            "Cook 1/2 strip of bacon until crispy, then crumble. Reserve the bacon fat.",
-            "Heat 1/2 tablespoon of the reserved bacon fat in a small saute pan over low heat.",
-            "Add 1/4 cup of chopped onions and cook until translucent.",
-            "Cool the onions slightly.",
-            "In a bowl, mix the crumbled bacon, cooked onions, 1/4 of an egg (beaten), 2 tablespoons of mayonnaise, 1/2 teaspoon of Dijon mustard, a pinch of sugar, and a small amount of lemon zest.",
-            "Check a portion of the 14-ounce can of wild salmon for large bones and add to the mixture.",
-            "Add approximately 1/12 of a fluffed russet potato to the mixture, mixing gently after each addition.",
-            "Form the mixture into 1 small patty.",
-            "In a shallow dish, mix 1/12 cup of bread crumbs, 1/6 tablespoon of grated Parmesan, and freshly ground black pepper to taste.",
-            "Coat the patty in the bread crumb mixture.",
-            "Heat approximately 1/12 cup of vegetable oil in a large saute pan over medium heat.",
-            "Cook the salmon cake until golden, about 3 to 4 minutes per side.",
-            "Serve the patty on a platter."
-        ],
-        "processed_ingredients": [
-            "0.50 strip bacon",
-            "0.50 tbsp bacon fat",
-            "0.25 cup onion",
-            "0.25 egg",
-            "2.00 tbsp mayonnaise",
-            "0.50 tsp Dijon mustard",
-            "0.08 tsp sugar",
-            "0.04 lemon zest",
-            "1.17 oz wild salmon",
-            "1.17 oz potato",
-            "0.02 cup bread crumbs",
-            "0.17 tbsp Parmesan",
-            "0.50 cup vegetable oil"
-        ],
-        "pure_ingredients": [
-            "bacon",
-            "bacon fat",
-            "onion",
-            "egg",
-            "mayonnaise",
-            "Dijon mustard",
-            "sugar",
-            "lemon",
-            "salmon",
-            "potato",
-            "bread crumbs",
-            "Parmesan",
-            "black pepper",
-            "vegetable oil"
-        ],
-        "cooking_time": "30 minutes",
-        "required_tools": [
-            "saute pan",
-            "bowl",
-            "fork",
-            "shallow dish",
-            "serving platter"
-        ]
-    },
-    {
-        "recipe_id": "fiF2Sq4vd5IM1BIbP2fAue8IAADsAAq",
-        "recipe_title": "Corn Cakes with Honey",
-        "original_instructions": "Watch how to make this recipe.\nMix corn pancake batter in a large bowl. Heat a griddle or cast iron pan over medium-low to medium heat.\nStir the corn kernels, orange zest, and scallions into batter. Cut up 2 tablespoons butter into small bits and fold it into the batter. Nestle a pat of butter into a folded paper towel and wipe pan with it. Pile the batter into mounds 3 inches wide and cook the cakes until deep golden on each side. Repeat with remaining batter. Meanwhile, heat a small pot of water over low heat and bring to a bubble. Remove the pan from heat and put the honey jar into the water bath to gently warm. Arrange the corn cakes on a serving platter and serve with honey drizzled on top.",
-        "ingredients": [
-            "1 package corn muffin mix, prepared to package directions for corn pancakes (recommended: Jiffy)",
-            "2 ears fresh corn, kernels scraped from cob",
-            "1 orange, zested",
-            "2 scallions, whites and greens, finely chopped",
-            "3 tablespoons butter",
-            "Honey"
-        ],
-        "step_by_step_instructions": [
-            "Mix corn pancake batter in a large bowl using approximately 1/6 of the package mix to make one portion.",
-            "Heat a griddle or cast iron pan over medium-low to medium heat.",
-            "Stir approximately 0.33 cup of corn kernels, a pinch of orange zest, and a small amount of finely chopped scallions into the batter.",
-            "Cut 0.33 tablespoon of butter into small bits and fold it into the batter.",
-            "Nestle a pat of butter into a folded paper towel and wipe the pan with it.",
-            "Pile the batter into a mound approximately 3 inches wide and cook the cake until deep golden on each side, about 2-3 minutes per side.",
-            "Meanwhile, heat a small pot of water over low heat and bring to a bubble.",
-            "Remove the pan from heat and put the honey jar into the water bath to gently warm.",
-            "Arrange the corn cake on a serving plate and serve with honey drizzled on top."
-        ],
-        "processed_ingredients": [
-            "1.67 oz corn muffin mix",
-            "0.33 cup corn kernels",
-            "0.17 tsp orange zest",
-            "0.33 tbsp scallions",
-            "0.33 tbsp butter",
-            "1.00 tbsp honey"
-        ],
-        "pure_ingredients": [
-            "corn",
-            "orange",
-            "scallions",
-            "butter",
-            "honey"
-        ],
-        "cooking_time": "15 minutes",
-        "required_tools": [
-            "bowl",
-            "griddle",
-            "cast iron pan",
-            "paper towel",
-            "small pot",
-            "serving plate"
-        ]
-    },
-    {
-        "recipe_id": "dCAENbMzaERMbtrdi.Sds8ze/43XowC",
-        "recipe_title": "Olive Oil Braised Potatoes",
-        "original_instructions": "Preheat a grill to medium-high heat.\nScrub potatoes under cold running water; leave skins on. Slice potatoes into thick rounds and then brush both sides of potatoes liberally with olive oil. Place potatoes on grill and grill on both sides until slightly brown, about 2 minutes per side. Remove from the grill and place in a single layer on a baking sheet.\nDrizzle potatoes liberally with olive oil again on both sides and then season both sides with salt and pepper. Place baking sheet on the grates of the grill and cook for about 10 more minutes, or until cooked through in the center and crispy on the outside. Remove from grill and sprinkle with minced garlic and chopped thyme leaves. Serve.",
-        "ingredients": [
-            "6 Yukon gold potatoes, skins on",
-            "Olive oil",
-            "Coarse salt",
-            "Freshly ground black pepper",
-            "4 cloves garlic, minced",
-            "4 to 6 sprigs fresh thyme, leaves chopped"
-        ],
-        "step_by_step_instructions": [
-            "Preheat a grill to medium-high heat.",
-            "Scrub 1 Yukon gold potato under cold running water; leave the skin on.",
-            "Slice the potato into thick rounds.",
-            "Brush both sides of the potato rounds liberally with olive oil.",
-            "Place the potato rounds on the grill and grill on both sides until slightly brown, about 2 minutes per side.",
-            "Remove from the grill and place in a single layer on a baking sheet.",
-            "Drizzle the potato rounds liberally with olive oil again on both sides.",
-            "Season both sides with salt and pepper.",
-            "Place the baking sheet on the grates of the grill and cook for about 10 more minutes, or until cooked through in the center and crispy on the outside.",
-            "Remove from the grill and sprinkle with minced garlic and chopped thyme leaves.",
-            "Serve."
-        ],
-        "processed_ingredients": [
-            "1.00 potato Yukon gold potato",
-            "2.00 tbsp olive oil",
-            "0.25 tsp salt",
-            "0.25 tsp black pepper",
-            "0.67 clove garlic",
-            "0.67 sprig thyme"
-        ],
-        "pure_ingredients": [
-            "potato",
-            "olive oil",
-            "salt",
-            "black pepper",
-            "garlic",
-            "thyme"
-        ],
-        "cooking_time": "20 minutes",
-        "required_tools": [
-            "grill",
-            "baking sheet",
-            "knife",
-            "brush"
-        ]
-    },
-    {
-        "recipe_id": "wY3bpmwVilTum6vSqN88pdSb6zOaWUS",
-        "recipe_title": "Garlicky Sauteed Swiss Chard",
-        "original_instructions": "Watch how to make this recipe.\nAdd the oil to a large saute pan with the garlic and red pepper flakes. Cook over medium heat until the garlic turns golden. Remove the garlic and discard. Add the chopped Swiss chard ribs and saute until soft, about 4 minutes. Add the Swiss chard leaves and season with salt, to taste. Cook until the leaves are wilted. Stir in a splash of red wine vinegar. Serve immediately.;",
-        "ingredients": [
-            "2 tablespoons olive oil",
-            "2 cloves garlic, smashed",
-            "1 teaspoon red pepper flakes",
-            "1 large bunch Swiss chard, ribs removed and chopped, leaves roughly chopped",
-            "Kosher salt",
-            "Splash red wine vinegar"
-        ],
-        "step_by_step_instructions": [
-            "Add about 0.33 tablespoon of olive oil to a large saute pan.",
-            "Add about 0.33 of a smashed garlic clove and roughly 0.17 teaspoon of red pepper flakes to the pan.",
-            "Cook over medium heat until the garlic turns golden. Remove the garlic and discard.",
-            "Add approximately 1.5 ounces of chopped Swiss chard ribs and saute until soft, about 4 minutes.",
-            "Add roughly 3 ounces of Swiss chard leaves to the pan.",
-            "Season with salt to taste.",
-            "Cook until the leaves are wilted.",
-            "Stir in a splash (approximately 0.17 tablespoon) of red wine vinegar.",
-            "Serve immediately."
-        ],
-        "processed_ingredients": [
-            "0.33 tablespoon olive oil",
-            "0.33 clove garlic",
-            "0.17 teaspoon red pepper flakes",
-            "1.5 ounce Swiss chard ribs",
-            "3 ounce Swiss chard leaves",
-            "0.17 tablespoon red wine vinegar"
-        ],
-        "pure_ingredients": [
-            "olive oil",
-            "garlic",
-            "red pepper flakes",
-            "Swiss chard",
-            "salt",
-            "red wine vinegar"
-        ],
-        "cooking_time": "10 minutes",
-        "required_tools": [
-            "large saute pan"
-        ]
-    },
-    {
-        "recipe_id": "bNSqx6UPJAU0AQhJ6hfeBn9bIbxpe5a",
-        "recipe_title": "Individual Potato Gratins",
-        "original_instructions": "Preheat oven to 375 degrees F.\nSpray 8 muffin tins with vegetable spray. Layer potato slices, cheese, and onions into each muffin cup. Season with salt and pepper and top each gratin with 1 or 2 tablespoons of heavy cream. Cover with foil and bake for 30 to 40 minutes, removing the foil halfway through cooking time. Invert gratins onto plate and serve.",
-        "ingredients": [
-            "Vegetable spray",
-            "2 large russet potatoes, roughly peeled and thinly sliced",
-            "1/2 cup grated Swiss cheese",
-            "2 green onions, finely chopped",
-            "Salt and freshly ground black pepper",
-            "3/4 cup heavy cream"
-        ],
-        "step_by_step_instructions": [
-            "Preheat oven to 375 degrees F.",
-            "Spray 1 muffin tin with vegetable spray.",
-            "Layer approximately 2.5 oz of potato slices into the muffin cup.",
-            "Add about 1 tbsp of grated Swiss cheese on top of the potatoes.",
-            "Sprinkle with a small pinch of finely chopped green onions.",
-            "Season with a pinch of salt and a pinch of freshly ground black pepper.",
-            "Top the gratin with about 1 tbsp of heavy cream.",
-            "Cover the muffin tin with foil and bake for 30 to 40 minutes, removing the foil halfway through cooking.",
-            "Invert the gratin onto a plate and serve."
-        ],
-        "processed_ingredients": [
-            "0.25 tablespoon vegetable spray",
-            "2.50 oz potato",
-            "1.00 tbsp Swiss cheese",
-            "0.50 tablespoon green onion",
-            "0.25 teaspoon salt",
-            "0.25 teaspoon black pepper",
-            "1.00 tablespoon heavy cream"
-        ],
-        "pure_ingredients": [
             "vegetable oil",
-            "potato",
-            "cheese",
-            "onion",
-            "salt",
-            "black pepper",
-            "cream"
-        ],
-        "cooking_time": "40 minutes",
-        "required_tools": [
-            "oven",
-            "muffin tin",
-            "foil",
-            "knife",
-            "cutting board",
-            "grater",
-            "measuring spoons"
-        ]
-    },
-    {
-        "recipe_id": "/yJj72YajZ6MJ587KyayEbPE/UCILVS",
-        "recipe_title": "Grilled Strip Steak",
-        "original_instructions": "Pat steak dry and season with salt and pepper. Place on hot oiled grill and grill about 4 minutes on each side for medium rare.;",
-        "ingredients": [
-            "1 pound (3/4-inch thick) bone less beef loin (strip)",
-            "Salt and freshly ground black pepper",
-            "Olive oil"
-        ],
-        "step_by_step_instructions": [
-            "Pat the steak dry using a paper towel.",
-            "Season the steak with salt and freshly ground black pepper on both sides.",
-            "Preheat the grill until it's hot and oil the grill grates lightly.",
-            "Place the steak on the hot oiled grill.",
-            "Grill the steak for about 4 minutes on one side.",
-            "Flip the steak and grill for another 4 minutes on the other side for medium-rare.",
-            "Remove the steak from the grill and let it rest for a few minutes before serving."
-        ],
-        "processed_ingredients": [
-            "0.25 lb beef loin",
-            "0.25 tsp salt",
-            "0.25 tsp black pepper",
-            "0.50 tbsp olive oil"
-        ],
-        "pure_ingredients": [
-            "beef",
-            "salt",
-            "black pepper",
-            "olive oil"
-        ],
-        "cooking_time": "8 minutes",
-        "required_tools": [
-            "grill",
-            "tongs",
-            "paper towel"
-        ]
-    },
-    {
-        "recipe_id": "8fwUQUzvP4C42Zz4Gkx3w.bloDlIj5O",
-        "recipe_title": "Quick Vegetable Skewers",
-        "original_instructions": "Preheat grill.\nWhisk olive oil, vinegar, dill, salt and pepper together in a small bowl; set aside.\nAssemble skewers, starting with garlic, mushroom, zucchini, onion, and tomato. Repeat until skewer is full, leaving 1 inch at each end of skewer. Brush each skewer with olive oil marinade. Grill for about 6 minutes, or until vegetables are cooked to your liking, turning skewers once after 3 minutes.",
-        "ingredients": [
-            "1/4 cup extra-virgin olive oil",
-            "1/4 cup balsamic vinegar",
-            "1 tablespoon fresh dill",
-            "1/2 teaspoon salt",
-            "Cracked black pepper",
-            "6 large cloves garlic",
-            "8 button mushrooms",
-            "2 large zucchini, cut into 1-inch dice",
-            "1/2 cup red onion, cut into 1-inch dice",
-            "4 plum tomatoes, halved",
-            "4 wooden skewers, soaked in water for 30 minutes, or 4 metal skewers"
-        ],
-        "step_by_step_instructions": [
-            "Preheat grill.",
-            "Whisk 1 tablespoon of olive oil, 1 tablespoon of balsamic vinegar, 0.25 teaspoon of fresh dill, 0.125 teaspoon of salt, and a pinch of cracked black pepper together in a small bowl; set aside.",
-            "Assemble skewer, starting with 1 large clove of garlic, 2 button mushrooms, 0.5 large zucchini, 2 tablespoons of red onion, and 1 plum tomato. Repeat until skewer is full, leaving 1 inch at each end of skewer.",
-            "Brush each skewer with olive oil marinade.",
-            "Grill for about 6 minutes, or until vegetables are cooked to your liking, turning skewer once after 3 minutes."
-        ],
-        "processed_ingredients": [
-            "1 tablespoon olive oil",
-            "1 tablespoon balsamic vinegar",
-            "0.25 teaspoon dill",
-            "0.125 teaspoon salt",
-            "1 pinch cracked black pepper",
-            "1 large clove garlic",
-            "2 button mushrooms",
-            "0.5 large zucchini",
-            "2 tablespoons red onion",
-            "1 plum tomato",
-            "1 skewer"
-        ],
-        "pure_ingredients": [
-            "olive oil",
-            "vinegar",
-            "dill",
-            "salt",
-            "pepper",
-            "garlic",
-            "mushroom",
-            "zucchini",
-            "onion",
-            "tomato",
-            "skewer"
-        ],
-        "cooking_time": "36 minutes",
-        "required_tools": [
-            "grill",
-            "whisk",
-            "bowl",
-            "brush"
-        ]
-    },
-    {
-        "recipe_id": "jztnG2HJJrpwE.CcYlvhxgh9HNXiy9C",
-        "recipe_title": "Mushroom Carpaccio",
-        "original_instructions": "Watch how to make this recipe.\nUsing a mandoline slicer or very sharp knife, slice the mushrooms as thinly as possible and arrange them in a single layer on a large serving platter. Scatter the arugula evenly over the top.\nJust before serving, squeeze the juice of the lemon over the arugula and very lightly drizzle with some olive oil. Season with salt and pepper, to taste, and using a vegetable peeler, shave thin strips of Parmesan evenly over the top. Serve immediately.",
-        "ingredients": [
-            "1/2 pound large white mushrooms, brushed clean and trimmed",
-            "4 ounces baby arugula",
-            "1 lemon, halved",
-            "Extra-virgin olive oil",
-            "Wedge Parmesan, for shaving",
-            "Kosher salt and freshly ground black pepper"
-        ],
-        "step_by_step_instructions": [
-            "Using a mandoline slicer or very sharp knife, slice about 2.67 ounces of mushrooms as thinly as possible and arrange them in a single layer on a large serving platter.",
-            "Scatter approximately 1.33 ounces of arugula evenly over the top of the mushrooms.",
-            "Just before serving, squeeze the juice from 0.5 of a lemon over the arugula.",
-            "Very lightly drizzle about 0.5 tablespoon of olive oil over the arugula and mushrooms.",
-            "Season with a pinch of salt and a pinch of pepper.",
-            "Using a vegetable peeler, shave thin strips from about 0.67 ounces of Parmesan and distribute evenly over the top.",
-            "Serve immediately."
-        ],
-        "processed_ingredients": [
-            "2.67 ounce mushrooms",
-            "1.33 ounce arugula",
-            "0.5 lemon",
-            "0.5 tablespoon olive oil",
-            "0.67 ounce Parmesan",
-            "0.5 teaspoon salt",
-            "0.5 teaspoon pepper"
-        ],
-        "pure_ingredients": [
-            "mushrooms",
-            "arugula",
-            "lemon",
-            "olive oil",
-            "Parmesan",
-            "salt",
-            "pepper"
-        ],
-        "cooking_time": "10 minutes",
-        "required_tools": [
-            "mandoline slicer",
-            "knife",
-            "large serving platter",
-            "vegetable peeler"
-        ]
-    },
-    {
-        "recipe_id": "naay2ESdsHSKMEBWTJU135y.gIyuErC",
-        "recipe_title": "Salsiccie e Fagioli: Pork and Beans",
-        "original_instructions": "In a saucepan, heat the olive oil. Saute the garlic and add the sausages and rosemary. Cook for a few minutes, turning the sausages over. Pierce the sausages to allow the fat to drip out and flavor up the dish. Add the tomatoes to the pan. With the back of a wooden spoon, break up the tomatoes into little chunks. Add 1/2 a cup of water and allow to simmer. Then add the beans, salt, and pepper.\nLet cook together for about 15 minutes or until the sauce has reduced and thickened.",
-        "ingredients": [
-            "4 tablespoons/59 ml extra-virgin olive oil",
-            "3 cloves garlic, peeled and crushed",
-            "8 (3-ounce/85 g) pork sausage links",
-            "2 sprigs fresh rosemary",
-            "1 (10-ounce/283 g) can peeled plum tomatoes",
-            "1/2 cup water",
-            "2 (19-ounce/540 ml) cans cannellini beans, drained and rinsed",
-            "Salt and freshly ground black pepper"
-        ],
-        "step_by_step_instructions": [
-            "Heat 0.5 tablespoon of olive oil in a saucepan.",
-            "Saut\u00e9 0.5 clove of garlic, then add 1 sausage link and a small piece of rosemary.",
-            "Cook for a few minutes, turning the sausage over.",
-            "Pierce the sausage to allow the fat to drip out.",
-            "Add 35.38 g of peeled plum tomatoes to the pan.",
-            "Break up the tomatoes into little chunks with the back of a wooden spoon.",
-            "Add 2 tablespoons of water and allow to simmer.",
-            "Add approximately 135 g of cannellini beans, salt, and pepper.",
-            "Let cook together for about 15 minutes or until the sauce has reduced and thickened."
-        ],
-        "processed_ingredients": [
-            "0.5 tbsp olive oil",
-            "0.5 clove garlic",
-            "1 sausage link",
-            "1 sprig rosemary",
-            "35.38 g peeled plum tomatoes",
-            "2 tbsp water",
-            "135 g cannellini beans",
-            "1 tsp salt",
-            "1 tsp black pepper"
-        ],
-        "pure_ingredients": [
-            "olive oil",
-            "garlic",
-            "pork",
-            "rosemary",
-            "tomato",
-            "water",
-            "cannellini beans",
-            "salt",
-            "black pepper"
-        ],
-        "cooking_time": "20 minutes",
-        "required_tools": [
-            "saucepan",
-            "wooden spoon",
-            "knife"
-        ]
-    },
-    {
-        "recipe_id": "DtgRQ5kjhPP1YQGlKiFJnJrwiQtuU2G",
-        "recipe_title": "Pasta with Summer Vegetables and Spicy Peanut Sauce",
-        "original_instructions": "In a small saucepan combine the peanut butter, soy sauce, vinegar, lime juice, garlic, cayenne and hot water. Whisk the sauce together over moderate heat until smooth and hot.\nIn a kettle of boiling salted water cook the pasta for 5 minutes. Add the sliced carrots to the cooking pasta, stir and cook for 1 minute. Add the broccoli, stir and cook for 30 seconds. Add the snow peas, stir and cook for another 30 seconds. Drain the pasta and vegetables in a colander.\nTransfer the pasta and vegetables to a large bowl and pour the hot sauce over the mixture, tossing to combine. Sprinkle with scallions.",
-        "ingredients": [
-            "3/4 cup smooth peanut butter",
-            "3 tablespoons soy sauce",
-            "2 tablespoon rice vinegar or white wine vinegar",
-            "1 tablespoon lime juice",
-            "1 small garlic clove, minced",
-            "Cayenne pepper",
-            "1/2 cup hot water",
-            "12 ounces pasta, i.e. rotelle, penne, farfalle",
-            "2 carrots, cut into thin slices diagonally",
-            "1 1/2 cups broccoli florets",
-            "1/2 pound snow peas, trimmed and cut crosswise into 1-inch pieces",
-            "4 scallions, thinly sliced"
-        ],
-        "step_by_step_instructions": [
-            "In a small saucepan, combine 0.19 cup smooth peanut butter, 0.75 tbsp soy sauce, 0.5 tbsp rice vinegar, 0.25 tbsp lime juice, 0.25 small garlic clove (minced), a pinch of cayenne, and 0.13 cup hot water.",
-            "Whisk the sauce together over moderate heat until smooth and hot.",
-            "In a kettle of boiling salted water cook 3 ounces of pasta for 5 minutes.",
-            "Add 0.5 carrot (cut into thin slices diagonally) to the cooking pasta, stir and cook for 1 minute.",
-            "Add 0.38 cup broccoli florets, stir and cook for 30 seconds.",
-            "Add 0.13 pound snow peas (trimmed and cut crosswise into 1-inch pieces), stir and cook for another 30 seconds.",
-            "Drain the pasta and vegetables in a colander.",
-            "Transfer the pasta and vegetables to a large bowl and pour the hot sauce over the mixture, tossing to combine.",
-            "Sprinkle with 1 scallion (thinly sliced)."
-        ],
-        "processed_ingredients": [
-            "0.19 cup smooth peanut butter",
-            "0.75 tbsp soy sauce",
-            "0.5 tbsp rice vinegar",
-            "0.25 tbsp lime juice",
-            "0.25 small garlic clove",
-            "0.13 cup hot water",
-            "3 oz pasta",
-            "0.5 carrot",
-            "0.38 cup broccoli florets",
-            "0.13 lb snow peas",
-            "1 scallion"
-        ],
-        "pure_ingredients": [
-            "peanut butter",
-            "soy sauce",
-            "vinegar",
-            "lime",
-            "garlic",
-            "cayenne pepper",
-            "water",
-            "pasta",
-            "carrot",
-            "broccoli",
-            "snow peas",
-            "scallion"
-        ],
-        "cooking_time": "15 minutes",
-        "required_tools": [
-            "small saucepan",
-            "kettle",
-            "colander",
-            "large bowl"
-        ]
-    },
-    {
-        "recipe_id": "llLO7KyObUzg7XTYf7JBWZZb3Nvq4fC",
-        "recipe_title": "Vegetable Coleslaw",
-        "original_instructions": "Watch how to make this recipe.\nFit a food processor with the thickest slicing blade. Cut the cabbages into small wedges and place horizontally into the feed tube. Process in batches. Next, fit the food processor with the grating blade. Cut the carrots in half and place in the feed tube so they are lying on their sides. Process in batches and mix in a bowl with the grated cabbages.\nIn a medium bowl, whisk together the mayonnaise, mustard, sugar, vinegar, celery seeds, celery salt, salt, and pepper. Pour enough of the dressing over the grated vegetables to moisten them. Serve cold or at room temperature.",
-        "ingredients": [
-            "1 pound white cabbage (1/2 small head)",
-            "3/4 pound red cabbage (1/2 small head)",
-            "5 carrots",
-            "2 cups good mayonnaise",
-            "1/4 cup Dijon mustard",
-            "1 tablespoon sugar",
-            "2 tablespoons cider vinegar",
-            "2 teaspoons celery seeds",
-            "1 teaspoon celery salt",
-            "1/2 teaspoon kosher salt",
-            "1/2 teaspoon freshly ground black pepper"
-        ],
-        "step_by_step_instructions": [
-            "Fit a food processor with the thickest slicing blade.",
-            "Cut approximately 1.5 ounces of white cabbage into small wedges and place horizontally into the feed tube. Process in batches.",
-            "Cut approximately 1.1 ounces of red cabbage into small wedges and place horizontally into the feed tube. Process in batches.",
-            "Fit the food processor with the grating blade.",
-            "Cut approximately 1 ounce of carrots in half and place in the feed tube so they are lying on their sides. Process in batches.",
-            "Mix the processed carrots with the grated cabbages in a bowl.",
-            "In a medium bowl, whisk together 0.33 cup of mayonnaise, 0.04 cup of Dijon mustard, 0.17 teaspoon of sugar, 0.33 tablespoon of cider vinegar, 0.28 teaspoon of celery seeds, 0.14 teaspoon of celery salt, 0.07 teaspoon of kosher salt, and 0.07 teaspoon of freshly ground black pepper.",
-            "Pour enough of the dressing over the grated vegetables to moisten them.",
-            "Serve cold or at room temperature."
-        ],
-        "processed_ingredients": [
-            "1.50 oz white cabbage",
-            "1.10 oz red cabbage",
-            "1 oz carrots",
-            "0.33 cup mayonnaise",
-            "0.04 cup Dijon mustard",
-            "0.17 tsp sugar",
-            "0.33 tbsp cider vinegar",
-            "0.28 tsp celery seeds",
-            "0.14 tsp celery salt",
-            "0.07 tsp kosher salt",
-            "0.07 tsp freshly ground black pepper"
-        ],
-        "pure_ingredients": [
-            "cabbage",
-            "carrots",
-            "mayonnaise",
-            "mustard",
-            "sugar",
-            "vinegar",
-            "celery seeds",
-            "salt",
-            "pepper"
-        ],
-        "cooking_time": "15 minutes",
-        "required_tools": [
-            "food processor",
-            "bowl",
-            "whisk"
-        ]
-    },
-    {
-        "recipe_id": "VzfV7PmBfeqpy5khctMKlzN7CbD9T02",
-        "recipe_title": "Crisp Sea Bass with Braised Endive and Aged Balsamic Vinegar",
-        "original_instructions": "Season the fish to taste with salt and pepper. Combine egg and cream to make an egg wash. Brush 1 side of the fillets with egg wash, then cover the egg wash side of fillets with bread crumb or cereal, and press down firmly. In a hot saute pan add 3 tablespoons oil. Place the fillets into the pan breaded side down. Cook for 2 minutes. Turn fillets over add the thyme and cook for approximately 2 minutes more, or until fillets are cooked, remove from pan. Meanwhile place 2 tablespoons oil into a hot pan, when the oil starts to smoke, add the endive. Toss the endive. Add the spice mix and the chives. Cook for 1 minute then remove from the heat. Place the endive in the center of 4 plates. Place the fish on top of the endive. Drizzle the chive oil around then the balsamic vinegar. Garnish with chives.;",
-        "ingredients": [
-            "4 (7-ounce) sea bass fillets",
-            "Sea salt and freshly ground pepper, to taste",
-            "1 egg",
-            "3 tablespoons heavy cream",
-            "4 tablespoons panko bread crumbs (or your favorite cereal)",
-            "5 tablespoons vegetable oil",
-            "A few sprigs of thyme",
-            "6 Belgium endives (split into sixths)",
-            "Spice mix",
-            "Aged balsamic vinegar, to taste",
-            "2 tablespoons chives (thinly sliced) plus extra for garnish",
-            "1/4 teaspoon ground ginger",
-            "1/4 teaspoon ground coriander seed",
-            "1/4 teaspoon ground cinnamon",
-            "1 tablespoon granulated sugar",
-            "1/4 teaspoon ground star anise",
-            "1/4 teaspoon cayenne pepper",
-            "Sea salt, to taste",
-            "White pepper (ground to taste)"
-        ],
-        "step_by_step_instructions": [
-            "Season 1 sea bass fillet with a pinch of salt and pepper.",
-            "Combine 0.25 egg and 0.75 tablespoon heavy cream to make an egg wash.",
-            "Brush 1 side of the fillet with the egg wash.",
-            "Cover the egg wash side of the fillet with 1 tablespoon panko bread crumbs and press down firmly.",
-            "In a hot saute pan, add 1.25 tablespoons vegetable oil.",
-            "Place the fillet into the pan, breaded side down.",
-            "Cook for 2 minutes, then turn the fillet over.",
-            "Add a sprig of thyme and cook for approximately 2 more minutes or until the fillet is cooked through.",
-            "Remove the fillet from the pan.",
-            "Meanwhile, place 0.5 tablespoon vegetable oil into a hot pan.",
-            "When the oil starts to smoke, add 1.5 pieces of Belgium endive.",
-            "Toss the endive and add a pinch of spice mix and 0.5 tablespoon chives.",
-            "Cook for 1 minute then remove from the heat.",
-            "Place the endive in the center of a plate.",
-            "Place the fish on top of the endive.",
-            "Drizzle chive oil around the plate, then add a dash of aged balsamic vinegar.",
-            "Garnish with a sprinkle of chives."
-        ],
-        "processed_ingredients": [
-            "1.75 ounce sea bass fillet",
-            "0.25 egg",
-            "0.75 tablespoon heavy cream",
-            "1 tablespoon panko bread crumbs",
-            "1.75 tablespoon vegetable oil",
-            "1 sprig thyme",
-            "1.5 piece Belgium endive",
-            "0.5 tablespoon chives",
-            "0.06 teaspoon ground ginger",
-            "0.06 teaspoon ground coriander seed",
-            "0.06 teaspoon ground cinnamon",
-            "0.25 tablespoon granulated sugar",
-            "0.06 teaspoon ground star anise",
-            "0.06 teaspoon cayenne pepper",
-            "0.06 teaspoon salt",
-            "0.06 teaspoon white pepper",
-            "0.25 tablespoon aged balsamic vinegar"
-        ],
-        "pure_ingredients": [
-            "sea bass",
-            "salt",
-            "pepper",
-            "egg",
-            "cream",
-            "bread crumbs",
-            "vegetable oil",
-            "thyme",
-            "endive",
-            "ginger",
-            "coriander seed",
-            "cinnamon",
-            "sugar",
-            "star anise",
-            "cayenne pepper",
-            "chives",
-            "balsamic vinegar"
-        ],
-        "cooking_time": "15 minutes",
-        "required_tools": [
-            "saute pan",
-            "brush",
-            "plate"
-        ]
-    },
-    {
-        "recipe_id": "qklDVDN/z/1r22JDyl8CkSFrivaH9GS",
-        "recipe_title": "Bruschetta with Sundried Tomato and Mozzarella",
-        "original_instructions": "Toast the bread slices on a baking sheet in the upper third of a preheated 500 degree oven for 4 minutes, or until they are golden. While the toasts are warm, brush both sides of the toasts with the oil and rub them with the garlic. In a bowl combine the tomatoes, mozzarella, basil, balsamic vinegar, and salt and pepper to taste and top toasts with the mixture.;",
-        "ingredients": [
-            "8 (1/2-inch) thick slices Italian bread",
-            "2 tablespoons olive oil (preferably extra-virgin)",
-            "1 garlic clove, halved",
-            "1/4 cup chopped sun-dried tomatoes in oil",
-            "1/4 cup mozzarella, cubed",
-            "1 tablespoon fresh basil leaves, minced",
-            "1 1/2 teaspoon balsamic vinegar"
-        ],
-        "step_by_step_instructions": [
-            "Preheat the oven to 500 degrees Fahrenheit.",
-            "Place 2 slices of Italian bread on a baking sheet.",
-            "Toast the bread slices in the upper third of the oven for 4 minutes or until they are golden.",
-            "While the toasts are warm, brush both sides of each toast with 0.5 tablespoons of olive oil.",
-            "Rub each toast with half of the garlic clove.",
-            "In a bowl, combine 1 tablespoon of chopped sun-dried tomatoes, 1 tablespoon of cubed mozzarella, 0.5 teaspoon of minced fresh basil leaves, 0.25 teaspoon of balsamic vinegar, and salt and pepper to taste.",
-            "Top each toast with the tomato and mozzarella mixture."
-        ],
-        "processed_ingredients": [
-            "2 slice Italian bread",
-            "0.5 tablespoon olive oil",
-            "0.5 clove garlic",
-            "1 tablespoon sun-dried tomatoes",
-            "1 tablespoon mozzarella",
-            "0.5 teaspoon basil leaves",
-            "0.25 teaspoon balsamic vinegar"
-        ],
-        "pure_ingredients": [
-            "bread",
-            "olive oil",
-            "garlic",
-            "tomato",
-            "mozzarella",
-            "basil",
-            "vinegar",
-            "salt",
-            "pepper"
-        ],
-        "cooking_time": "4 minutes",
-        "required_tools": [
-            "oven",
-            "baking sheet",
-            "bowl",
-            "brush"
-        ]
-    },
-    {
-        "recipe_id": "5vRA6msdw9uObdT0p2QcH0/p.tETRNG",
-        "recipe_title": "Pork Chops with Potatoes",
-        "original_instructions": "Heat the oven to 325 degrees F/160 degrees C.\nCut slivers in the pork chops and slide in slices of garlic. Heat the pork fat or butter in a pan on high heat. Sprinkle the chops with salt and pepper and brown them, about 3 minutes per side.\nArrange half the potatoes and onions in a casserole. Sprinkle with salt and pepper and lay the chops on top. Scatter over the bacon and juniper berries. Cover with the remaining potatoes and onions. Sprinkle with salt and pepper again. Pour over the wine. Cut a piece of parchment to fit over the potatoes and pork chops and lay it in on top. Bake the dish for about 1 hour 30 minutes, pouring in the stock halfway through baking. Sprinkle with parsley to serve.",
-        "ingredients": [
-            "4 fatty pork chops",
-            "2 cloves garlic, sliced",
-            "Kosher salt and freshly ground black pepper",
-            "1 tablespoon pork fat, or butter",
-            "1 1/2 pounds/750 g potatoes, peeled and thinly sliced",
-            "1 onion, sliced",
-            "4 slices bacon",
-            "1/2 teaspoon juniper berries",
-            "1/2 cup/125 ml white wine, cider or beer",
-            "1/2 cup/125 beef or chicken stock",
-            "A handful of chopped fresh parsley, for garnish"
-        ],
-        "step_by_step_instructions": [
-            "Heat the oven to 325 degrees F (160 degrees C).",
-            "Cut a small sliver in a pork chop and slide in a small slice of garlic.",
-            "Heat 0.25 tablespoon of pork fat or butter in a pan on high heat.",
-            "Sprinkle the pork chop with salt and pepper.",
-            "Brown the chop, about 3 minutes per side.",
-            "Arrange half of 187.5 g of potatoes and some sliced onion in a casserole.",
-            "Sprinkle with salt and pepper.",
-            "Lay the pork chop on top.",
-            "Scatter over one slice of bacon and a small portion of juniper berries.",
-            "Cover with the remaining potatoes and onions.",
-            "Sprinkle with salt and pepper again.",
-            "Pour over 31.25 ml of white wine.",
-            "Cut a piece of parchment to fit over the potatoes and pork chop and lay it on top.",
-            "Bake the dish for about 1 hour 30 minutes.",
-            "Pour in 31.25 ml of beef or chicken stock halfway through baking.",
-            "Sprinkle with some chopped fresh parsley to serve."
-        ],
-        "processed_ingredients": [
-            "1 fatty pork chop",
-            "0.5 clove garlic",
-            "1 teaspoon kosher salt",
-            "1 teaspoon freshly ground black pepper",
-            "0.25 tablespoon pork fat",
-            "187.5 g potatoes",
-            "0.25 onion",
-            "1 slice bacon",
-            "0.125 teaspoon juniper berries",
-            "31.25 ml white wine",
-            "31.25 ml beef stock",
-            "1 tablespoon fresh parsley"
-        ],
-        "pure_ingredients": [
-            "pork",
-            "garlic",
-            "salt",
-            "black pepper",
-            "pork fat",
-            "potato",
-            "onion",
-            "bacon",
-            "juniper berries",
-            "white wine",
-            "beef stock",
-            "parsley"
-        ],
-        "cooking_time": "90 minutes",
-        "required_tools": [
-            "oven",
-            "pan",
-            "casserole",
-            "knife",
-            "cutting board",
-            "baking parchment"
-        ]
-    },
-    {
-        "recipe_id": "LytXopbMHzcnvSlXl.8huFZWEc7JXF.",
-        "recipe_title": "Ginger Scallion Soy Sauce",
-        "original_instructions": "Peel ginger and cut into small pieces. Press about 1/2-inch piece of ginger in a garlic presser and squeeze ginger juice and small bits into a medium size bowl. Grate another 1/2-inch piece into same bowl. Finely chop the scallions and place in the same bowl. Add all other ingredients and mix well. Adjust by tasting and enjoy this fantastic Chinese dumpling dipping sauce.",
-        "ingredients": [
-            "1 small piece ginger, about 2 ounces",
-            "2 scallions (green onion)",
-            "1/2 cup soy sauce",
-            "2 tablespoons white vinegar",
-            "1 1/2 teaspoons sugar",
-            "2 tablespoons water",
-            "1 teaspoon spicy Chinese chili red paste (optional)"
-        ],
-        "step_by_step_instructions": [
-            "Peel approximately 0.7 ounces of ginger.",
-            "Cut ginger into small pieces.",
-            "Press about 0.15-ounce piece of ginger in a garlic presser and squeeze ginger juice and small bits into a medium size bowl.",
-            "Grate another 0.15-ounce piece of ginger into the same bowl.",
-            "Finely chop 0.67 scallion (green onion) and place it in the same bowl.",
-            "Add 0.17 cup soy sauce to the bowl.",
-            "Add 0.67 tablespoon white vinegar to the bowl.",
-            "Add 0.5 teaspoon sugar to the bowl.",
-            "Add 0.67 tablespoon water to the bowl.",
-            "Add 0.33 teaspoon spicy Chinese chili red paste (optional) to the bowl.",
-            "Mix all ingredients well.",
-            "Taste and adjust if necessary."
-        ],
-        "processed_ingredients": [
-            "0.7 oz ginger",
-            "0.67 scallion",
-            "0.17 cup soy sauce",
-            "0.67 tbsp white vinegar",
-            "0.5 tsp sugar",
-            "0.67 tbsp water",
-            "0.33 tsp spicy Chinese chili red paste"
-        ],
-        "pure_ingredients": [
-            "ginger",
-            "scallion",
-            "soy sauce",
-            "vinegar",
-            "sugar",
-            "water",
-            "chili paste"
-        ],
-        "cooking_time": "10 minutes",
-        "required_tools": [
-            "peeler",
-            "knife",
-            "garlic presser",
-            "grater",
-            "bowl",
-            "spoon"
-        ]
-    },
-    {
-        "recipe_id": "sLwMmwUFNMqBukxo9MLDgXldXadw9pK",
-        "recipe_title": "Easy Spicy Black Bean Soup",
-        "original_instructions": "In a large heavy pot, heat oil over medium heat. Add onion, garlic and peppers and cook until tender about 5-8 minutes. Stir in spices and toss to coat vegetables. Pour in stock and beans and bring to a boil. Reduce heat to a simmer and cook for 15 minutes. In a blender, puree half of the soup until smooth and stir back into soup pot. Serve hot with garnishes.",
-        "ingredients": [
-            "2 tablespoons olive oil",
-            "1 1/2 cups chopped onion",
-            "2 cloves garlic, finely chopped",
-            "1 cup chopped green bell pepper",
-            "1 cup chopped red bell pepper",
-            "1 tablespoon cumin",
-            "1 teaspoon cayenne pepper",
-            "6 cups low sodium chicken stock",
-            "2 cans black beans, drained and rinsed",
-            "Salt and pepper",
-            "Cheddar cheese",
-            "Sour cream",
-            "Chopped red onion"
-        ],
-        "step_by_step_instructions": [
-            "In a large heavy pot, heat 0.67 tablespoon olive oil over medium heat.",
-            "Add approximately 0.25 cup chopped onion, 0.5 clove garlic (finely chopped), 0.17 cup chopped green bell pepper, and 0.17 cup chopped red bell pepper.",
-            "Cook the vegetables until tender, about 5-8 minutes.",
-            "Stir in 0.33 teaspoon cumin and 0.11 teaspoon cayenne pepper to coat the vegetables.",
-            "Pour in 1 cup low sodium chicken stock and approximately 0.67 can of black beans, drained and rinsed.",
-            "Bring the mixture to a boil, then reduce heat to a simmer and cook for 15 minutes.",
-            "In a blender, puree half of the soup until smooth and stir it back into the soup pot.",
-            "Serve hot with garnishes like cheddar cheese, sour cream, and chopped red onion."
-        ],
-        "processed_ingredients": [
-            "0.67 tablespoon olive oil",
-            "0.25 cup chopped onion",
-            "0.5 clove garlic",
-            "0.17 cup chopped green bell pepper",
-            "0.17 cup chopped red bell pepper",
-            "0.33 teaspoon cumin",
-            "0.11 teaspoon cayenne pepper",
-            "1 cup low sodium chicken stock",
-            "0.67 can black beans",
-            "Salt",
-            "Pepper",
-            "Cheddar cheese",
-            "Sour cream",
-            "Chopped red onion"
-        ],
-        "pure_ingredients": [
-            "olive oil",
-            "onion",
-            "garlic",
-            "green bell pepper",
-            "red bell pepper",
-            "cumin",
-            "cayenne pepper",
-            "chicken stock",
-            "black beans",
-            "salt",
-            "pepper",
-            "cheese",
-            "sour cream",
-            "red onion"
-        ],
-        "cooking_time": "23 minutes",
-        "required_tools": [
-            "large pot",
-            "blender"
-        ]
-    },
-    {
-        "recipe_id": "8lwQwq1AE1yW0ySlw6lq6Hf0xw6NKEG",
-        "recipe_title": "Morcilla Blood Sausage",
-        "original_instructions": "Place sausages on the heated grill. Brush with olive oil. Season with salt and pepper. Cook until done, about 10 to 15 minutes.;",
-        "ingredients": [
-            "12 links blood sausage (about 2 pounds)",
-            "1 tablespoon olive oil",
-            "Coarse salt and freshly ground black pepper"
-        ],
-        "step_by_step_instructions": [
-            "Place 1 link of sausage on the heated grill.",
-            "Brush the sausage with 0.08 tablespoon of olive oil.",
-            "Season the sausage with coarse salt and freshly ground black pepper.",
-            "Cook the sausage until done, about 10 to 15 minutes."
-        ],
-        "processed_ingredients": [
-            "0.17 lb blood sausage",
-            "0.08 tbsp olive oil",
-            "0.17 tsp coarse salt",
-            "0.17 tsp freshly ground black pepper"
-        ],
-        "pure_ingredients": [
-            "blood sausage",
-            "olive oil",
-            "salt",
-            "black pepper"
-        ],
-        "cooking_time": "15 minutes",
-        "required_tools": [
-            "grill",
-            "brush"
-        ]
-    },
-    {
-        "recipe_id": "x7gGxIY1J2J8elPDlwXSTKO4dBETXQW",
-        "recipe_title": "Ravioli Alfredo With Peas",
-        "original_instructions": "Bring a large pot of salted water to a boil. Add the ravioli and cook as the label directs. Reserve 1/2 cup of the cooking water, then drain the ravioli.\nCombine the butter, cream and peas in a large skillet and bring to a simmer over medium heat; cook 1 minute. Add the ravioli, cheese, nutmeg and a splash of the reserved cooking water to the skillet and toss. Add more cooking water to thin the sauce, if needed. Season with salt and pepper. Divide among bowls and top with the parsley.\nPhotograph by Christopher Testani",
-        "ingredients": [
-            "Kosher salt",
-            "2 9-ounce packages mushroom ravioli",
-            "Freshly ground pepper",
-            "4 tablespoons unsalted butter",
-            "1/2 cup heavy cream",
-            "1 cup frozen peas, thawed",
-            "1/2 cup grated parmesan cheese",
-            "Pinch of freshly grated nutmeg",
-            "2 tablespoons chopped fresh parsley"
-        ],
-        "step_by_step_instructions": [
-            "Bring a large pot of salted water to a boil.",
-            "Add approximately 4.5 ounces of mushroom ravioli to the pot and cook as the label directs.",
-            "Reserve about 2 tablespoons of the cooking water, then drain the ravioli.",
-            "Combine 1 tablespoon of butter, 1/8 cup of heavy cream, and 1/4 cup of thawed peas in a large skillet and bring to a simmer over medium heat; cook for 1 minute.",
-            "Add the cooked ravioli, 2 tablespoons of grated parmesan cheese, a pinch of nutmeg, and a splash of the reserved cooking water to the skillet and toss.",
-            "Add more cooking water to thin the sauce, if needed.",
-            "Season with salt and pepper to taste.",
-            "Divide the ravioli among bowls and top with 1 teaspoon of chopped parsley."
-        ],
-        "processed_ingredients": [
-            "1.50 g salt",
-            "4.50 oz mushroom ravioli",
-            "0.50 g pepper",
-            "1.00 tbsp butter",
-            "0.13 cup heavy cream",
-            "0.25 cup peas",
-            "2.00 tbsp parmesan cheese",
-            "0.25 g nutmeg",
-            "1.00 tsp parsley"
-        ],
-        "pure_ingredients": [
-            "salt",
-            "mushroom ravioli",
-            "pepper",
-            "butter",
-            "cream",
-            "peas",
-            "cheese",
-            "nutmeg",
-            "parsley"
-        ],
-        "cooking_time": "15 minutes",
-        "required_tools": [
-            "large pot",
-            "skillet",
-            "measuring cups",
-            "measuring spoons"
-        ]
-    },
-    {
-        "recipe_id": "0J6vaG3dRstS9kWH3s8Hc/6SPQEZkqG",
-        "recipe_title": "Candied Walnut Butter Salad",
-        "original_instructions": "Preheat oven to 375 degrees F.\nLine a large cookie sheet with foil and spray with nonstick spray. In a 10-inch skillet over medium heat, add 6 tablespoons sugar and orange-tangerine juice. Bring to a simmer, and then add walnuts. Cook until sugar is absorbed and mixture starts to caramelize around walnuts, stirring constantly, about 2 minutes.\nIn a small bowl, mix cinnamon and remaining 3 tablespoons sugar. Toss walnuts in cinnamon-sugar. Place walnuts in single layer on prepared cookie sheet. Bake until walnuts appear crystallized and toasted, about 8 minutes. Set aside\nPlace 4 to 6 dry lettuce leaves on each plate. Randomly place orange segments, onion slices, and walnuts on top of each lettuce bed. Drizzle 2 tablespoons of dressing on top of each salad and serve.",
-        "ingredients": [
-            "Nonstick vegetable spray",
-            "6 tablespoons plus 3 more tablespoons sugar",
-            "3 tablespoons orange-tangerine juice",
-            "2 cups walnut halves",
-            "1/2 teaspoon ground cinnamon",
-            "2 heads butter lettuce, washed and dried",
-            "2 (8-ounce) cans mandarin orange segments",
-            "1/2 red onion, very thinly sliced",
-            "1 cup purchased Asian-style salad dressing (such as miso dressing or ginger dressing)"
-        ],
-        "step_by_step_instructions": [
-            "Preheat oven to 375 degrees F.",
-            "Line a large cookie sheet with foil and spray with nonstick spray.",
-            "In a 10-inch skillet over medium heat, add 1 tablespoon sugar and 0.5 tablespoon orange-tangerine juice.",
-            "Bring to a simmer, and then add approximately 0.33 cups walnut halves.",
-            "Cook until sugar is absorbed and mixture starts to caramelize around walnuts, stirring constantly, for about 2 minutes.",
-            "In a small bowl, mix 0.08 teaspoon ground cinnamon and 0.5 tablespoon sugar.",
-            "Toss walnuts in cinnamon-sugar mixture.",
-            "Place walnuts in a single layer on the prepared cookie sheet.",
-            "Bake until walnuts appear crystallized and toasted, about 8 minutes.",
-            "Set aside the walnuts.",
-            "Place 1 to 2 dry lettuce leaves on a plate.",
-            "Randomly place approximately 1.33 ounces mandarin orange segments, a few very thinly sliced red onion pieces, and the candied walnuts on top of the lettuce bed.",
-            "Drizzle 0.33 cup of Asian-style salad dressing on top of the salad and serve."
-        ],
-        "processed_ingredients": [
-            "0.17 tbsp nonstick vegetable spray",
-            "1.5 tbsp sugar",
-            "0.5 tbsp orange-tangerine juice",
-            "0.33 cup walnut halves",
-            "0.08 tsp ground cinnamon",
-            "1 to 2 leaves butter lettuce",
-            "1.33 oz mandarin orange segments",
-            "0.08 whole red onion",
-            "0.33 cup Asian-style salad dressing"
-        ],
-        "pure_ingredients": [
-            "nonstick spray",
-            "sugar",
-            "orange juice",
-            "walnuts",
-            "cinnamon",
-            "butter lettuce",
-            "mandarin oranges",
-            "red onion",
-            "salad dressing"
-        ],
-        "cooking_time": "20 minutes",
-        "required_tools": [
-            "oven",
-            "cookie sheet",
-            "foil",
-            "nonstick spray",
-            "skillet",
-            "small bowl"
-        ]
-    },
-    {
-        "recipe_id": "uoz1uqO9rWvw2K/r0TA4PRK7VK3u/KW",
-        "recipe_title": "Grilled Pork Chops with Onion and Bell Pepper Relish",
-        "original_instructions": "To make the relish: In a straight-sided skillet, saute the onions and bell peppers in the oil until onions are translucent. Add the vinegar, sugar, and port wine, and cook at a very low heat until liquid evaporates. Onions and peppers should still be a little firm to the bite but sweet and caramelized. Set aside.\nTo cook the pork: Prepare the grill for grilling chops: high heat on left side, medium heat on right side. Drizzle the chops with canola oil and season with salt and pepper. Place the chops on the grill and cook for 2 to 3 minutes on each side, using a inverted baking pan to keep chops covered during cooking. Move the chops to the right side of the grill and continue cooking over medium heat. Cook 4 minutes and then turn chops over to finish cooking, keeping covered for an additional 4 minutes. Cook to 150 degrees F internal temperature.\nServe with the relish.",
-        "ingredients": [
-            "2 pounds sweet red onion, peeled and thinly sliced",
-            "1 red bell pepper, ribs and seeds removed, thinly sliced",
-            "1 green bell pepper, ribs and seeds removed, thinly sliced",
-            "1 yellow bell pepper, ribs and seeds removed, thinly sliced",
-            "1 tablespoon grapeseed oil",
-            "2 teaspoons balsamic vinegar",
-            "2 tablespoons brown sugar",
-            "1/2 cup ruby port wine",
-            "4 (8-ounce) bone-in pork loin chops, about 1 to 1 1/2 inches thick, trimmed",
-            "Canola oil",
-            "Salt and freshly ground black pepper"
-        ],
-        "step_by_step_instructions": [
-            "1. In a straight-sided skillet, saut\u00e9 0.5 pound of sweet red onions and 0.125 pound each of red, green, and yellow bell peppers in 0.25 tablespoon of grapeseed oil over medium heat until the onions are translucent.",
-            "2. Add 0.5 teaspoon of balsamic vinegar, 0.5 tablespoon of brown sugar, and 2 tablespoons of ruby port wine to the skillet.",
-            "3. Cook at a very low heat until the liquid evaporates and the onions and peppers are sweet and caramelized but still a little firm to the bite. Set aside.",
-            "4. Prepare the grill with high heat on the left side and medium heat on the right side.",
-            "5. Drizzle 1 pork loin chop (8-ounce) with canola oil and season with salt and freshly ground black pepper.",
-            "6. Place the pork chop on the grill and cook for 2 to 3 minutes on each side, using an inverted baking pan to cover the chop during cooking.",
-            "7. Move the pork chop to the right side of the grill and continue cooking over medium heat for 4 minutes.",
-            "8. Turn the pork chop over and cook for an additional 4 minutes, keeping it covered.",
-            "9. Ensure the pork chop is cooked to an internal temperature of 150 degrees F.",
-            "10. Serve the grilled pork chop with the onion and bell pepper relish."
-        ],
-        "processed_ingredients": [
-            "0.5 lb sweet red onion",
-            "0.125 lb red bell pepper",
-            "0.125 lb green bell pepper",
-            "0.125 lb yellow bell pepper",
-            "0.25 tbsp grapeseed oil",
-            "0.5 tsp balsamic vinegar",
-            "0.5 tbsp brown sugar",
-            "2 oz ruby port wine",
-            "1 pork loin chop",
-            "1 tbsp canola oil",
-            "1 tsp salt",
-            "1 tsp black pepper"
-        ],
-        "pure_ingredients": [
-            "sweet red onion",
-            "red bell pepper",
-            "green bell pepper",
-            "yellow bell pepper",
-            "grapeseed oil",
-            "balsamic vinegar",
-            "brown sugar",
-            "ruby port wine",
-            "pork loin chop",
-            "canola oil",
-            "salt",
-            "black pepper"
-        ],
-        "cooking_time": "45 minutes",
-        "required_tools": [
-            "skillet",
-            "grill",
-            "inverted baking pan"
-        ]
-    },
-    {
-        "recipe_id": "SBA6HD5z9ZA4odD0Nidwp9HMlQ/KprG",
-        "recipe_title": "Baked Parmesan Zucchini Fries",
-        "original_instructions": "Special equipment: 2 wire racks 2 rimmed baking sheets\nAdjust 2 oven racks to the top and bottom thirds of the oven and preheat to 425 degrees F. Put the wire racks in the baking sheets and coat each generously with cooking spray.\nCombine the flour and 3/4 teaspoon salt in a large re-sealable plastic bag. Combine the eggs and 3/4 teaspoon salt in another large plastic bag; combine the breadcrumbs, Parmesan and 3/4 teaspoon salt in a third large plastic bag.\nAdd about a half of the zucchini sticks to the bag with the flour and use a combination of your hands and shaking the bag to coat the zucchini. Remove the zucchini and shake off any excess flour. Transfer to the egg wash and repeat until coated. (It's less messy if you use only one hand for the dry ingredients and the other for the wet.) Let any excess egg drip off before transferring to the breadcrumb mixture; repeat until fully coated (you'll still see some green and white of the zucchini peeking through the breading). Transfer to the prepared baking sheets and coat the breaded zucchini generously with cooking spray (there's no need to turn them). Repeat with the remaining zucchini.\nBake, rotating the baking sheets from top to bottom about halfway through, until golden brown and tender, 25 to 30 minutes. Sprinkle with a little salt and serve warm with your favorite dipping sauces.",
-        "ingredients": [
-            "Nonstick cooking spray",
-            "1/2 cup all-purpose flour",
-            "Kosher salt",
-            "2 large eggs",
-            "2 1/2 cups panko breadcrumbs (see Cook's Note)",
-            "1/2 cup finely grated Parmesan",
-            "1 pound zucchini (2 to 3 small-to-medium zucchini), cut into 3-inch-by-1/4-inch sticks"
-        ],
-        "step_by_step_instructions": [
-            "Preheat your oven to 425 degrees F and adjust the racks to the top and bottom thirds.",
-            "Place a wire rack in a rimmed baking sheet and coat it generously with nonstick cooking spray.",
-            "In a large re-sealable plastic bag, combine 1 tablespoon of flour with a pinch of salt.",
-            "In another large plastic bag, beat 1/2 of a large egg with a pinch of salt.",
-            "In a third large plastic bag, mix 1/2 cup of panko breadcrumbs with 1 tablespoon of finely grated Parmesan and a pinch of salt.",
-            "Add about 1/3 of the zucchini sticks to the bag with the flour and shake to coat. Remove and shake off excess flour.",
-            "Transfer the flour-coated zucchini to the egg wash, ensuring they are fully coated, and let any excess egg drip off.",
-            "Move the zucchini to the breadcrumb mixture and shake until fully coated.",
-            "Place the breaded zucchini on the prepared baking sheet and spray them generously with cooking spray.",
-            "Repeat the coating process with the remaining zucchini.",
-            "Bake the zucchini fries in the oven, rotating the baking sheet halfway through, for 25 to 30 minutes until they are golden brown and tender.",
-            "Sprinkle with a little salt before serving warm with your favorite dipping sauce."
-        ],
-        "processed_ingredients": [
-            "0.67 tbsp all-purpose flour",
-            "0.67 pinch salt",
-            "0.33 large egg",
-            "0.42 cup panko breadcrumbs",
-            "0.17 cup Parmesan",
-            "5.33 oz zucchini",
-            "5.00 spray nonstick cooking spray"
-        ],
-        "pure_ingredients": [
-            "cooking spray",
-            "flour",
-            "salt",
-            "eggs",
-            "breadcrumbs",
-            "Parmesan",
-            "zucchini"
-        ],
-        "cooking_time": "30 minutes",
-        "required_tools": [
-            "oven",
-            "wire rack",
-            "rimmed baking sheet",
-            "plastic bags",
-            "cooking spray"
-        ]
-    },
-    {
-        "recipe_id": "hugz4qNPzg6Xr06DYTdDCHqEEh54vZa",
-        "recipe_title": "Creamy Lamb's-Quarters Gratin ",
-        "original_instructions": "Make Filling: Preheat the oven to 350\u00b0 F with the rack in the middle. Butter a 2-quart shallow baking dish. Bring 1-inch salted water to a boil in a large saucepan. Meanwhile, wash lamb's-quarters in a large bowl of cold water and drain well. Trim any coarse, woody stems at bottom (don't go crazy with trimming; young lamb's-quarter stems cook up tender and delicious). Add lamb's-quarters to pot and cook over medium heat, covered, until leaves are wilted and stems are tender, 2 to 3 minutes. Drain the greens in a large sieve or colander and rinse well under cold running water. Drain again, pressing out excess liquid with the back of a large spoon. Coarsely chop greens and transfer to a bowl. Dry saucepan and reserve. Cook scallions in olive oil with 1/4 teaspoon salt in reserved saucepan over medium heat, stirring, until softened, 3 to 4 minutes. Combine scallion mixture with greens in bowl. Reserve saucepan again. Melt butter in reserved saucepan over medium-low heat and stir in flour. Cook, stirring, 2 minutes, then whisk in milk and bring to a boil, whisking. Reduce heat and simmer sauce, whisking, 2 minutes (it will be thick). Remove from heat and whisk in nutmeg, zest, and salt and pepper to taste. Mix sauce into greens mixture. If the mixture is too thick, thin with a little additional milk; season with salt and pepper. Spread out mixture in baking dish.\nPreheat the oven to 350\u00b0 F with the rack in the middle. Butter a 2-quart shallow baking dish.\nBring 1-inch salted water to a boil in a large saucepan. Meanwhile, wash lamb's-quarters in a large bowl of cold water and drain well. Trim any coarse, woody stems at bottom (don't go crazy with trimming; young lamb's-quarter stems cook up tender and delicious).\nAdd lamb's-quarters to pot and cook over medium heat, covered, until leaves are wilted and stems are tender, 2 to 3 minutes. Drain the greens in a large sieve or colander and rinse well under cold running water. Drain again, pressing out excess liquid with the back of a large spoon. Coarsely chop greens and transfer to a bowl. Dry saucepan and reserve.\nCook scallions in olive oil with 1/4 teaspoon salt in reserved saucepan over medium heat, stirring, until softened, 3 to 4 minutes. Combine scallion mixture with greens in bowl. Reserve saucepan again.\nMelt butter in reserved saucepan over medium-low heat and stir in flour. Cook, stirring, 2 minutes, then whisk in milk and bring to a boil, whisking. Reduce heat and simmer sauce, whisking, 2 minutes (it will be thick). Remove from heat and whisk in nutmeg, zest, and salt and pepper to taste.\nMix sauce into greens mixture. If the mixture is too thick, thin with a little additional milk; season with salt and pepper. Spread out mixture in baking dish.\nMake Topping: Toss together crumbs, cheeses, and oil until combined well. Sprinkle topping evenly over greens mixture and bake in oven until crumbs are golden and mixture is bubbling, about 30 minutes.\nToss together crumbs, cheeses, and oil until combined well. Sprinkle topping evenly over greens mixture and bake in oven until crumbs are golden and mixture is bubbling, about 30 minutes.\nCooks' Notes: The best way to make coarse fresh breadcrumbs is to cube fresh bread, then grind it in small batches in a blender (a food processor is not as good at grinding crusty bread into breadcrumbs because the crusts get stuck in the blade). Creamy lamb's-quarters mixture and crumb mixture can be made 1 day ahead and kept separately in airtight containers, chilled.\nThe best way to make coarse fresh breadcrumbs is to cube fresh bread, then grind it in small batches in a blender (a food processor is not as good at grinding crusty bread into breadcrumbs because the crusts get stuck in the blade).\nCreamy lamb's-quarters mixture and crumb mixture can be made 1 day ahead and kept separately in airtight containers, chilled.",
-        "ingredients": [
-            "1 1/2 pounds lambs-quarters",
-            "1 bunch scallions, chopped (1 1/2 cups)",
-            "1 tablespoon olive oil",
-            "Salt",
-            "freshly ground black pepper",
-            "3 tablespoons unsalted butter",
-            "3 tablespoons all-purpose flour",
-            "1 cup milk, plus additional, if necessary",
-            "1/4 teaspoon nutmeg (preferably freshly grated)",
-            "1 teaspoon finely grated lemon zest",
-            "1 cup coarse fresh breadcrumbs (coarsely ground from a baguette; see Cooks' Notes)",
-            "1/2 cup packaged pre-grated mozzarella",
-            "1/4 cup finely grated Parmesan",
-            "4 teaspoons olive oil"
-        ],
-        "step_by_step_instructions": [
-            "Preheat the oven to 350\u00b0 F with the rack in the middle.",
-            "Butter a 2-quart shallow baking dish.",
-            "Bring 1-inch salted water to a boil in a large saucepan.",
-            "Wash approximately 120 g of lamb's-quarters in cold water and drain well.",
-            "Trim any coarse, woody stems from the lamb's-quarters.",
-            "Add lamb's-quarters to the boiling water and cook over medium heat, covered, until leaves are wilted and stems are tender, about 2 to 3 minutes.",
-            "Drain the greens in a sieve or colander and rinse under cold running water.",
-            "Drain again, pressing out excess liquid with the back of a spoon.",
-            "Coarsely chop the greens and transfer to a bowl.",
-            "In the reserved saucepan, cook 30 g of chopped scallions in 0.20 tbsp of olive oil with a pinch of salt over medium heat, stirring, until softened, about 3 to 4 minutes.",
-            "Combine scallion mixture with greens in the bowl.",
-            "Melt 0.20 oz of butter in the reserved saucepan over medium-low heat and stir in 0.20 oz of flour.",
-            "Cook, stirring, for 2 minutes, then whisk in 0.07 cup of milk and bring to a boil, whisking.",
-            "Reduce heat and simmer the sauce, whisking, for 2 minutes until thick.",
-            "Remove from heat and whisk in a pinch of nutmeg, 0.20 tsp of lemon zest, and salt and pepper to taste.",
-            "Mix the sauce into the greens mixture.",
-            "If the mixture is too thick, thin with a little additional milk; season with salt and pepper.",
-            "Spread out the mixture in the baking dish.",
-            "Toss together 0.20 cup of breadcrumbs, 0.10 cup of mozzarella, and 0.05 cup of Parmesan with 0.27 tbsp of olive oil until combined well.",
-            "Sprinkle topping evenly over the greens mixture.",
-            "Bake in the oven until crumbs are golden and mixture is bubbling, about 30 minutes."
-        ],
-        "processed_ingredients": [
-            "120.00 g lamb's-quarters",
-            "30.00 g scallions",
-            "0.20 tbsp olive oil",
-            "0.20 oz butter",
-            "0.20 oz all-purpose flour",
-            "0.07 cup milk",
-            "0.20 tsp lemon zest",
-            "0.20 cup breadcrumbs",
-            "0.10 cup mozzarella",
-            "0.05 cup Parmesan",
-            "0.27 tbsp olive oil",
-            "0.05 tsp salt",
-            "0.05 tsp black pepper",
-            "0.01 tsp nutmeg"
-        ],
-        "pure_ingredients": [
-            "lamb's-quarters",
+            "long-grain white rice",
+            "chicken broth",
+            "cayenne",
             "scallions",
-            "olive oil",
-            "salt",
-            "black pepper",
-            "butter",
-            "flour",
-            "milk",
-            "nutmeg",
-            "lemon zest",
-            "breadcrumbs",
-            "mozzarella",
-            "Parmesan"
-        ],
-        "cooking_time": "40 minutes",
-        "required_tools": [
-            "oven",
-            "saucepan",
-            "baking dish",
-            "sieve",
-            "colander",
-            "spoon",
-            "whisk",
-            "bowl"
-        ]
-    },
-    {
-        "recipe_id": "sLZ2G/41ux/RlFaXkHS.ZEbgKSEUVEK",
-        "recipe_title": "Pork with Sweet Onion Marmellata",
-        "original_instructions": "For the onion marmellata, place a large, heavy pot over medium-high heat. Add the olive oil and the onions. Stir to combine and cook until starting to sizzle, about 2 minutes. Add the remaining ingredients. Reduce the heat to low. Cover the pot and cook over low heat for 2 hours, stirring every 30 minutes to scrape up any brown bits. The onions should be a soft, jam-like consistency and a deep mahogany color.\nMeanwhile, for the pork chops, combine the rosemary, thyme, garlic, salt, and pepper in a small bowl. Using your fingers, work all the ingredients together until well combined. Rub the herb mixture over the pork chops. Cover with plastic wrap and reserve in the refrigerator.\nAbout 20 minutes before the onions are finished, remove the pork chops from the refrigerator. Place a grill pan over medium-high heat or preheat a gas or charcoal grill. Grill the pork chops to medium, about 7 minutes a side depending on thickness. To serve, spoon the onion marmellata over the pork chops. Sprinkle with the chopped parsley. Serve immediately.",
-        "ingredients": [
-            "1/4 cup olive oil",
-            "4 large onions, thinly sliced (about 3 pounds)",
-            "1/4 cup orange marmalade",
-            "1 tablespoon chopped fresh rosemary",
-            "1 tablespoon chopped fresh thyme",
-            "1 teaspoon kosher salt",
-            "1 teaspoon freshly ground black pepper",
-            "2 tablespoons balsamic vinegar",
-            "1 tablespoon sugar (or more to taste)",
-            "1 tablespoon chopped fresh rosemary",
-            "1 tablespoon chopped fresh thyme",
-            "2 cloves garlic, minced",
-            "1 teaspoon kosher salt",
-            "1 teaspoon freshly ground black pepper",
-            "4 to 6 pork chops",
-            "1/4 cup chopped fresh flat-leaf parsley"
-        ],
-        "step_by_step_instructions": [
-            "Place a large, heavy pot over medium-high heat.",
-            "Add 1 tablespoon of olive oil and 200 grams of thinly sliced onions.",
-            "Stir to combine and cook until starting to sizzle, about 2 minutes.",
-            "Add 1 tablespoon of orange marmalade, 0.25 tablespoon of chopped rosemary, 0.25 tablespoon of chopped thyme, 0.25 teaspoon of kosher salt, 0.25 teaspoon of black pepper, 0.5 tablespoon of balsamic vinegar, and 0.25 tablespoon of sugar.",
-            "Reduce the heat to low.",
-            "Cover the pot and cook over low heat for 2 hours, stirring every 30 minutes to scrape up any brown bits.",
-            "Meanwhile, combine 0.25 tablespoon of chopped rosemary, 0.25 tablespoon of chopped thyme, 0.5 clove of minced garlic, 0.25 teaspoon of kosher salt, and 0.25 teaspoon of black pepper in a small bowl.",
-            "Using your fingers, work all the ingredients together until well combined.",
-            "Rub the herb mixture over 1 pork chop.",
-            "Cover with plastic wrap and reserve in the refrigerator.",
-            "About 20 minutes before the onions are finished, remove the pork chop from the refrigerator.",
-            "Place a grill pan over medium-high heat or preheat a grill.",
-            "Grill the pork chop to medium, about 7 minutes on each side depending on thickness.",
-            "To serve, spoon the onion marmellata over the pork chop.",
-            "Sprinkle with 0.25 tablespoon of chopped parsley.",
-            "Serve immediately."
-        ],
-        "processed_ingredients": [
-            "1 tablespoon olive oil",
-            "200 g onions",
-            "1 tablespoon orange marmalade",
-            "0.25 tablespoon rosemary",
-            "0.25 tablespoon thyme",
-            "0.25 teaspoon kosher salt",
-            "0.25 teaspoon black pepper",
-            "0.5 tablespoon balsamic vinegar",
-            "0.25 tablespoon sugar",
-            "0.5 clove garlic",
-            "1 pork chop",
-            "0.25 tablespoon parsley"
-        ],
-        "pure_ingredients": [
-            "olive oil",
-            "onions",
-            "orange marmalade",
-            "rosemary",
-            "thyme",
-            "salt",
-            "black pepper",
-            "balsamic vinegar",
-            "sugar",
-            "garlic",
-            "pork",
-            "parsley"
-        ],
-        "cooking_time": "2 hours 20 minutes",
-        "required_tools": [
-            "pot",
-            "bowl",
-            "plastic wrap",
-            "grill pan",
-            "grill"
-        ]
-    },
-    {
-        "recipe_id": ".dOYaIRB1BYYRzcgaGk6B7WXCSYfl5i",
-        "recipe_title": "Green Beans with Maple-Pecan Butter ",
-        "original_instructions": "Cook beans in large pot of boiling salted water , uncovered, until crisp-tender, 3 to 4 minutes. Using large slotted spoon, transfer beans to colander set in bowl of ice and cold water to stop cooking, then drain well. Return water to boil and repeat with remaining beans. In small heavy skillet over moderate heat, heat 1 teaspoon oil until hot but not smoking. Add pecans and toast, stirring constantly, until light brown and fragrant, about 3 to 4 minutes. Remove from heat and set aside. In electric mixer fitted with paddle attachment, whip butter until smooth, about 1 to 2 minutes. Add maple syrup and pecans, stirring by hand to incorporate. Set aside. In 10-inch skillet over moderately high heat, heat 2 tablespoons canola oil until hot but not smoking. Add half green beans and saut\u00e9 until hot, about 3 to 5 minutes. Transfer to large bowl and repeat with remaining beans and oil. Add maple-pecan butter and toss to combine. Sprinkle with salt and pepper and serve immediately.\nCook beans in large pot of boiling salted water , uncovered, until crisp-tender, 3 to 4 minutes. Using large slotted spoon, transfer beans to colander set in bowl of ice and cold water to stop cooking, then drain well. Return water to boil and repeat with remaining beans.\nIn small heavy skillet over moderate heat, heat 1 teaspoon oil until hot but not smoking. Add pecans and toast, stirring constantly, until light brown and fragrant, about 3 to 4 minutes. Remove from heat and set aside.\nIn electric mixer fitted with paddle attachment, whip butter until smooth, about 1 to 2 minutes. Add maple syrup and pecans, stirring by hand to incorporate. Set aside.\nIn 10-inch skillet over moderately high heat, heat 2 tablespoons canola oil until hot but not smoking. Add half green beans and saut\u00e9 until hot, about 3 to 5 minutes. Transfer to large bowl and repeat with remaining beans and oil. Add maple-pecan butter and toss to combine. Sprinkle with salt and pepper and serve immediately.",
-        "ingredients": [
-            "2 1/2 pounds French green beans, trimmed",
-            "4 tablespoons plus 1 teaspoon canola oil",
-            "1/2 cup (2 ounces) pecan halves",
-            "1 cup (2 sticks) unsalted butter, at room temperature",
-            "1/4 cup (2 ounces) maple syrup",
-            "2 teaspoons kosher salt",
-            "1 tablespoon freshly ground black pepper"
-        ],
-        "step_by_step_instructions": [
-            "Cook approximately 250 grams of green beans in a large pot of boiling salted water, uncovered, until crisp-tender, about 3 to 4 minutes.",
-            "Using a large slotted spoon, transfer the beans to a colander set in a bowl of ice and cold water to stop cooking, then drain well.",
-            "Return the water to a boil and repeat with another batch of approximately 250 grams of green beans.",
-            "In a small heavy skillet over moderate heat, heat 0.5 teaspoons of canola oil until hot but not smoking.",
-            "Add about 10 grams of pecans and toast, stirring constantly, until light brown and fragrant, about 3 to 4 minutes. Remove from heat and set aside.",
-            "In an electric mixer fitted with a paddle attachment, whip about 28 grams of butter until smooth, about 1 to 2 minutes.",
-            "Add approximately 7 ml of maple syrup and the toasted pecans, stirring by hand to incorporate, and set aside.",
-            "In a 10-inch skillet over moderately high heat, heat 1 tablespoon of canola oil until hot but not smoking.",
-            "Add approximately 250 grams of green beans and saut\u00e9 until hot, about 3 to 5 minutes. Transfer to a large bowl.",
-            "Repeat with the remaining 250 grams of green beans and 1 tablespoon of canola oil.",
-            "Add the prepared maple-pecan butter to the green beans and toss to combine.",
-            "Sprinkle with about 0.25 teaspoons of salt and 0.5 teaspoons of black pepper, then serve immediately."
-        ],
-        "processed_ingredients": [
-            "500 g French green beans",
-            "2.5 tbsp canola oil",
-            "10 g pecan halves",
-            "28 g unsalted butter",
-            "7 ml maple syrup",
-            "0.25 tsp kosher salt",
-            "0.5 tsp black pepper"
-        ],
-        "pure_ingredients": [
-            "green beans",
-            "canola oil",
-            "pecans",
-            "butter",
-            "maple syrup",
-            "salt",
-            "black pepper"
-        ],
-        "cooking_time": "30 minutes",
-        "required_tools": [
-            "large pot",
-            "slotted spoon",
-            "colander",
-            "bowl",
-            "small heavy skillet",
-            "electric mixer with paddle attachment",
-            "10-inch skillet"
-        ]
-    },
-    {
-        "recipe_id": "IuET6zkMwL3mqM5z0mHH2RiOAxPTRxG",
-        "recipe_title": "Jollof Rice ",
-        "original_instructions": "Finely slice the peppers and onions. Make a paste out of the garlic and 1 teaspoon of salt. Seed and slice the Scotch bonnet pepper, dice the tomatoes and set them aside. Soften the onions and peppers in the sunflower oil over high heat for 5 minutes, stirring frequently. Add the pasted garlic, Scotch bonnet pepper, tomatoes, and dry seasonings and cook for another 10 minutes over medium heat, stirring frequently. Add the tomato paste, cook for another minute or so, then remove from the heat. Blend the mixture with a generous 3/4 cup of chicken stock. If this was prepared in advance, reheat it first. Add another 3/4 cup of stock and blend until the mixture is smooth. Add the palm oil, a final teaspoon of salt, and then pour 2 1/2 cups of this mixture back into the pot. Heat the sauce until it is lightly bubbling. Measure out your rice, then add to the pot. The pot should have a tight-fitting lid, but if it doesn\u2019t you can use some foil with the shiny side facing down to retain the heat. Stir gently so that all the rice is coated with the red sauce, then reduce the heat to a very low flame\u2014the lowest possible. Cover and simmer for 10 minutes. Open the lid and stir gently again. It is important to get under the center of the pan so all the rice cooks at the same rate. Cover and simmer for another 10 minutes. Open and stir for a final time, then simmer for a final 10 minutes. This makes 30 minutes cooking time in total. Turn the heat off and allow to steam, covered, for another 15 minutes. It\u2019s tempting to open the pot here but it\u2019s very important to trust the process and allow the rice to cook residually. This improves the final taste and texture of the rice. Open the lid then leave to stand for 5 minutes, uncovered. Then fluff with a fork to separate the rice, slowly working inward from the edge of the pan in a swirling motion. If the rice is not completely cooked, add the remaining 1/2 cup stock, stir gently, then place back over low heat for another 10 minutes. Spoon the rice out onto a separate dish and serve.\nFinely slice the peppers and onions. Make a paste out of the garlic and 1 teaspoon of salt. Seed and slice the Scotch bonnet pepper, dice the tomatoes and set them aside. Soften the onions and peppers in the sunflower oil over high heat for 5 minutes, stirring frequently. Add the pasted garlic, Scotch bonnet pepper, tomatoes, and dry seasonings and cook for another 10 minutes over medium heat, stirring frequently. Add the tomato paste, cook for another minute or so, then remove from the heat.\nBlend the mixture with a generous 3/4 cup of chicken stock. If this was prepared in advance, reheat it first. Add another 3/4 cup of stock and blend until the mixture is smooth. Add the palm oil, a final teaspoon of salt, and then pour 2 1/2 cups of this mixture back into the pot. Heat the sauce until it is lightly bubbling. Measure out your rice, then add to the pot. The pot should have a tight-fitting lid, but if it doesn\u2019t you can use some foil with the shiny side facing down to retain the heat. Stir gently so that all the rice is coated with the red sauce, then reduce the heat to a very low flame\u2014the lowest possible.\nCover and simmer for 10 minutes. Open the lid and stir gently again. It is important to get under the center of the pan so all the rice cooks at the same rate. Cover and simmer for another 10 minutes. Open and stir for a final time, then simmer for a final 10 minutes. This makes 30 minutes cooking time in total. Turn the heat off and allow to steam, covered, for another 15 minutes. It\u2019s tempting to open the pot here but it\u2019s very important to trust the process and allow the rice to cook residually. This improves the final taste and texture of the rice.\nOpen the lid then leave to stand for 5 minutes, uncovered. Then fluff with a fork to separate the rice, slowly working inward from the edge of the pan in a swirling motion. If the rice is not completely cooked, add the remaining 1/2 cup stock, stir gently, then place back over low heat for another 10 minutes. Spoon the rice out onto a separate dish and serve.",
-        "ingredients": [
-            "4 red bell peppers",
-            "2 medium to large onions",
-            "3 bulbs of garlic",
-            "2 teaspoons salt",
-            "1/2 a Scotch bonnet pepper",
-            "1/4 pound plum tomatoes",
-            "1/4 cup sunflower oil",
-            "1 teaspoon dried thyme",
-            "1/2 teaspoon ground ginger",
-            "1/2 teaspoon cayenne pepper or alternative",
-            "1/4 teaspoon smoked paprika",
-            "1 heaping teaspoon tomato paste",
-            "Generous 2 cups chicken stock",
-            "1 teaspoon red palm oil",
-            "1 1/4 cups white basmati rice"
-        ],
-        "step_by_step_instructions": [
-            "Finely slice 1 red bell pepper and 1/2 an onion.",
-            "Make a paste out of 1 bulb of garlic and 1/2 teaspoon salt.",
-            "Seed and slice 1/8 of a Scotch bonnet pepper, dice 15 g of plum tomatoes and set them aside.",
-            "Soften the sliced onions and peppers in 1 tablespoon sunflower oil over high heat for 5 minutes, stirring frequently.",
-            "Add the garlic paste, Scotch bonnet pepper, tomatoes, and 1/4 teaspoon each of dried thyme, ground ginger, cayenne pepper, and smoked paprika to the pot.",
-            "Cook for another 10 minutes over medium heat, stirring frequently.",
-            "Add 1/4 teaspoon tomato paste, cook for another minute or so, then remove from the heat.",
-            "Blend the mixture with 1/4 cup chicken stock until smooth. If the mixture was prepared in advance, reheat it first.",
-            "Add another 1/4 cup of chicken stock and blend until the mixture is smooth.",
-            "Add 1/4 teaspoon red palm oil and a final 1/4 teaspoon salt to the mixture, then pour 3/4 cup of this mixture back into the pot.",
-            "Heat the sauce until it is lightly bubbling.",
-            "Measure out 1/3 cup white basmati rice, then add it to the pot.",
-            "Stir gently so that all the rice is coated with the red sauce, then reduce the heat to the lowest possible flame.",
-            "Cover and simmer for 10 minutes.",
-            "Open the lid and stir gently again, ensuring to stir under the center of the pan.",
-            "Cover and simmer for another 10 minutes.",
-            "Open the lid and stir for a final time, then simmer for a final 10 minutes.",
-            "Turn the heat off and allow to steam, covered, for another 15 minutes.",
-            "Open the lid and leave to stand for 5 minutes, uncovered.",
-            "Fluff the rice with a fork to separate it, working inward from the edge of the pan in a swirling motion.",
-            "If the rice is not completely cooked, add the remaining 1/6 cup chicken stock, stir gently, then place back over low heat for another 10 minutes.",
-            "Spoon the rice out onto a separate dish and serve."
-        ],
-        "processed_ingredients": [
-            "1 red bell pepper",
-            "0.5 onion",
-            "1 bulb garlic",
-            "0.5 teaspoon salt",
-            "0.125 Scotch bonnet pepper",
-            "15 g plum tomatoes",
-            "1 tablespoon sunflower oil",
-            "0.25 teaspoon dried thyme",
-            "0.25 teaspoon ground ginger",
-            "0.25 teaspoon cayenne pepper",
-            "0.0625 teaspoon smoked paprika",
-            "0.25 teaspoon tomato paste",
-            "0.75 cup chicken stock",
-            "0.25 teaspoon red palm oil",
-            "0.33 cup white basmati rice"
-        ],
-        "pure_ingredients": [
-            "red bell pepper",
-            "onion",
-            "garlic",
-            "salt",
-            "Scotch bonnet pepper",
-            "plum tomatoes",
-            "sunflower oil",
-            "thyme",
-            "ginger",
-            "cayenne pepper",
-            "paprika",
-            "tomato paste",
-            "chicken stock",
-            "palm oil",
-            "white basmati rice"
-        ],
-        "cooking_time": "85 minutes",
-        "required_tools": [
-            "knife",
-            "cutting board",
-            "pan",
-            "blender",
-            "measuring cup",
-            "spatula",
-            "lid or foil",
-            "fork"
-        ]
-    },
-    {
-        "recipe_id": "BVmtgqMwlRMEesC1z/ShGQSNlCGb2jK",
-        "recipe_title": "Crunchburger (aka the Signature Burger)",
-        "original_instructions": "Watch how to make this recipe.\nDivide the meat into 4 equal portions (about 6 ounces each). Form each portion loosely into a 3/4-inch-thick burger and make a deep depression in the center with your thumb. Season both sides of each burger with salt and pepper.\nHeat the oil in the pan or griddle over high heat until the oil begins to shimmer. Cook the burgers until golden brown and slightly charred on the first side, about 3 minutes for beef and 5 minutes for turkey. Flip over the burgers. Cook beef burgers until golden brown and slightly charred on the second side, 4 minutes for medium rare (3 minutes if topping with cheese) or until cooked to desired degree of doneness. Cook turkey burgers until cooked throughout, about 5 minutes on the second side.\nAdd the cheese, if using, to the tops of the burgers during the last minute of cooking and top with a basting cover, close the grill cover, or tent the burgers with aluminum foil to melt the cheese.\nPlace the burgers on the bun bottoms and, if desired, top with tomato, lettuce, onion, and a dollop of horseradish mustard mayonnaise. Pile on the potato chips, top with the bun tops, and serve immediately.\nWhisk together the mayonnaise, mustard, and horseradish in a small bowl and season with salt and pepper. Cover and refrigerate for at least 30 minutes to allow the flavors to meld. The sauce can be prepared 1 day in advance and kept covered in the refrigerator.",
-        "ingredients": [
-            "1 1/2 pounds ground chuck (80 percent lean) or ground turkey (90 percent lean)",
-            "Kosher salt and freshly ground black pepper",
-            "1 1/2 tablespoons canola oil",
-            "8 slices American cheese, each 1/4 inch thick",
-            "4 potato hamburger buns, split; toasted, if desired (see Cook's Note)",
-            "4 slices beefsteak tomato (optional)",
-            "4 leaves romaine lettuce (optional)",
-            "4 slices red onion (optional)",
-            "Horseradish Mustard Mayonnaise, recipe follows (optional)*",
-            "4 handfuls of potato chips",
-            "1/4 cup mayonnaise",
-            "2 tablespoons Dijon mustard",
-            "2 tablespoons drained prepared horseradish",
-            "Kosher salt and freshly ground black pepper"
-        ],
-        "step_by_step_instructions": [
-            "Divide 6 ounces (approximately 170 grams) of ground chuck or turkey into a 3/4-inch-thick burger patty. Make a deep depression in the center with your thumb.",
-            "Season both sides of the burger patty with a pinch of salt and pepper.",
-            "Heat 0.38 tablespoons of canola oil in a pan over high heat until the oil begins to shimmer.",
-            "Cook the burger for about 3 minutes on the first side for beef or 5 minutes for turkey, until golden brown and slightly charred.",
-            "Flip the burger. Cook beef burgers for 3 more minutes if adding cheese or until desired doneness, or cook turkey burgers for another 5 minutes until cooked throughout.",
-            "If using, add 2 slices of American cheese during the last minute of cooking and cover to melt the cheese.",
-            "Place the cooked burger on the bottom half of a potato hamburger bun.",
-            "Optionally, top the burger with 1 slice of beefsteak tomato, 1 leaf of romaine lettuce, 1 slice of red onion, and a dollop of horseradish mustard mayonnaise.",
-            "Add 1 handful of potato chips on top of the burger.",
-            "Cover with the top half of the bun and serve immediately.",
-            "To make horseradish mustard mayonnaise, whisk together 1 tablespoon of mayonnaise, 0.5 tablespoons of Dijon mustard, and 0.5 tablespoons of drained prepared horseradish in a small bowl, seasoning with a pinch of salt and pepper.",
-            "Cover and refrigerate the sauce for at least 30 minutes before serving."
-        ],
-        "processed_ingredients": [
-            "6.00 oz ground chuck",
-            "0.38 tbsp canola oil",
-            "2.00 oz American cheese",
-            "1.00 potato hamburger bun",
-            "1.00 slice beefsteak tomato",
-            "1.00 leaf romaine lettuce",
-            "1.00 slice red onion",
-            "1.00 handful potato chips",
-            "1.00 tbsp mayonnaise",
-            "0.50 tbsp Dijon mustard",
-            "0.50 tbsp prepared horseradish",
-            "0.13 tsp kosher salt",
-            "0.13 tsp black pepper"
-        ],
-        "pure_ingredients": [
-            "ground chuck",
-            "canola oil",
-            "American cheese",
-            "potato hamburger bun",
-            "beefsteak tomato",
-            "romaine lettuce",
-            "red onion",
-            "potato chips",
-            "mayonnaise",
-            "Dijon mustard",
-            "horseradish",
-            "salt",
-            "black pepper"
-        ],
-        "cooking_time": "45 minutes",
-        "required_tools": [
-            "pan",
-            "griddle",
-            "basting cover",
-            "grill",
-            "aluminum foil",
-            "small bowl",
-            "whisk"
-        ]
-    },
-    {
-        "recipe_id": "e0yOcknvhOpc.HjVFq88DO20Llcxfrq",
-        "recipe_title": "Asian BBQ Turkey Drumsticks",
-        "original_instructions": "1. For the rub: Mix the five-spice powder, 1 teaspoon salt, 1/2 teaspoon pepper, granulated garlic, and onion powder together in a bowl. Smear the spices all over the drumsticks. Cover and refrigerate for several hours or overnight.\n2. Prepare an outdoor grill with a medium-hot fire on one side of the grill for both direct and indirect cooking. Position a drip pan under the grate on the cool side. Toss 1/2 cup soaked wood chips onto the coals.\n3. Lay the turkey legs on the grate over the drip pan. Cover the grill and position the lid's vent holes directly over the meat. When the fire dies down, after 45 minutes or so, add about a 1/2 dozen pieces of cold charcoal and the remaining wood chips to maintain a medium to medium-low smoky fire.\n4. Meanwhile, make the mop: Whisk together the garlic, ginger, vinegar, soy sauce, sesame oil, hoisin, chili sauce, and scallions.\n5. Set aside about half the sauce for serving. After about 1 hour, mop the turkey drumsticks with some of the mop and flip. Mop and flip every 10 minutes or so until the legs are browned and glazed and an instant-read thermometer inserted into the thickest part of the thigh registers about 170 degrees F, 30 to 40 minutes more. Serve the drumsticks with the reserved mop on the side.",
-        "ingredients": [
-            "2 tablespoons five-spice powder",
-            "Kosher salt and freshly ground pepper",
-            "1/2 teaspoon granulated garlic",
-            "1/2 teaspoon onion powder",
-            "4 turkey drumsticks, without thighs (about 4 pounds)",
-            "3/4 cup wood chips, soaked",
-            "6 cloves garlic, chopped (about 2 tablespoons)",
-            "1 1/2-inches fresh ginger, peeled and finely chopped",
-            "3/4 cup rice vinegar",
-            "1/4 cup soy sauce",
-            "1 tablespoon dark sesame oil",
-            "2 tablespoons hoisin sauce",
-            "4 teaspoons Asian chili sauce, such as Sriracha",
-            "4 scallions (white and green parts), thinly sliced"
-        ],
-        "step_by_step_instructions": [
-            "Mix 0.5 tablespoon of five-spice powder, 0.125 teaspoon of salt, 0.0625 teaspoon of pepper, 0.125 teaspoon of granulated garlic, and 0.125 teaspoon of onion powder together in a bowl.",
-            "Smear the spices all over 1 turkey drumstick.",
-            "Cover and refrigerate for several hours or overnight.",
-            "Prepare an outdoor grill with a medium-hot fire on one side for both direct and indirect cooking.",
-            "Position a drip pan under the grate on the cool side.",
-            "Toss 0.1875 cup soaked wood chips onto the coals.",
-            "Lay the turkey leg on the grate over the drip pan.",
-            "Cover the grill and position the lid's vent holes directly over the meat.",
-            "When the fire dies down after about 45 minutes, add about 1.5 pieces of cold charcoal and 0.0625 cup wood chips to maintain a medium to medium-low smoky fire.",
-            "Whisk together 0.5 tablespoon of chopped garlic, 0.375 inches of chopped ginger, 0.1875 cup of rice vinegar, 0.0625 cup of soy sauce, 0.25 teaspoon of sesame oil, 0.5 tablespoon of hoisin sauce, 1 teaspoon of Asian chili sauce, and 1 sliced scallion.",
-            "Set aside half the sauce for serving.",
-            "After about 1 hour, mop the turkey drumstick with some of the mop and flip.",
-            "Mop and flip every 10 minutes until the leg is browned and glazed and an instant-read thermometer inserted into the thickest part registers about 170 degrees F, 30 to 40 minutes more.",
-            "Serve the drumstick with the reserved mop on the side."
-        ],
-        "processed_ingredients": [
-            "0.5 tablespoon five-spice powder",
-            "0.125 teaspoon salt",
-            "0.0625 teaspoon pepper",
-            "0.125 teaspoon granulated garlic",
-            "0.125 teaspoon onion powder",
-            "1 lb turkey drumstick",
-            "0.1875 cup wood chips",
-            "0.5 tablespoon garlic",
-            "0.375 inches ginger",
-            "0.1875 cup rice vinegar",
-            "0.0625 cup soy sauce",
-            "0.25 teaspoon sesame oil",
-            "0.5 tablespoon hoisin sauce",
-            "1 teaspoon Asian chili sauce",
-            "1 scallion"
-        ],
-        "pure_ingredients": [
-            "five-spice powder",
-            "salt",
-            "pepper",
-            "garlic",
-            "onion powder",
-            "turkey",
-            "wood chips",
-            "ginger",
-            "rice vinegar",
-            "soy sauce",
-            "sesame oil",
-            "hoisin sauce",
-            "chili sauce",
-            "scallion"
-        ],
-        "cooking_time": "3 hours",
-        "required_tools": [
-            "bowl",
-            "grill",
-            "drip pan",
-            "whisk",
-            "instant-read thermometer"
-        ]
-    },
-    {
-        "recipe_id": "bR7g24fNWu7YpWsB7yprGGAuZkdq1FO",
-        "recipe_title": "Spice-Rubbed Lamb Chops with Roasted Tomatoes ",
-        "original_instructions": "Preheat oven to 450\u00b0F. and lightly oil a baking pan. Arrange tomatoes in one layer in prepared pan and brush with 1 teaspoon oil. Roast tomatoes in middle of oven 20 minutes, or until browned lightly, and keep warm. Pat lamb chops dry. In a small dish stir together cumin, salt, and pepper and rub mixture on both sides of lamb chops. In a 9-inch heavy non-stick skillet heat remaining 2 teaspoons oil over moderate heat until hot but not smoking and cook lamb chops 3 to 5 minutes on each side for medium-rare meat. Transfer lamb chops to 2 plates and serve with roasted tomatoes.\nPreheat oven to 450\u00b0F. and lightly oil a baking pan.\nArrange tomatoes in one layer in prepared pan and brush with 1 teaspoon oil. Roast tomatoes in middle of oven 20 minutes, or until browned lightly, and keep warm.\nPat lamb chops dry. In a small dish stir together cumin, salt, and pepper and rub mixture on both sides of lamb chops.\nIn a 9-inch heavy non-stick skillet heat remaining 2 teaspoons oil over moderate heat until hot but not smoking and cook lamb chops 3 to 5 minutes on each side for medium-rare meat. Transfer lamb chops to 2 plates and serve with roasted tomatoes.",
-        "ingredients": [
-            "3 plum tomatoes, cut lengthwise into 1/4-inch-thick slices",
-            "3 teaspoons olive oil",
-            "two 3/4-to 1-inch-thick shoulder lamb chops (8 to 10 ounces each)",
-            "2 teaspoons ground cumin",
-            "1/2 teaspoon coarse salt",
-            "1/2 teaspoon freshly ground black pepper"
-        ],
-        "step_by_step_instructions": [
-            "Preheat oven to 450\u00b0F.",
-            "Lightly oil a baking pan.",
-            "Cut 1 plum tomato into 1/4-inch-thick slices.",
-            "Arrange tomato slices in one layer in the prepared pan.",
-            "Brush tomato slices with 0.33 teaspoon olive oil.",
-            "Roast tomatoes in the middle of the oven for 20 minutes, or until browned lightly, and keep warm.",
-            "Pat 1 lamb chop dry.",
-            "In a small dish, stir together 1 teaspoon ground cumin, 0.25 teaspoon coarse salt, and 0.25 teaspoon freshly ground black pepper.",
-            "Rub the spice mixture on both sides of the lamb chop.",
-            "In a 9-inch heavy non-stick skillet, heat 0.67 teaspoons olive oil over moderate heat until hot but not smoking.",
-            "Cook the lamb chop for 3 to 5 minutes on each side for medium-rare meat.",
-            "Transfer the lamb chop to a plate and serve with the roasted tomatoes."
-        ],
-        "processed_ingredients": [
-            "1 plum tomato",
-            "1.33 teaspoon olive oil",
-            "1 lamb chop",
-            "1 teaspoon ground cumin",
-            "0.25 teaspoon coarse salt",
-            "0.25 teaspoon freshly ground black pepper"
-        ],
-        "pure_ingredients": [
-            "tomato",
-            "olive oil",
-            "lamb",
-            "cumin",
             "salt",
             "black pepper"
         ],
         "cooking_time": "25 minutes",
         "required_tools": [
-            "oven",
-            "baking pan",
+            "heavy saucepan",
             "knife",
-            "brush",
-            "small dish",
-            "9-inch heavy non-stick skillet",
-            "plate"
+            "cutting board",
+            "paper towels",
+            "fork"
+        ],
+        "recipe_id": "5aUx6Oj9cq9TadEMAwp3RfcPfePrL8C",
+        "recipe_title": "Smoked Sausage Jambalaya",
+        "original_instructions": "Cut sausage into 1/4-inch-thick slices and chop onion, bell pepper, and celery. In a dry 2 to 2 1/2-quart heavy saucepan brown sausage over moderately high heat, stirring frequently, and with a slotted spoon transfer to paper towels to drain. Pour off any fat from pan and in pan cook vegetables in oil over moderate heat, stirring occasionally, until onion is softened. Stir in rice, broth, and cayenne and bring to a boil. Cover pan and cook rice over low heat 15 minutes.\nRemove pan from heat and let rice stand, covered, 5 minutes. Thinly slice scallions. Fluff rice with a fork and stir in sausage, scallions, and salt and pepper, to taste.",
+        "ingredients": [
+            "1 pound smoked pork sausage such as kielbasa",
+            "1 large onion",
+            "2 small red bell peppers",
+            "2 celery ribs",
+            "2 teaspoons vegetable oil",
+            "1 1/3 cups long-grain white rice",
+            "2 2/3 cups chicken broth",
+            "1/4 teaspoon cayenne",
+            "4 scallions",
+            "Salt and freshly ground black pepper"
         ]
     },
     {
-        "recipe_id": "ASGIgDxKpL6ejcF6r4t8X8ltmtrqhvC",
-        "recipe_title": "Fried Zucchini",
-        "original_instructions": "Pour the oil into a deep, heavy bottomed pot and heat to 350 degrees F.\nMake the breading mixture by combining the breadcrumbs, and Parmesan in a medium bowl. Mix to blend. In another bowl, whisk together the eggs and the splash of water.\nPlace the zucchini in a large bowl and season with salt. Toss to blend. Sprinkle lightly with flour (use a sieve) to dredge then toss to coat evenly - this will help the breading to stick. Submerge the zucchini in the eggs. Remove the pieces, 1 by 1, shaking off excess egg and them roll them in the breadcrumb mixture until they are coated on all sides. Transfer to a platter or baking sheet.\nWhen the oil comes up to temperature, test the oil by dropping in one piece of zucchini. It should rise to the surface fairly quickly, begin the bubble and fry gradually. Prepare a baking sheet fitted with a kitchen towel and a slotted spoon (or, alternatively, a spider) to remove the zucchini from the oil. Drop a few pieces of zucchini into the oil and gently swirl the oil as they fry. This swirling will allow the zucchini to move around a lot, assuring they fry more evenly on all sides. When they are light to medium brown, remove them with the spoon and lay them out on the kitchen towel to cool. Sprinkle with a touch of salt and paprika. Repeat.\nServe immediately with lemon wedges.",
-        "ingredients": [
-            "4 cups canola oil",
-            "1 cup toasted Italian breadcrumbs",
-            "3 tablespoons grated Parmesan",
-            "3 eggs",
-            "1 splash cold water",
-            "4 medium zucchini, washed, dried, ends trimmed, cut, lengthwise, into 10 wedges like pickles",
-            "2 cups flour, for dredging",
-            "Kosher salt",
-            "1 tablespoon paprika, for dusting",
-            "1 lemon, cut into wedges"
-        ],
         "step_by_step_instructions": [
-            "Pour about 0.5 cups of canola oil into a deep, heavy bottomed pot and heat to 350 degrees F.",
-            "Make the breading mixture by combining about 0.125 cups of toasted Italian breadcrumbs and about 0.375 tablespoons of grated Parmesan in a medium bowl. Mix to blend.",
-            "In another bowl, whisk together 1 egg and a small splash of water.",
-            "Take 1 medium zucchini, wash, dry, trim the ends, and cut it lengthwise into 2 or 3 wedges like pickles.",
-            "Place the zucchini wedges in a large bowl and season with a pinch of salt. Toss to blend.",
-            "Sprinkle lightly about 0.5 cups of flour over the zucchini using a sieve to dredge, then toss to coat evenly.",
-            "Submerge the zucchini in the egg mixture.",
-            "Remove the zucchini pieces one by one, shaking off excess egg, then roll them in the breadcrumb mixture until they are coated on all sides.",
-            "Transfer the coated zucchini to a platter or baking sheet.",
-            "When the oil comes up to temperature, test the oil by dropping in one piece of zucchini. It should rise to the surface fairly quickly, begin to bubble, and fry gradually.",
-            "Prepare a baking sheet fitted with a kitchen towel and a slotted spoon to remove the zucchini from the oil.",
-            "Drop a few pieces of zucchini into the oil and gently swirl the oil as they fry.",
-            "When they are light to medium brown, remove them with the spoon and lay them out on the kitchen towel to cool.",
-            "Sprinkle with a touch of salt and about 0.125 tablespoons of paprika.",
-            "Serve immediately with a wedge of lemon."
+            "Peel, seed, and chop the cantaloupe. Puree the cantaloupe with the lemon juice in a blender or food processor until very smooth. Transfer to a bowl and chill, covered, for at least 3 hours or overnight.",
+            "Peel, seed, and chop the honeydew melon. Puree the honeydew with the lime juice and the minced mint in a blender or food processor until very smooth. Transfer to a bowl and chill, covered, for at least 3 hours or overnight.",
+            "Pour equal amounts of both chilled soups into chilled bowls at the same time (using 2 measuring cups). Garnish each serving with sour cream if desired and a mint sprig."
         ],
         "processed_ingredients": [
-            "0.5 cup canola oil",
-            "0.125 cup toasted Italian breadcrumbs",
-            "0.375 tablespoon grated Parmesan",
-            "1 egg",
-            "0.5 medium zucchini",
-            "0.5 cup flour",
-            "0.125 tablespoon paprika",
-            "1 lemon wedge"
+            "450 g cantaloupe",
+            "30 ml lemon juice",
+            "350 g honeydew melon",
+            "45 ml lime juice",
+            "1.5 tsp minced fresh mint",
+            "15 g sour cream",
+            "2 mint sprigs"
         ],
         "pure_ingredients": [
-            "canola oil",
-            "breadcrumbs",
-            "Parmesan",
-            "egg",
-            "water",
-            "zucchini",
-            "flour",
-            "salt",
-            "paprika",
-            "lemon"
+            "cantaloupe",
+            "lemon juice",
+            "honeydew melon",
+            "lime juice",
+            "mint",
+            "sour cream"
         ],
-        "cooking_time": "45 minutes",
-        "required_tools": [
-            "deep heavy bottomed pot",
-            "medium bowl",
-            "whisk",
-            "large bowl",
-            "sieve",
-            "platter or baking sheet",
-            "kitchen towel",
-            "slotted spoon"
-        ]
-    },
-    {
-        "recipe_id": "ae9rO6SAhpTtlqIBwRDpO8rsPynU2Cq",
-        "recipe_title": "Chiarello's Herb Roasted Turkey",
-        "original_instructions": "1. Heat oven to 375 degrees F.\n2. Wash the turkey, inside and out, and dry well. Coat inside and outside with olive oil. Season turkey on the outside with salt and pepper, pressing it in to adhere. Place 2 rosemary sprigs, 1 thyme sprig, 1 sage sprig, 1 oregano sprig and lemon halves inside the cavity of the turkey. Place cooling rack or roasting rack in bottom of large roasting pan. Place turkey on rack, and arrange carrots, celery and remaining herbs on bottom of pan around turkey. Pour 4 cups (1 carton) chicken broth and water over vegetables and herbs.\n3. Roast until an instant-read thermometer (inserted deep into the thigh but away from the bone) reads 165 degrees F and juices in the thigh run clear when pierced with a fork, about 2 to 2 1/2 hours, basting with pan broth every 30 minutes. Remove turkey from the pan and let rest for 15 minutes before carving. Strain and reserve pan juices, and discard vegetables.\n4. While turkey is resting, make the gravy. In a medium heavy saucepan, cook flour and butter over medium heat for 3 to 4 minutes, or until a blond roux is formed. Add pan juices and 4 cups (1 carton) of chicken broth; heat to boiling over high heat. Reduce the heat and let simmer until thickened and ready to serve.\n5. Carve turkey as desired, and serve with gravy.\nCopyright 2010 Michael Chiarello\nRecipe provided by Chef Michael Chiarello - June 2010.",
-        "ingredients": [
-            "1 (12 to 14 lb) whole turkey",
-            "4 cups water",
-            "3/4 cup all-purpose flour",
-            "3/4 cup butter",
-            "3 tablespoons extra-virgin olive oil",
-            "1 teaspoon salt",
-            "1/2 teaspoon freshly ground black pepper",
-            "3 sprigs fresh rosemary",
-            "2 sprigs fresh thyme",
-            "2 sprigs fresh sage",
-            "2 sprigs oregano",
-            "1 lemon, halved",
-            "2 carrots, halved",
-            "4 celery stalks, halved",
-            "2 cartons (32 oz each) Progresso chicken broth"
-        ],
-        "step_by_step_instructions": [
-            "1. Preheat your oven to 375 degrees F.",
-            "2. Wash and dry the turkey thoroughly, inside and out.",
-            "3. Coat the turkey inside and out with approximately 0.23 tbsp of olive oil.",
-            "4. Season the outside of the turkey with about 0.08 tsp of salt and 0.04 tsp of freshly ground black pepper, pressing it in to adhere.",
-            "5. Place a small portion of rosemary, thyme, sage, and oregano along with 0.08 of a lemon inside the cavity of the turkey.",
-            "6. Place the turkey on a roasting rack in a pan, and arrange around 0.33 of a carrot, 0.67 of a celery stalk, and a small portion of the remaining herbs on the bottom of the pan.",
-            "7. Pour about 0.5 cups of chicken broth and 0.5 cups of water over the vegetables and herbs.",
-            "8. Roast the turkey in the oven, basting with pan broth every 30 minutes, until an instant-read thermometer reads 165 degrees F when inserted into the thigh, approximately 2 to 2.5 hours.",
-            "9. Remove the turkey from the pan and let it rest for 15 minutes before carving.",
-            "10. While the turkey is resting, strain and reserve the pan juices, discarding the vegetables.",
-            "11. In a medium saucepan, cook 0.08 cups of flour and 0.08 cups of butter over medium heat for 3 to 4 minutes to form a blond roux.",
-            "12. Add the reserved pan juices and about 0.5 cups of chicken broth to the roux; bring to a boil over high heat.",
-            "13. Reduce the heat and simmer until the gravy thickens, then serve with the carved turkey."
-        ],
-        "processed_ingredients": [
-            "0.86 lb whole turkey",
-            "0.5 cup water",
-            "0.08 cup all-purpose flour",
-            "0.08 cup butter",
-            "0.23 tbsp extra-virgin olive oil",
-            "0.08 tsp salt",
-            "0.04 tsp freshly ground black pepper",
-            "0.5 sprig fresh rosemary",
-            "0.33 sprig fresh thyme",
-            "0.33 sprig fresh sage",
-            "0.33 sprig oregano",
-            "0.08 lemon",
-            "0.33 carrot",
-            "0.67 celery stalk",
-            "0.5 cup Progresso chicken broth"
-        ],
-        "pure_ingredients": [
-            "turkey",
-            "water",
-            "flour",
-            "butter",
-            "olive oil",
-            "salt",
-            "black pepper",
-            "rosemary",
-            "thyme",
-            "sage",
-            "oregano",
-            "lemon",
-            "carrot",
-            "celery",
-            "chicken broth"
-        ],
-        "cooking_time": "2.75 hours",
-        "required_tools": [
-            "oven",
-            "roasting pan",
-            "cooling rack or roasting rack",
-            "instant-read thermometer",
-            "saucepan",
-            "fork",
-            "measuring spoons",
-            "measuring cups"
-        ]
-    },
-    {
-        "recipe_id": "uMQq8LgYYCBCMjYQziHsiom8lOpupli",
-        "recipe_title": "Extra-Crispy Indian Spiced Chicken Wings",
-        "original_instructions": "Combine the garlic, ginger, chiles and 3 tablespoons kosher salt in a food processor and process to a fine paste; transfer the marinade to a large bowl. Using a paring knife, pierce each chicken wing two or three times through the skin then add to the marinade, tossing to coat evenly. Cover the bowl with plastic wrap and refrigerate for at least 2 hours, or preferably overnight.\nMeanwhile, toast the coconut in a medium skillet over medium heat, stirring often until golden, 4 to 5 minutes. Transfer the coconut to a bowl and let cool.\nMake the raita: Combine the cucumber and 1 teaspoon salt in colander set over a bowl, toss to combine and let stand for 30 minutes. Use your hands to squeeze as much moisture as possible from the cucumbers, then transfer them to a bowl. Stir in the yogurt, cilantro, lime zest and juice. Season the raita with more salt and pepper then cover with plastic wrap and refrigerate until ready to use, up to 2 days. Stir before serving.\nPut the chickpea flour in a large bowl. Using tongs, remove half the wings from the marinade and toss with the flour to coat evenly. Transfer the wings to a wire rack set over a baking sheet and repeat the dredging process with the remaining wings. Discard any leftover chickpea flour.\nHeat 2 inches of oil in a large, heavy-bottomed pot over medium heat until a deep-fry thermometer registers 350 degrees F. Working in 2 batches, fry the wings, turning occasionally, until golden brown and cooked through, 16 to 18 minutes per batch. Use a slotted spoon to transfer the wings to a large bowl and sprinkle with salt. (Make sure the oil returns to the proper temperature between batches.)\nToast the mustard and coriander seeds in a medium skillet over medium heat, swirling the pan until the mustard seeds begin to pop and the spices are fragrant, 2 to 3 minutes. Stir in the turmeric, cook for 10 seconds, then stir in the butter. Heat until the butter melts and the spices begin to sizzle, about 1 minute. Pour the butter and spices over the chicken wings, toss to coat, then transfer to a serving platter. Add the toasted coconut to the seasonings left in the large bowl, then sprinkle over the wings. Serve immediately with the raita on the side.",
-        "ingredients": [
-            "2 heads garlic, cloves separated and peeled",
-            "One 8-inch piece ginger (about 6 ounces), peeled and thinly sliced",
-            "10 serrano chiles (about 4 ounces), stems removed (remove seeds for less heat)",
-            "Kosher salt",
-            "4 pounds chicken wings, separated into flats and drummettes",
-            "1 cup sweetened shredded coconut",
-            "1 cucumber, grated on the large holes of a box grater",
-            "1 cup plain whole-milk yogurt (not Greek)",
-            "2 tablespoons finely chopped cilantro",
-            "Finely grated zest and juice of 1 lime",
-            "Freshly ground pepper",
-            "Vegetable oil, for frying",
-            "3 cups chickpea flour",
-            "1 tablespoon whole brown mustard seeds",
-            "1 tablespoon whole coriander seeds",
-            "1/2 teaspoon ground turmeric",
-            "1 stick (8 tablespoons) unsalted butter, diced"
-        ],
-        "step_by_step_instructions": [
-            "Combine 0.25 heads garlic, 0.25 ounce ginger, 0.25 serrano chiles, and 0.38 teaspoon kosher salt in a food processor and process to a fine paste. Transfer the marinade to a large bowl.",
-            "Pierce 0.5 pound chicken wings two or three times through the skin and add to the marinade, tossing to coat evenly. Cover the bowl with plastic wrap and refrigerate for at least 2 hours, or preferably overnight.",
-            "Toast 0.13 cup sweetened shredded coconut in a medium skillet over medium heat, stirring often until golden, about 4 to 5 minutes. Transfer the coconut to a bowl and let cool.",
-            "Make the raita by combining 0.13 cucumber and 0.13 teaspoon salt in a colander set over a bowl. Toss to combine and let stand for 30 minutes. Squeeze out as much moisture as possible from the cucumbers, then transfer them to a bowl.",
-            "Stir in 0.13 cup plain whole-milk yogurt, 0.25 tablespoon finely chopped cilantro, and 0.13 lime's zest and juice. Season the raita with more salt and pepper, cover with plastic wrap, and refrigerate until ready to use, up to 2 days. Stir before serving.",
-            "Put 0.38 cup chickpea flour in a large bowl. Using tongs, remove 0.25 pound wings from the marinade and toss with the flour to coat evenly. Transfer the wings to a wire rack set over a baking sheet. Discard any leftover chickpea flour.",
-            "Heat 2 inches of oil in a large, heavy-bottomed pot over medium heat until a deep-fry thermometer registers 350 degrees F.",
-            "Working in batches, fry the wings, turning occasionally, until golden brown and cooked through, about 16 to 18 minutes per batch. Use a slotted spoon to transfer the wings to a large bowl and sprinkle with salt.",
-            "Toast 0.25 tablespoon mustard seeds and 0.25 tablespoon coriander seeds in a medium skillet over medium heat, swirling the pan until the mustard seeds begin to pop and the spices are fragrant, about 2 to 3 minutes.",
-            "Stir in 0.03 teaspoon ground turmeric and cook for 10 seconds, then stir in 1 tablespoon unsalted butter. Heat until the butter melts and the spices begin to sizzle, about 1 minute.",
-            "Pour the butter and spices over the chicken wings, toss to coat, then transfer to a serving platter.",
-            "Add the toasted coconut to the seasonings left in the large bowl, then sprinkle over the wings. Serve immediately with the raita on the side."
-        ],
-        "processed_ingredients": [
-            "0.25 heads garlic",
-            "0.25 ounce ginger",
-            "0.25 serrano chiles",
-            "0.38 teaspoon kosher salt",
-            "0.5 pound chicken wings",
-            "0.13 cup sweetened shredded coconut",
-            "0.13 cucumber",
-            "0.13 cup plain whole-milk yogurt",
-            "0.25 tablespoon cilantro",
-            "0.13 lime",
-            "0.38 cup chickpea flour",
-            "0.25 tablespoon mustard seeds",
-            "0.25 tablespoon coriander seeds",
-            "0.03 teaspoon ground turmeric",
-            "1 tablespoon unsalted butter",
-            "2 inches vegetable oil"
-        ],
-        "pure_ingredients": [
-            "garlic",
-            "ginger",
-            "serrano chiles",
-            "salt",
-            "chicken wings",
-            "coconut",
-            "cucumber",
-            "yogurt",
-            "cilantro",
-            "lime",
-            "pepper",
-            "vegetable oil",
-            "chickpea flour",
-            "mustard seeds",
-            "coriander seeds",
-            "turmeric",
-            "butter"
-        ],
-        "cooking_time": "3 hours",
+        "cooking_time": "3 hours 10 minutes",
         "required_tools": [
             "food processor",
-            "paring knife",
-            "plastic wrap",
-            "refrigerator",
-            "medium skillet",
-            "colander",
+            "blender",
             "bowl",
-            "tongs",
-            "wire rack",
+            "knife",
+            "cutting board",
+            "measuring cups"
+        ],
+        "recipe_id": "XRka2m/JoUtOzhAaZw.EFt5ssVS3XDm",
+        "recipe_title": "Two Melon Soup",
+        "original_instructions": "In a food processor or blender puree the cantaloupe with the lemon juice in batches until it is very smooth and in a bowl chill it, covered, for at least 3 hours or overnight. In the food processor or blender puree the honeydew with the lime juice and the minced mint in batches until it is very smooth and in a bowl chill it, covered, for at least 3 hours or overnight. Pour at the same time, using 2 measuring cups, equal amounts of both soups into chilled bowls and garnish each serving with sour cream if desired and a mint sprig.",
+        "ingredients": [
+            "1 small very ripe cantaloupe, peeled, seeded and chopped coarse",
+            "2 tablespoons fresh lemon juice, or to taste",
+            "1/2 very ripe honeydew melon, peeled, seeded and chopped coarse",
+            "3 tablespoons fresh lime juice, or to taste",
+            "1 1/2 teaspoons minced fresh mint, or to taste, plus additional mint sprigs for garnish",
+            "Sour cream for garnish if desired"
+        ]
+    },
+    {
+        "step_by_step_instructions": [
+            "Finely chop the basil leaves, garlic, and pine nuts on a cutting board, then transfer to a jar.",
+            "Add the grated cheese, salt, and 60 ml olive oil, and mix well.",
+            "Pour in the remaining olive oil to top up, then mix again until smooth."
+        ],
+        "processed_ingredients": [
+            "50 g fresh basil leaves",
+            "6 g garlic",
+            "60 g pine nuts",
+            "30 g grated parmesan cheese",
+            "0.5 tsp salt",
+            "250 ml extra-virgin olive oil"
+        ],
+        "pure_ingredients": [
+            "fresh basil leaves",
+            "garlic",
+            "pine nuts",
+            "parmesan cheese",
+            "salt",
+            "olive oil"
+        ],
+        "cooking_time": "15 minutes",
+        "required_tools": [
+            "cutting board",
+            "knife",
+            "jar"
+        ],
+        "recipe_id": "KNRDuXT1zUjdOdK42fy3tk2SBvBdupu",
+        "recipe_title": "Pesto Genovese",
+        "original_instructions": "Put basil, garlic, and pine nuts on a cutting board. With a mezzaluna or sharp knife, finely chop the ingredients and add to a jar. Add the Parmigiano cheese, salt, and 1/2 cup olive oil and mix all the ingredients well. Top up with the remaining extra-virgin olive oil.\nCook's Note: Pesto can be served fresh or it can be preserved in the refrigerator or freezer in an air-tight container. If freezing, omit the cheese and drizzle the top with oil. Thaw, then stir in the cheese.",
+        "ingredients": [
+            "Bunch fresh basil leaves, washed and dried",
+            "2 cloves garlic, crushed",
+            "1/2 cup/125 ml pine nuts, crushed",
+            "1/2 cup/125 ml freshly grated Parmigiano-Reggiano cheese",
+            "Salt",
+            "1 cup/250 ml extra-virgin olive oil"
+        ]
+    },
+    {
+        "step_by_step_instructions": [
+            "Whisk together the olive oil, garlic, lime juice, salt, and pepper in a small bowl to make the marinade.",
+            "Place the swordfish steaks in a shallow dish or plastic container and pour the marinade over them.",
+            "Cover and marinate for 12 to 15 minutes.",
+            "Grill or broil the swordfish to desired doneness.",
+            "Serve with lime wedges."
+        ],
+        "processed_ingredients": [
+            "2 tbsp olive oil",
+            "1 tbsp garlic",
+            "2 tbsp lime juice",
+            "0.5 tsp salt",
+            "0.25 tsp black pepper",
+            "1 lime wedges",
+            "1 lb swordfish steaks"
+        ],
+        "pure_ingredients": [
+            "olive oil",
+            "garlic",
+            "lime juice",
+            "salt",
+            "black pepper",
+            "lime wedges",
+            "swordfish steaks"
+        ],
+        "cooking_time": "20 minutes",
+        "required_tools": [
+            "small bowl",
+            "whisk",
+            "shallow dish",
+            "plastic container",
+            "grill",
+            "broiler"
+        ],
+        "recipe_id": "/9MsWx5JeISkj9FYlgI/4X/mx/q7Xy2",
+        "recipe_title": "Swordfish Marinade",
+        "original_instructions": "Whisk together all the marinade ingredients in a small bowl. Arrange the swordfish, or another strongly flavored fish, such as mahi mahi or Spanish mackerel in a shallow dish or plastic container, pour the marinade over them, cover, and marinate for 12 to 15 minutes. Grill or broil to desired doneness, serve with lime wedges.;",
+        "ingredients": [
+            "1/2 cup olive oil",
+            "1 tablespoon garlic",
+            "1/4 cup fresh lime juice",
+            "Salt and pepper, to taste",
+            "Lime wedges, as needed",
+            "4 (6-ounce) fish steaks (swordfish, mahi mahi, or Spanish mackerel)"
+        ]
+    },
+    {
+        "step_by_step_instructions": [
+            "Preheat the broiler.",
+            "Brush the salmon with 1 tbsp of the soy sauce. Place on a baking sheet and broil for 10 minutes, or until cooked through.",
+            "In a small bowl, whisk together the remaining soy sauce, rice wine vinegar, sesame oil, sugar, ginger, and minced garlic until the sugar is dissolved.",
+            "Quarter, pit, and peel the avocado, then cut into 1/2-inch slices.",
+            "Add the avocado to the dressing and gently turn with a rubber spatula to coat.",
+            "Plate the salmon and divide the avocado and dressing between the portions. Sprinkle sesame seeds over the avocado."
+        ],
+        "processed_ingredients": [
+            "2 tbsp soy sauce",
+            "12 oz salmon fillet",
+            "1 tbsp rice wine vinegar",
+            "1 tsp asian sesame oil",
+            "0.125 tsp sugar",
+            "1 tsp fresh gingerroot",
+            "1 clove garlic",
+            "1/2 medium avocado",
+            "1 tsp sesame seeds"
+        ],
+        "pure_ingredients": [
+            "soy sauce",
+            "salmon fillet",
+            "rice wine vinegar",
+            "sesame oil",
+            "sugar",
+            "gingerroot",
+            "garlic",
+            "avocado",
+            "sesame seeds"
+        ],
+        "cooking_time": "15 minutes",
+        "required_tools": [
+            "broiler",
             "baking sheet",
-            "heavy-bottomed pot",
-            "deep-fry thermometer",
-            "slotted spoon",
-            "serving platter"
+            "small bowl",
+            "whisk",
+            "knife",
+            "cutting board",
+            "rubber spatula"
+        ],
+        "recipe_id": "k.3iC5yF7wfsPPHDmN/6vpYyqJIjhKm",
+        "recipe_title": "Salmon and Avocado with Sesame Soy Dressing",
+        "original_instructions": "Preheat broiler. Brush salmon with 1 tablespoon of the soy sauce. Place on a baking sheet and broil salmon for 10 minutes or until it is cooked through. In a small bowl whisk together, remaining soy sauce, rice wine vinegar, lemon juice, oil, sugar, ginger, and a pinch of salt until sugar is dissolved. Quarter pit and peel avocado and cut crosswise into 1/2-inch slices. Add avocado to dressing and gently turn with a rubber spatula to coat. Plate salmon and divide avocado and dressing between them. Sprinkle sesame seeds over avocado.",
+        "ingredients": [
+            "3 tablespoons soy sauce",
+            "12 ounce salmon fillet, cut in half",
+            "1 tablespoon rice wine vinegar",
+            "1 teaspoon Asian sesame oil",
+            "1/8 teaspoon sugar",
+            "2 teaspoons fresh gingerroot, peeled and grated",
+            "1 garlic clove, minced",
+            "1 chilled firm ripe avocado",
+            "1 teaspoon sesame seeds, toasted"
+        ]
+    },
+    {
+        "step_by_step_instructions": [
+            "Fill a large saucepan with water and bring to a boil. Slowly lower the eggs into the water one by one using a ladle.",
+            "Reduce heat to a low boil and cook the eggs for 10 minutes. Drain the eggs.",
+            "When the eggs are cool enough to handle, peel them.",
+            "Slice each egg in half lengthwise. Remove the yolks and place them in a food processor.",
+            "Arrange the egg whites cut-side up on a serving platter.",
+            "To the food processor, add the mayonnaise, yellow mustard, salt, and black pepper. Process until well blended and smooth.",
+            "Transfer the yolk mixture to a resealable plastic bag. Snip off a bottom corner and pipe the yolk mixture into the egg whites.",
+            "Sprinkle with sweet paprika. Cover loosely and chill until ready to serve."
+        ],
+        "processed_ingredients": [
+            "6 large eggs",
+            "1/2 cup mayonnaise",
+            "1 tbsp yellow mustard",
+            "1/8 tsp kosher salt",
+            "1/8 tsp freshly ground black pepper",
+            "1/2 tsp sweet paprika"
+        ],
+        "pure_ingredients": [
+            "eggs",
+            "mayonnaise",
+            "yellow mustard",
+            "kosher salt",
+            "black pepper",
+            "sweet paprika"
+        ],
+        "cooking_time": "1 hour 10 minutes",
+        "required_tools": [
+            "large saucepan",
+            "ladle",
+            "food processor",
+            "serving platter",
+            "resealable plastic bag",
+            "scissors"
+        ],
+        "recipe_id": "AwvdCUdLFpiPFakES54DIgz2e9CVze.",
+        "recipe_title": "Katie's Deviled Eggs",
+        "original_instructions": "Fill a large saucepan with water and bring to a boil. With a ladle, slowly lower the eggs into the water, one by one. Reduce the heat to a low boil and cook for 10 minutes. Drain. When the eggs are cool enough to handle, remove the shells.\nSlice each egg in half lengthwise. Remove the yolks and place them in a food processor. Arrange the whites cut-side up on a serving platter. To the food processor, add the mayo, mustard, salt and pepper. Process until well blended and smooth, then transfer to a resealable plastic bag. With scissors, snip off a bottom corner from the bag. Using the bag like a pastry bag, pipe the yolk mixture into the egg whites. Sprinkle with paprika. Cover loosely and chill until ready to serve.",
+        "ingredients": [
+            "12 large eggs",
+            "1 cup mayonnaise",
+            "1 tablespoon yellow mustard",
+            "1/4 teaspoon kosher salt",
+            "1/4 teaspoon freshly ground black pepper",
+            "Sweet paprika, for garnish"
+        ]
+    },
+    {
+        "step_by_step_instructions": [
+            "Place the cabbage, carrot, and green bell pepper in a large bowl.",
+            "In a small bowl, whisk together the mayonnaise, corn oil, sour cream, milk, and caraway seeds until smooth. Season with salt and pepper.",
+            "Pour the dressing over the cabbage mixture, stir to combine, cover, and chill for at least 4 hours.",
+            "Let the coleslaw return to room temperature before serving."
+        ],
+        "processed_ingredients": [
+            "450 g green cabbage",
+            "60 g carrot",
+            "80 g green bell pepper",
+            "120 ml mayonnaise",
+            "60 ml corn oil",
+            "120 g sour cream",
+            "15 ml milk",
+            "1 tsp caraway seeds",
+            "0.5 tsp salt",
+            "0.25 tsp black pepper"
+        ],
+        "pure_ingredients": [
+            "green cabbage",
+            "carrot",
+            "green bell pepper",
+            "mayonnaise",
+            "corn oil",
+            "sour cream",
+            "milk",
+            "caraway seeds",
+            "salt",
+            "black pepper"
+        ],
+        "cooking_time": "4 hours 20 minutes",
+        "required_tools": [
+            "large bowl",
+            "small bowl",
+            "whisk",
+            "knife",
+            "cutting board",
+            "grater",
+            "refrigerator",
+            "cover"
+        ],
+        "recipe_id": "NSG0cCl1e5b5TzNzfEaz9GsNkgabPB6",
+        "recipe_title": "Homey Coleslaw",
+        "original_instructions": "1. Place the cabbage, carrot and bell pepper in a large bowl. 2. Combine the remaining ingredients in a small bowl and whisk together well. Pour over the cabbage mixture, stir, cover, and chill for at least 4 hours. Allow the slaw to return to room temperature before serving.\n1. Place the cabbage, carrot and bell pepper in a large bowl.\n2. Combine the remaining ingredients in a small bowl and whisk together well. Pour over the cabbage mixture, stir, cover, and chill for at least 4 hours. Allow the slaw to return to room temperature before serving.",
+        "ingredients": [
+            "1 small head of green cabbage, cleaned, cored and cut into slivers",
+            "1 large carrot, trimmed, peeled and grated",
+            "1 medium-sized green bell pepper, stemmed, seeded and grated",
+            "1 cup mayonnaise",
+            "1/2 cup corn oil",
+            "1/2 cup sour cream",
+            "2 tablespoons milk",
+            "1 teaspoon caraway seeds",
+            "Salt and pepper, to taste"
+        ]
+    },
+    {
+        "step_by_step_instructions": [
+            "In a very small saucepan, combine 1 tbsp sugar and 1 tbsp water. Bring to a boil, stirring until the sugar dissolves, then boil for 1 minute.",
+            "In a small bowl, stir together 2 tbsp golden raisins, 2 tbsp dark rum, and the sugar syrup. Cover and let the raisins plump at room temperature overnight.",
+            "Cut the peel from the grapefruits, including all white pith, and cut the fruit sections free from the membranes. Place the sections in a serving bowl.",
+            "Pour the rum-raisin syrup over the grapefruit sections and sprinkle with the toasted sliced almonds."
+        ],
+        "processed_ingredients": [
+            "1 tbsp sugar",
+            "1 tbsp water",
+            "2 tbsp golden raisins",
+            "2 tbsp dark rum",
+            "1 grapefruit",
+            "1 tbsp sliced almonds"
+        ],
+        "pure_ingredients": [
+            "sugar",
+            "water",
+            "golden raisins",
+            "dark rum",
+            "grapefruit",
+            "almonds"
+        ],
+        "cooking_time": "1 day 5 minutes",
+        "required_tools": [
+            "very small saucepan",
+            "stirring spoon",
+            "small bowl",
+            "knife",
+            "cutting board",
+            "serving bowl"
+        ],
+        "recipe_id": "LLGq1n.EO4OJSrREcijPPCVEl8OAYpG",
+        "recipe_title": "Grapefruit with Golden Raisin Rum Syrup",
+        "original_instructions": "Bring sugar and water to a boil in a very small saucepan, stirring until sugar is dissolved, then boil 1 minute. Stir together raisins, rum and sugar syrup in a small bowl, and let raisins plump, covered at room temperature overnight.\nCut peel from grapefruit, including all white pith, with a sharp knife and cut sections free from membranes. Put sections in a serving bowl and pour rum-raisin syrup over them. Sprinkle with almonds.",
+        "ingredients": [
+            "3 tablespoons sugar",
+            "3 tablespoons water",
+            "1/4 cup golden raisins",
+            "1/4 cup dark rum",
+            "3 red, pink, or white grapefruits",
+            "1 tablespoon sliced almonds, toasted"
+        ]
+    },
+    {
+        "step_by_step_instructions": [
+            "Combine cornstarch, sugar, water, and coconut milk in a bowl and stir until smooth.",
+            "Stir the mixture over medium heat until thickened.",
+            "Lower the heat and continue cooking for 10 minutes, stirring occasionally.",
+            "Stir in the chopped fresh pineapple.",
+            "Pour into a flat pan and refrigerate until set."
+        ],
+        "processed_ingredients": [
+            "0.5 cup cornstarch",
+            "0.25 cup sugar",
+            "0.5 cup water",
+            "0.5 cup coconut milk",
+            "0.17 cup chopped fresh pineapple"
+        ],
+        "pure_ingredients": [
+            "cornstarch",
+            "sugar",
+            "water",
+            "coconut milk",
+            "pineapple"
+        ],
+        "cooking_time": "20 minutes",
+        "required_tools": [
+            "mixing bowl",
+            "pan",
+            "flat pan",
+            "refrigerator",
+            "spoon"
+        ],
+        "recipe_id": "trdiWzCG8OkzlPjz243dYI5CuBVKU0S",
+        "recipe_title": "Haupia with Pineapple",
+        "original_instructions": "Combine cornstarch, sugar, water, and coconut milk. Stir until smooth. Stir over medium heat until thickened. Lower heat and continue cooking for 10 minutes. Stir in fresh pineapple and pour into a flat pan. Refrigerate until set.",
+        "ingredients": [
+            "1 1/2 cups coconut milk",
+            "1 1/2 cups water",
+            "1/2 cup sugar",
+            "3/4 cup corn starch",
+            "1/2 cup chopped fresh pineapple"
         ]
     }
 ]
