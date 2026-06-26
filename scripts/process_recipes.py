@@ -50,15 +50,19 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     args = build_parser().parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+    logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("openai").setLevel(logging.WARNING)
 
     config = get_config()
     config.ensure_output_directories()
     input_path = (
-        config.datasets_dir / "recipe_dataset_init_200.json"
+        config.datasets_dir / "recipe_dataset_200.json"
         if args.input is None
         else config.resolve_path(args.input)
     )
     output_dir = None if args.output_dir is None else config.resolve_path(args.output_dir)
+    model_name = args.model or config.openai.chat_model
+    print(f"Using model: {model_name}")
     
     """
     Output batches contains:
@@ -73,7 +77,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         recipe_dataset=_load_raw_recipes(input_path),
         batch_size=args.batch_size,
         output_dir=output_dir,
-        model=args.model,
+        model=model_name,
     )
     print(f"Created {batch_count} processed recipe batches")
     
@@ -82,3 +86,4 @@ def main(argv: Sequence[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

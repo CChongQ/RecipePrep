@@ -37,12 +37,17 @@ def main(argv: Sequence[str] | None = None) -> int:
     """Run CNF embedding and index creation."""
     args = build_parser().parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+    logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("openai").setLevel(logging.WARNING)
 
     config = get_config()
     config.ensure_output_directories()
     if args.download_food_codes:
         get_food_code_dataset(config=config)
         
+
+    model_name = args.model or config.openai.embedding_model
+    print(f"Using embedding model: {model_name}")
 
     #descriptions are normalized lowercased, stripped of punctuation, and lemmatized
     food_descriptions, _ = get_normalized_foodCode_dataset(config=config)
@@ -52,7 +57,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         OpenAI(),
         food_descriptions,
         batch_size=args.batch_size,
-        model=args.model,
+        model=model_name,
     )
     embedding_array = np.asarray(embeddings, dtype="float32")
     embedding_path = (
@@ -71,3 +76,4 @@ def main(argv: Sequence[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

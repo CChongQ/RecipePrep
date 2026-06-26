@@ -1,4 +1,4 @@
-﻿"""Evaluate one generated recipe from the command line."""
+"""Evaluate one generated recipe from the command line."""
 
 from __future__ import annotations
 
@@ -69,6 +69,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     """Run evaluation for one generated recipe."""
     args = build_parser().parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+    logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("openai").setLevel(logging.WARNING)
 
     config = get_config()
     recipe_path = config.resolve_path(args.recipe)
@@ -100,3 +102,4 @@ def main(argv: Sequence[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

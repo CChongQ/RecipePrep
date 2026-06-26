@@ -12,6 +12,39 @@ from recipeprep.retrieval.preprocessing import preprocess_text
 from recipeprep.schemas import FoodCodeMatch
 
 
+def _normalized_description_segments(description: str) -> list[str]:
+    """Split a CNF description into normalized comma-separated parts."""
+
+    return [
+        segment
+        for segment in (preprocess_text(part) for part in description.split(","))
+        if segment
+    ]
+
+
+def _contains_all_words(ingredient: str, description: str) -> bool:
+    """Return whether every ingredient word appears in the CNF description."""
+
+    ingredient_words = ingredient.split()
+    if len(ingredient_words) < 2:
+        return False
+    description_words = set(description.split())
+    return all(word in description_words for word in ingredient_words)
+
+
+def _is_product_variant_for_single_word(ingredient: str, description: str) -> bool:
+    """Avoid matching plain foods to oils or extracts too early."""
+
+    ingredient_words = set(ingredient.split())
+    if len(ingredient_words) != 1:
+        return False
+    product_words = {"oil", "extract"}
+    description_words = set(preprocess_text(description).split())
+    return bool(product_words & description_words) and not bool(
+        product_words & ingredient_words
+    )
+
+
 def find_closest_food_code(
     client: Any,
     index: Any,
@@ -27,12 +60,34 @@ def find_closest_food_code(
 
     normalized_ingredient = preprocess_text(ingredient)
 
-    #Case 1: Exact text matches
+    # Case 1: exact match against the full normalized CNF description.
     for idx, description in enumerate(food_descriptions):
         if normalized_ingredient == description:
-            return food_codes[idx], description, 1.0
+            return food_codes[idx], food_descriptions_ori[idx], 1.0
 
-    #Case 2: embed the ingredient and search the saved FAISS index
+    # Case 2: exact match against comma-separated CNF description segments.
+    # Example: "almond" matches "Nuts, almonds, dried, unblanched, unroasted".
+    segment_match: tuple[int, int | str, str] | None = None
+    for idx, description_ori in enumerate(food_descriptions_ori):
+        if _is_product_variant_for_single_word(normalized_ingredient, description_ori):
+            continue
+        segments = _normalized_description_segments(description_ori)
+        if normalized_ingredient not in segments:
+            continue
+        segment_position = segments.index(normalized_ingredient)
+        if segment_match is None or segment_position < segment_match[0]:
+            segment_match = (segment_position, food_codes[idx], description_ori)
+    if segment_match is not None:
+        _, food_code, description_ori = segment_match
+        return food_code, description_ori, 0.95
+
+    # Case 3: conservative multi-word containment match.
+    # Example: "all purpose flour" matches a longer CNF flour description.
+    for idx, description in enumerate(food_descriptions):
+        if _contains_all_words(normalized_ingredient, description):
+            return food_codes[idx], food_descriptions_ori[idx], 0.9
+
+    # Case 4: embed the ingredient and search the saved FAISS index.
     ingredient_embedding = generate_embeddings(
         client,
         [normalized_ingredient],

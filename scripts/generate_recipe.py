@@ -61,9 +61,13 @@ def main(argv: Sequence[str] | None = None) -> int:
     """Run recipe generation."""
     args = build_parser().parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+    logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("openai").setLevel(logging.WARNING)
 
     config = get_config()
     recipes_path = config.resolve_path(args.recipes)
+    print(f"Using model: {config.openai.chat_model}")
+    print(f"Using embedding model for retrievers: {config.openai.embedding_model}")
 
     # Load the nutrient and recipe retrievers built during pipeline setup
     retrievers = build_retrievers(recipes_path, config=config)
@@ -98,3 +102,4 @@ def main(argv: Sequence[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

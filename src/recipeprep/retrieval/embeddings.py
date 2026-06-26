@@ -2,9 +2,12 @@
 
 from __future__ import annotations
 
+import logging
 from typing import Any, Sequence
 
 from recipeprep.config import get_config
+
+LOGGER = logging.getLogger(__name__)
 
 
 def generate_embeddings(
@@ -16,9 +19,11 @@ def generate_embeddings(
     """Create embeddings for one list of food descriptions."""
 
     config = get_config()
-    
+    model_name = model or config.openai.embedding_model
+    LOGGER.debug("Using embedding model: %s", model_name)
+
     response = client.embeddings.create(
-        model=model or config.openai.embedding_model,
+        model=model_name,
         input=list(food_descriptions),
     )
     return [item.embedding for item in response.data]
@@ -47,3 +52,4 @@ def batch_generate_embeddings(
         embeddings.extend(generate_embeddings(client, batch, model=model))
         
     return embeddings
+

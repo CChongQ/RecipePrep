@@ -40,9 +40,12 @@ def main(argv: Sequence[str] | None = None) -> int:
     """Run retriever creation."""
     args = build_parser().parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+    logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("openai").setLevel(logging.WARNING)
 
     config = get_config()
     config.ensure_output_directories()
+    print(f"Using embedding model for Chroma retrievers: {config.openai.embedding_model}")
     nutrient_map = None if args.nutrient_map is None else config.resolve_path(args.nutrient_map)
     
     build_retrievers(
@@ -59,3 +62,4 @@ def main(argv: Sequence[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

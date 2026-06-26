@@ -19,7 +19,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--pattern",
-        default="processed_recipes_init*.json",
+        default="processed_recipes_*.json",
         help="Glob pattern under the processed recipes directory.",
     )
     parser.add_argument(

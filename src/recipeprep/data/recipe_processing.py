@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 from typing import Any, Mapping
 
@@ -11,6 +12,8 @@ from pydantic import ValidationError
 from recipeprep.config import get_config
 from recipeprep.generation.prompts import RECIPE_PROCESS_PROMPT
 from recipeprep.schemas import ProcessedRecipe, RawRecipe, RecipeProcessingOutput
+
+LOGGER = logging.getLogger(__name__)
 
 
 def get_API_response(
@@ -25,6 +28,8 @@ def get_API_response(
     """Send a system prompt and user input to the configured model."""
     
     config = get_config()
+    model_name = model or config.openai.chat_model
+    LOGGER.info("Using model for recipe processing: %s", model_name)
 
     # Send the recipe-specific prompt to the chat model.
     chat_completion = client.chat.completions.create(
@@ -32,7 +37,7 @@ def get_API_response(
             {"role": "system", "content": in_prompt},
             {"role": "user", "content": user_input},
         ],
-        model=model or config.openai.chat_model,
+        model=model_name,
         temperature=temp,
         top_p=topp,
     )
@@ -86,7 +91,7 @@ def _save_recipe_batch(
     # Save each batch as a separate checkpoint file.
     output_dir.mkdir(parents=True, exist_ok=True)
     output_path = output_dir / (
-        f"processed_recipes_init_{total_size}_batch_{batch_counter}.json"
+        f"processed_recipes_{total_size}_batch_{batch_counter}.json"
     )
     with output_path.open("w", encoding="utf-8") as file:
         json.dump(recipes, file, indent=4)

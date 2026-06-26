@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import shutil
 import logging
 from dataclasses import dataclass
 from pathlib import Path
@@ -39,7 +40,7 @@ def nutrient_metadata(record: Mapping[str, Any]) -> dict[str, Any]:
     """Create searchable metadata for one ingredient nutrient record."""
     return {
         "ingredient_name": record.get("ingredient_name", ""),
-        "nutrients": "".join(map(str, record.get("nutrients", []))),
+        "nutrients": json.dumps(record.get("nutrients", [])),
     }
 
 
@@ -126,8 +127,16 @@ def _build_or_load_retriever(
     Chroma, _, OpenAIEmbeddings = _langchain_types()
 
     # Use the configured OpenAI embedding model for both Chroma collections.
+    LOGGER.info(
+        "Using embedding model for Chroma collection %s: %s",
+        collection_name,
+        config.openai.embedding_model,
+    )
     embeddings = OpenAIEmbeddings(model=config.openai.embedding_model)
     has_saved_store = persist_directory.is_dir() and any(persist_directory.iterdir())
+    if has_saved_store and rebuild:
+        shutil.rmtree(persist_directory)
+        has_saved_store = False
 
     # Reuse persisted Chroma data unless the caller explicitly rebuilds it.
     if has_saved_store and not rebuild:

@@ -60,6 +60,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     """
     args = build_parser().parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+    logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("openai").setLevel(logging.WARNING)
 
     config = get_config()
     input_path = (
@@ -72,6 +74,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         if args.output is None
         else config.resolve_path(args.output)
     )
+    model_name = args.model or config.openai.embedding_model
+    print(f"Using embedding model for unmatched ingredients: {model_name}")
 
     # Load the normalized/original CNF descriptions and saved FAISS index.
     normalized_descriptions, food_codes = get_normalized_foodCode_dataset(config=config)
@@ -86,7 +90,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         food_codes=food_codes,
         food_descriptions_ori=original_descriptions,
         top_k=args.top_k,
-        embedding_model=args.model,
+        embedding_model=model_name,
     )
    
     matches = get_food_code_for_ingredients(_load_ingredients(input_path), matcher)
@@ -102,3 +106,4 @@ def main(argv: Sequence[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

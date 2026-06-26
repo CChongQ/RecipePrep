@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import ast
+import json
 import logging
 from typing import Any, Mapping, Sequence
 
@@ -38,9 +39,12 @@ def parse_nutrient_metadata(nutrients: Any) -> list[dict[str, Any]]:
         data = nutrients
     elif isinstance(nutrients, str):
         try:
-            data = ast.literal_eval(nutrients)
-        except (SyntaxError, ValueError) as error:
-            raise ValueError("Nutrient metadata is not a valid list.") from error
+            data = json.loads(nutrients)
+        except json.JSONDecodeError:
+            try:
+                data = ast.literal_eval(nutrients)
+            except (SyntaxError, ValueError) as error:
+                raise ValueError("Nutrient metadata is not a valid list.") from error
     else:
         raise ValueError("Nutrient metadata is missing.")
 

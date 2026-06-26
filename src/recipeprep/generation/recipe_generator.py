@@ -33,10 +33,12 @@ def get_API_response(
     """Send recipe prompts to the configured chat model."""
     
     config = get_config()
+    model_name = model or config.openai.chat_model
+    LOGGER.info("Using model for recipe generation: %s", model_name)
 
     # System prompt carries retrieved context; user prompt carries constraints.
     completion = client.chat.completions.create(
-        model=model or config.openai.chat_model,
+        model=model_name,
         temperature=temp,
         top_p=top_p,
         messages=[
