@@ -1,13 +1,26 @@
 # RecipePrep
 
-RecipePrep is a GPT-4o-powered personalized recipe generator that helps users turn available ingredients into practical, balanced meals. Users provide ingredients, cooking tools, and time constraints, and the app generates a tailored recipe with clear step-by-step instructions.
+RecipePrep is a GPT-4o-powered personalized recipe generator that **helps users turn available ingredients into practical, balanced meals**. Users provide ingredients, cooking tools, and time constraints, and the app generates a tailored recipe with clear step-by-step instructions.
 
-To make nutrient calculation and recipe guidance more reliable, we ground ingredient nutrition data in the Canadian Nutrient File (CNF), scores recipes with deterministic nutrition rules, and uses few-shot retrieval to provide the model with similar filtered recipes as examples.
+To make nutrient calculation and recipe guidance more reliable, the system grounds ingredient nutrition data in the Canadian Nutrient File (CNF), scores recipes with deterministic nutrition rules, and uses few-shot retrieval to provide the model with similar filtered recipes as examples.
 
 RecipePrep includes the full pipeline for recipe processing, nutrient matching, health scoring, retrieval, evaluation, and interactive generation through a Gradio app.
 
 
 This guide explains how to run the current project and how each part works.
+
+## Table of Contents
+
+- [1. Project flow](#1-project-flow)
+- [2. Important directories](#2-important-directories)
+- [3. Data sources](#3-data-sources)
+- [4. Installation](#4-installation)
+- [5. API key setup](#5-api-key-setup)
+- [6. Configuration](#6-configuration)
+- [7. Quick start using existing project data](#7-quick-start-using-existing-project-data)
+- [8. Full pipeline rebuild](#8-full-pipeline-rebuild)
+- [9. Recipe evaluation](#9-recipe-evaluation)
+- [10. Tests and quality checks](#10-tests-and-quality-checks)
 
 ## 1. Project flow
 
