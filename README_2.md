@@ -177,33 +177,31 @@ OPENAI_API_KEY
 
 ## 7. Quick start using existing project data
 
-The repository already contains:
+Follow below steps when the prepared project artifacts already exist (Or you already completed Section 8 Step 1-9) and you want to generate recipes without rebuilding the full pipeline.
 
-- `datasets/filtered_recipes_419.json`;
+Expected files:
+
+- `datasets/filtered_recipes_merged.json`;
 - `ingre_nutrition_map/ingredient_nutrient_map.json`;
 - `ingre_nutrition_map/nutrient_unit_map.json`.
 
-Therefore, the shortest path is to launch the application:
+### 7.1 Run the Gradio UI
+
+Start the app:
 
 ```powershell
 python app/gradio_app.py
 ```
 
-Open:
+Open the local URL printed in the terminal, by defaut:
 
 ```text
 http://127.0.0.1:7860
 ```
 
-The first recipe request:
+In the UI, the user can provide available ingredients, cooking tools, cooking time, and whether retrieved example recipes should be included in the prompt.
 
-1. creates the OpenAI client;
-2. builds the nutrient Chroma store if it does not exist;
-3. builds the recipe Chroma store if it does not exist;
-4. saves both stores under `artifacts/indexes/`;
-5. generates the recipe.
-
-Later requests reuse the loaded services and saved stores.
+On the first recipe request, the app creates the OpenAI client, loads or builds the nutrient and recipe Chroma stores, then generates the recipe. Later requests reuse the loaded services and saved stores.
 
 To force both Chroma stores to be rebuilt:
 
@@ -217,6 +215,18 @@ Other app options:
 python app/gradio_app.py --host 0.0.0.0 --port 7860
 python app/gradio_app.py --share
 python app/gradio_app.py --debug
+```
+
+### 7.2 Quick command-line generation
+
+Use this as a smoke test if you want to check generation without opening the UI:
+
+```powershell
+python scripts/generate_recipe.py `
+  --recipes datasets/filtered_recipes_merged.json `
+  --ingredients tomato egg rice `
+  --tools pan stove `
+  --time 30
 ```
 
 ## 8. Full pipeline rebuild
@@ -258,7 +268,7 @@ Choose the right model in the config based on your budget and quality needs befo
 python scripts/process_recipes.py `
   --input datasets/recipe_dataset_init_200.json `
   --batch-size 50 `
-  --temperature 0.7 `
+  --temperature 0.2 `
   --top-p 1.0
 ```
 
@@ -291,10 +301,12 @@ python scripts/collect_ingredients.py `
 
 This step maps each unique processed ingredient to the closest Canadian Nutrient File (CNF) food code.
 
-The matcher works in two stages:
+The matcher works in four stages:
 
 1. Normalize the ingredient name and try an **exact match** against normalized CNF food descriptions.
-2. If no exact match is found, compare the ingredient embedding with saved CNF description embeddings and use the **closest candidate**.
+2. Check CNF comma-separated description parts, so names like `almond` can match `Nuts, almonds, dried...`.
+3. Use conservative word matching for multi-word ingredients
+4. If no text match is found, compare the ingredient embedding with saved CNF description embeddings and use the **closest candidate**.
 
 ```powershell
 python scripts/match_ingredients.py `
@@ -328,9 +340,12 @@ This step uses the ingredient nutrient map to calculate a **health score** for e
 
 ```powershell
 python scripts/score_recipes.py `
-  --input datasets/Processed_Recipes/processed_recipes_init_200_batch_1.json `
-  --output datasets/scored_recipes_init_200_batch_1.json
+  --input-dir datasets/Processed_Recipes `
+  --pattern "processed_recipes_*.json" `
+  --output-dir datasets/scored_recipes
 ```
+
+Use `--rebuild-retriever` when the ingredient nutrient map or nutrient retriever metadata has changed.
 
 **Scoring rules**:
 
@@ -351,20 +366,10 @@ python scripts/score_recipes.py `
 
 Filter scored recipes before building the recipe retriever. By default, filtering uses `total_health_score`, so the recipe retriever is built from the healthy recipe set.
 
-Filter one file:
-
 ```powershell
 python scripts/filter_recipes.py `
-  --input datasets/scored_recipes_init_200_batch_1.json `
-  --output datasets/filtered_recipes_1.json `
-  --min-score 3
-```
-
-Combine and filter several files:
-
-```powershell
-python scripts/filter_recipes.py `
-  --input datasets/scored_batch_1.json datasets/scored_batch_2.json `
+  --input-dir datasets/scored_recipes `
+  --pattern "scored_recipes_*.json" `
   --output datasets/filtered_recipes_merged.json `
   --min-score 3
 ```
@@ -382,12 +387,11 @@ The **nutrient retriever** searches ingredient names, and the **recipe retriever
 
 ```powershell
 python scripts/build_retrievers.py `
-  --recipes datasets/filtered_recipes_419.json `
+  --recipes datasets/filtered_recipes_merged.json `
   --rebuild
 ```
 
-After the first build, omit `--rebuild` to load the saved stores when they
-already exist.
+Use `--rebuild` after changing filtered recipes, nutrient maps, or vector-store metadata.
 
 ### 8.4 Test recipe generation from the command line
 
@@ -398,7 +402,7 @@ context.
 
 ```powershell
 python scripts/generate_recipe.py `
-  --recipes datasets/filtered_recipes_419.json `
+  --recipes datasets/filtered_recipes_merged.json `
   --ingredients tomato egg rice `
   --tools pan stove `
   --time 30
