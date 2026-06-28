@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import argparse
 import logging
+from collections.abc import Sequence
 from pathlib import Path
-from typing import Sequence
 
 from recipeprep.config import get_config
 from recipeprep.retrieval import build_retrievers

@@ -5,8 +5,8 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+from collections.abc import Sequence
 from pathlib import Path
-from typing import Sequence
 
 from recipeprep.config import get_config
 from recipeprep.data import get_ingre_list_from_dataset

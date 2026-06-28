@@ -5,7 +5,8 @@ from __future__ import annotations
 import ast
 import json
 import logging
-from typing import Any, Mapping, Sequence
+from collections.abc import Mapping, Sequence
+from typing import Any
 
 from recipeprep.config import AppConfig, get_config
 from recipeprep.nutrition.quantity_parser import (

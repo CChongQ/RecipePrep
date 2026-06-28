@@ -5,8 +5,9 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+from collections.abc import Sequence
 from pathlib import Path
-from typing import Any, Sequence
+from typing import Any
 
 from recipeprep.config import get_config
 from recipeprep.evaluation import evaluate_recipe

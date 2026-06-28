@@ -9,7 +9,6 @@ from recipeprep.generation.recipe_generator import (
 )
 from recipeprep.generation.structured_output import parse_generated_recipe
 
-
 GENERATED_RECIPE = {
     "title": "Tomato Toast",
     "processed_ingredients": ["1 tomato", "1 slice bread"],

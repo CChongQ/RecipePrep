@@ -6,8 +6,9 @@ import json
 import logging
 import random
 from collections import Counter
+from collections.abc import Mapping, Sequence
 from pathlib import Path
-from typing import Any, Mapping, Sequence
+from typing import Any
 
 import pandas as pd  # type: ignore[import-untyped]
 

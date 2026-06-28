@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
-import requests  # type: ignore[import-untyped]
+import requests
 
 from recipeprep.config import AppConfig, get_config
 from recipeprep.retrieval.preprocessing import preprocess_text
@@ -19,7 +19,7 @@ LOGGER = logging.getLogger(__name__)
 def _load_faiss() -> Any:
     """Import FAISS only when an index operation needs it."""
     try:
-        import faiss  # type: ignore[import-not-found]
+        import faiss
     except ImportError as error:
         raise ImportError(
             "FAISS is required for index operations. Install project dependencies first."

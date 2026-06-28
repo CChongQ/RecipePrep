@@ -1,0 +1,32 @@
+{
+  "raw_recipes": {
+    "recipe-1": {
+      "title": "Test Soup",
+      "ingredients": ["1 cup water", "1 carrot"],
+      "instructions": "Boil water. Add carrot.",
+      "picture_link": null
+    }
+  },
+  "processed_recipes": [
+    {
+      "recipe_id": "recipe-1",
+      "recipe_title": "Test Soup",
+      "original_instructions": "Boil water. Add carrot.",
+      "ingredients": ["1 cup water", "1 carrot"],
+      "step_by_step_instructions": ["Boil water.", "Add carrot."],
+      "processed_ingredients": ["1 cup water", "100 g carrot"],
+      "pure_ingredients": ["water", "carrot"],
+      "cooking_time": "10 minutes",
+      "required_tools": ["pot"]
+    }
+  ],
+  "ingredient_nutrients": [
+    {
+      "ingredient_name": "carrot",
+      "nutrients": [
+        {"value": 41.0, "nutrient_name": "Energy", "unit": "kcal"},
+        {"value": 0.9, "nutrient_name": "Protein", "unit": "g"}
+      ]
+    }
+  ]
+}

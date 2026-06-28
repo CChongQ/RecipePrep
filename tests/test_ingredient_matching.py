@@ -17,7 +17,7 @@ def test_exact_match_does_not_call_embedding_api() -> None:
 
     assert result["tomato"] == {
         "food_code": 123,
-        "description": "tomato",
+        "description": "Tomato, raw",
         "similarity": 1.0,
     }
 

@@ -5,10 +5,11 @@ from __future__ import annotations
 import json
 import logging
 import random
+from collections.abc import Sequence
 from pathlib import Path
-from typing import Any, Sequence
+from typing import Any
 
-import requests  # type: ignore[import-untyped]
+import requests
 
 from recipeprep.config import AppConfig, get_config
 

@@ -3,9 +3,10 @@
 from __future__ import annotations
 
 import logging
+from collections.abc import Sequence
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Sequence
+from typing import Any
 
 from recipeprep.config import AppConfig, get_config
 from recipeprep.generation.prompts import RECIPE_GENERATION_SYSTEM_PROMPT

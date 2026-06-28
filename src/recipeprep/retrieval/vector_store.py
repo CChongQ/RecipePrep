@@ -3,11 +3,12 @@
 from __future__ import annotations
 
 import json
-import shutil
 import logging
+import shutil
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Mapping, Sequence
+from typing import Any
 
 from recipeprep.config import AppConfig, get_config
 
@@ -17,9 +18,9 @@ LOGGER = logging.getLogger(__name__)
 def _langchain_types() -> tuple[Any, Any, Any]:
     """Load LangChain classes only when vector-store work is requested."""
     try:
-        from langchain_chroma import Chroma  # type: ignore[import-not-found]
-        from langchain_core.documents import Document  # type: ignore[import-not-found]
-        from langchain_openai import OpenAIEmbeddings  # type: ignore[import-not-found]
+        from langchain_chroma import Chroma
+        from langchain_core.documents import Document
+        from langchain_openai import OpenAIEmbeddings
     except ImportError as error:
         raise ImportError(
             "LangChain and Chroma dependencies are required for vector-store work."

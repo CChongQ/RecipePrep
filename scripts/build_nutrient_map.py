@@ -5,8 +5,9 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+from collections.abc import Sequence
 from pathlib import Path
-from typing import Any, Sequence
+from typing import Any
 
 from recipeprep.config import get_config
 from recipeprep.data import get_all_ingredient_mapping
@@ -59,7 +60,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     
     print(f"Saved nutrient map to {config.nutrient_map_path}")
     
-    # caches nutrient unit map, so repeated runs do not need to look up the same nutrient unit from the CNF API every time
+    # Cache nutrient units so repeated runs avoid duplicate CNF API lookups.
     print(f"Saved nutrient unit map to {config.nutrient_unit_map_path}")
     
     return 0

@@ -5,14 +5,15 @@ from __future__ import annotations
 import argparse
 import logging
 import re
+from collections.abc import Sequence
 from dataclasses import dataclass
 from functools import lru_cache
-from typing import Any, Sequence
+from typing import Any
 
 from recipeprep.config import AppConfig, get_config
 from recipeprep.generation import RecipeGenerator
-from recipeprep.schemas import GeneratedRecipe
 from recipeprep.retrieval import build_retrievers
+from recipeprep.schemas import GeneratedRecipe
 
 LOGGER = logging.getLogger(__name__)
 
@@ -224,8 +225,9 @@ def build_app(handler: Any = generate_recipe) -> Any:
         time: object,
         provide_example: bool,
         single_prompt: bool,
-        progress: Any = gr.Progress(),
+        progress: Any = None,
     ) -> Any:
+        progress = progress or gr.Progress()
         yield (
             _status_html("Generating recipe", "Preparing inputs and retrievers...", active=True),
             "",

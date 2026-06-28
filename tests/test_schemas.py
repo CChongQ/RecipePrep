@@ -1,18 +1,18 @@
 import json
 from pathlib import Path
+from typing import Any
 
 from recipeprep.schemas import IngredientNutrientRecord, ProcessedRecipe, RawRecipe
 
+FIXTURE_PATH = Path(__file__).parent / "fixtures" / "schema_records.json"
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+def load_schema_records() -> dict[str, Any]:
+    return json.loads(FIXTURE_PATH.read_text(encoding="utf-8"))
 
 
-def test_raw_recipe_schema_accepts_existing_recipe_data() -> None:
-    data = json.loads(
-        (PROJECT_ROOT / "datasets" / "recipe_dataset_init_200.json").read_text(
-            encoding="utf-8"
-        )
-    )
+def test_raw_recipe_schema_accepts_fixture_recipe_data() -> None:
+    data = load_schema_records()["raw_recipes"]
     recipe_id, recipe = next(iter(data.items()))
 
     validated = RawRecipe.model_validate(recipe)
@@ -23,15 +23,8 @@ def test_raw_recipe_schema_accepts_existing_recipe_data() -> None:
     assert validated.instructions
 
 
-def test_processed_recipe_schema_accepts_existing_processed_data() -> None:
-    data = json.loads(
-        (
-            PROJECT_ROOT
-            / "datasets"
-            / "Data_Processing_Agent_testing"
-            / "processed_recipes_init_5.json"
-        ).read_text(encoding="utf-8")
-    )
+def test_processed_recipe_schema_accepts_fixture_processed_data() -> None:
+    data = load_schema_records()["processed_recipes"]
 
     validated = ProcessedRecipe.model_validate(data[0])
 
@@ -40,14 +33,8 @@ def test_processed_recipe_schema_accepts_existing_processed_data() -> None:
     assert validated.pure_ingredients
 
 
-def test_nutrient_schema_accepts_existing_map() -> None:
-    data = json.loads(
-        (
-            PROJECT_ROOT
-            / "ingre_nutrition_map"
-            / "ingredient_nutrient_map.json"
-        ).read_text(encoding="utf-8")
-    )
+def test_nutrient_schema_accepts_fixture_nutrient_map() -> None:
+    data = load_schema_records()["ingredient_nutrients"]
 
     validated = IngredientNutrientRecord.model_validate(data[0])
 

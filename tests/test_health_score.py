@@ -2,7 +2,6 @@ from types import SimpleNamespace
 
 from recipeprep.nutrition import evaluate_recipe_health, score_nutrient_totals
 
-
 BALANCED_NUTRIENTS = [
     {"value": 10.0, "nutrient_name": "Protein", "unit": "g"},
     {"value": 30.0, "nutrient_name": "Carbohydrate", "unit": "g"},

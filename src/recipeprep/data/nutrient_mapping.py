@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from typing import Any, Callable, Mapping
+from collections.abc import Callable, Mapping
+from typing import Any
 
 from recipeprep.data.nutrient_client import get_nut_map
 from recipeprep.schemas import FoodCodeMatch, IngredientNutrientRecord

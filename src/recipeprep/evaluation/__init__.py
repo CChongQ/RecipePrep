@@ -1,12 +1,5 @@
 """Recipe evaluation."""
 
-from recipeprep.evaluation.dataset_builder import (
-    create_examples,
-    generate_datasets,
-    generate_mix_examples,
-    save_to_csv,
-    split_with_mixed,
-)
 from recipeprep.evaluation.consistency import (
     consistency_evaluation,
     evaluate_instruction_clarity,
@@ -17,6 +10,13 @@ from recipeprep.evaluation.constraints import (
     check_cooking_time,
     check_cooking_tools,
     parse_cooking_time_minutes,
+)
+from recipeprep.evaluation.dataset_builder import (
+    create_examples,
+    generate_datasets,
+    generate_mix_examples,
+    save_to_csv,
+    split_with_mixed,
 )
 from recipeprep.evaluation.evaluator import evaluate_recipe
 from recipeprep.evaluation.relevance import (
