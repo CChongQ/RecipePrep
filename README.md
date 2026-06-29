@@ -241,12 +241,38 @@ python scripts/generate_recipe.py `
 
 ## 8. Full pipeline rebuild
 
-The following sections describe how to rebuild the project from raw data.
+The following sections describe how to rebuild the project from raw data. Steps 1-9 are setup and data-preparation steps. They usually only need to be **run once** when rebuilding the project from raw data or refreshing generated artifacts.
 
-Steps 1-9 are setup and data-preparation steps. They usually only need to be **run once** when rebuilding the project from raw data or refreshing generated artifacts. 
+**Important Note!**: Please remember to choose model settings based on your requirement and budget. The scripts below use OpenAI models by default.
 
+The easiest way to rebuild or resume the setup pipeline is to use the pipeline runner. It prints and runs the same scripts shown in the manual steps below.
 
-**Important Note!**: Different parts may uses models to process different volumn of data. Please remember to change model type in each step based on your requirement and budget. The rebuild scripts below use OpenAI models by default.
+**Preview the full rebuild without running anything**:
+
+```powershell
+python scripts/run_pipeline.py --from-step 1 --to-step 9 --dry-run
+```
+
+**Run the full rebuild**:
+
+```powershell
+python scripts/run_pipeline.py --from-step 1 --to-step 9 --allow-costly
+```
+
+Resume from a later step after fixing an input or reviewing an output:
+
+```powershell
+python scripts/run_pipeline.py --from-step 7 --to-step 9 --allow-costly
+```
+
+Useful options:
+
+- `--dry-run`: print selected commands without running them.
+- `--from-step` and `--to-step`: run only part of the setup pipeline.
+- `--allow-costly`: required for steps that call OpenAI models, embeddings, or external APIs.
+- `--download-food-codes`: download the CNF food-code file before building the CNF index.
+- `--rebuild-indexes`: rebuild saved vector stores where supported.
+- `--sample-size`, `--process-batch-size`, `--embedding-batch-size`, and `--min-score`: adjust common pipeline settings.
 
 ### 8.1 Recipe dataset preparation
 
@@ -505,6 +531,5 @@ The tests cover:
 - filtering scripts.
 
 Tests do not make real OpenAI calls.
-
 
 
